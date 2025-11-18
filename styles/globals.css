@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next { height: 100%; }
+body { background:#fff; color:#0b1220; }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 1rem; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium transition; }
+.btn-primary { @apply btn bg-brand-700 text-white hover:bg-brand-800; }
+.btn-ghost { @apply btn border border-gray-300 hover:bg-gray-50; }
+.card { @apply rounded-2xl border border-gray-200 bg-white shadow-card; }
+.badge { @apply text-xs inline-flex items-center rounded-full bg-gray-100 px-2 py-1; }
+.prose p { @apply text-gray-700 leading-relaxed; }
+
+@layer utilities {
+    /* Global vertical rhythm: adds margin between siblings */
+    .stack > * + * {
+      @apply mt-16 md:mt-24;  /* ~64px mobile, ~96px md+ */
+    }
+  
+    /* Optional variants if you want different rhythms on some pages */
+    .stack-tight > * + * { @apply mt-10 md:mt-14; }
+    .stack-loose > * + * { @apply mt-20 md:mt-28; }
+  }
+  @layer utilities {
+    /* Add vertical space before every section after the first, anywhere in the page */
+    main :where(section):not(:first-of-type) {
+      margin-top: clamp(3rem, 6vw, 6rem); /* ~48–96px */
+    }
+  
+    /* Prevent over-spacing inside cards / header / footer */
+    .card :where(section),
+    header :where(section),
+    footer :where(section) {
+      margin-top: 0 !important;
+    }
+  }
+    

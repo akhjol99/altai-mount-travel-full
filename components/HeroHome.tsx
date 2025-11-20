@@ -4,7 +4,8 @@ import Link from "next/link";
 
 const heroImages = [
   "/images/5bogd.jpg",
-  "/images/hero.jpeg"
+  "/images/hero.jpeg",
+  "/images/mount.jpeg"
 ];
 
 export default function HeroHome() {
@@ -19,7 +20,7 @@ export default function HeroHome() {
   }, []);
 
   return (
-    <section className="relative mt-16 md:mt-0 overflow-hidden h-[80vh]">
+    <section className="relative mt-16 md:mt-0 overflow-hidden h-[90vh]">
 
       {/* Background Images */}
       {heroImages.map((img, i) => (
@@ -27,7 +28,7 @@ export default function HeroHome() {
           key={i}
           src={img}
           alt="Altai Mountains"
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ${
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1200ms] ${
             i === current ? "opacity-100" : "opacity-0"
           }`}
         />

@@ -5,7 +5,7 @@ export const tours = [
     durationDays:10, difficulty:'Easy', season:['Jun','Jul','Aug','Sep'], tags:['Trekking','Cultural','Lake', 'Hiking'],
     startingFromUsd:1900, popularity:100,
     heroImage:'/images/hero.jpeg',
-    images: ['/images/malchin.jpg', '/images/bc.jpeg'],
+    images: ['/images/malchin.jpg', '/images/bc.jpeg', '/images/eaglebest.jpg', '/images/van.jpg'],
     highlights:['Eagle hunters','Tent stay','Camel support','Trekking'],
     quickFacts:{ bestSeason:'Late Sep - early Oct', maxAltitudeM:3500, accommodationMix:'Hotel + Yurt + Tent', startEnd:'UBN ↔ UBN', airport:'Chenggis Khaan Int Airport' },
     itinerary:[
@@ -29,9 +29,9 @@ export const tours = [
     id:'altai', slug:'altai-tavan-bogd-trek', title:'Altai Mountain Trekking Tour',
     summary:'Experience glaciers, serene alpine lakes, and brilliant starry nights under the Milky Way.s',
     durationDays:12, difficulty:'Moderate', season:['Jun','Jul','Aug'], tags:['Trekking','Glacier','Horse riding'],
-    startingFromUsd:2140, popularity:90,
+    startingFromUsd:2360, popularity:100,
     heroImage:'/images/river.jpeg',
-    images: ['/images/bear.jpeg','/images/hearth_lake.jpeg', '/images/horse.jpeg', '/images/trekking.jpeg', '/images/river.jpeg'],
+    images: ['/images/bear.jpeg','/images/hearth_lake.jpeg', '/images/bhorse.jpeg', '/images/trekking.jpeg', '/images/river.jpeg', '/images/bridge.jpg'],
     highlights:['Glacier views','Horse support','Ridge panoramas','Nomad hospitality'],
     quickFacts:{ bestSeason:'July–September', maxAltitudeM:3500, accommodationMix:'Hotel + Yurt + Tent', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
     itinerary:[
@@ -58,7 +58,7 @@ export const tours = [
     durationDays:9, difficulty:'Easy', season:['Sep', 'Oct'], tags:['Cultural', 'Festival'],
     startingFromUsd:2300, popularity:90,
     heroImage:'/images/child.jpg',
-    images: ['/images/hunter.jpg', '/images/logo.png'],
+    images: ['/images/hunter.jpg', '/images/festival.jpeg', '/images/octhunter.jpeg'],
     highlights:['Eagle Hunting','Felt crafts','Camel ride','Lakeside camp'],
     quickFacts:{ bestSeason:'June–September', maxAltitudeM:2600, accommodationMix:'Guesthouses + Gers', startEnd:'Ölgii ↔ Ölgii', airport:'Chinggis Khaan Int Airport' },
     itinerary:[
@@ -83,7 +83,7 @@ export const tours = [
     startingFromUsd:2300, popularity:90,
     heroImage:'/images/kh.jpg',
     images: ['/images/khuiten.jpg', '/images/tent.jpg'],
-    highlights:['Climbing','Camel ride','Nomadic life'],
+    highlights:['Climbing','Camel support','Nomadic life'],
     quickFacts:{ bestSeason:'June–August', maxAltitudeM:4500, accommodationMix:'Guesthouses + Gers', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
     itinerary:[
       { day:1, title:'Arrive to Ulaanbaatar', summary:'Market, sightseeing and local dinner.' },
@@ -97,6 +97,30 @@ export const tours = [
     ],
     includes:['All accommodation','All Transportation','Domestic Flight','Tour Guide', '(Breakfast, Lunch, Dinner, Water&Snacks)', 'Golden Eagle Festival Tickets', 'Pick up & drop off services'],
     excludes:['International Flights','Excess baggage fee','Personal needs','Travel Insurance', 'Gratitude'],
-    priceTiers:[{minGroup:2,maxGroup:2,priceUsd:3200},{minGroup:3,maxGroup:4,priceUsd:2800},{minGroup:5,maxGroup:8,priceUsd:2600}, {minGroup:9,maxGroup:12,priceUsd:2400}]
-  }
+    priceTiers:[{minGroup:2,maxGroup:2,priceUsd:3200},{minGroup:3,maxGroup:4,priceUsd:2800},{minGroup:5,maxGroup:8,priceUsd:2600}, {minGroup:9,maxGroup:12,priceUsd:2400},]
+  },
+  {
+    id:'mixed', slug:'mixed', title:'Altai Mixed Tour with Malchin Peak',
+    summary:'In the far western corner of Mongolia lie the Altai Tavan Bogd Mountains, a stunningly beautiful region of snow capped peaks, immense glaciers and large alpine lakes. We explore the region on foot, on horse back and by 4 wheel drive SUVs. Spend a week in the Altai Tavan Bogd National Park. Climb one of the 5 high peaks of Mongolian Altai!',
+    durationDays:8, difficulty:"Easy", season:['Jun','Jul','Aug'], tags:['Mountaineering','Cultural', 'Horse', 'Trekking'],
+    startingFromUsd:1370, popularity:90,
+    heroImage:'/images/bger.jpg',
+    images: ['/images/bhorse.jpeg', '/images/malchin.jpg', '/images/beagle.jpeg', '/images/waterfall.jpeg'],
+    highlights:['Trekking','Horse riding','Nomadic life', 'Climbing'],
+    quickFacts:{ bestSeason:'June–August', maxAltitudeM:4500, accommodationMix:'Guesthouses + Gers', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
+    itinerary:[
+      { day:1, title:'Fly in to Ulgii', summary:'You would get picked up at Ulgii airport by our English speaking guide and driver - would drive in to town for quick grocery store. We would drive to one of the most beautiful place in Western Mongolia. This is the region where the Khoton & Khurgan lakes are. We would stop by beautiful spots, to enjoy the view, to have break, to have lunch. Would pass through some high passes where you have chance to take landscape photos and get breathtaking view from up high. After a long yet a beautiful drive, we would get to Khoton lake area and set up our camp at lake shore, backed with beautiful snow caped mountain range which has the border line with China on top. Overnight in tent. Elevation: 2087m Driving distance: 180km (L, D)' },
+      { day:2, title:'Horse Trek at lake shore of Khoton', summary:'You would get picked up at Ulgii airport by our English speaking guide and driver - would drive in to town for quick grocery store. We would drive to one of the most beautiful place in Western Mongolia. This is the region where the Khoton & Khurgan lakes are. We would stop by beautiful spots, to enjoy the view, to have break, to(L,D)' },
+      { day:3, title:'Short trek to Baga Turgen waterfall', summary:'Are you ready for another adventurous day? Mongolian horses are easier to manage and ride. After a short riding instruction we would saddle up our horses and would ride towards Zagastai river through beautiful scenic route. We would have trail side pack lunch on the way. You would love this riding experience on these tiny Mongolian horses, except the sour on your butt. 😉 oops . On our way to return we would visit local nomad family in ger. Overnight in tent(B,L,D)' },
+      { day:4, title:'Drive to Altai base camp', summary:'After a big western style breakfast we would move towards northern end of the Altai Tavan Bogd National park. We would drive through high passes, will cross rivers and stop by interesting places such as White river. (We have given a name "Yak Milk" to this river) While we moving forward you would recognize that the terrain changes almost every hour. By end of the day we would get to Base camp of Tavan Bogd. Overnight in tent(B,L,D)' },
+      { day:5, title:'Trek and Climb to Malchin Peak', summary:'We would get up early at 5:30am and would have early breakfast. Then we would head up to Malchin peak. Malchin peak is one of the 5 peaks of Altai Tavan Bogd mountain with altitude of 4050meters from sea level. It takes 9-10 hours for us to get to top and back to our camp. The view is incredible!(B,L,D)' },
+      { day:6, title:'Visiting eagle hunter family', summary:'We would drive heading east to visit eagle hunter family. Mongolian nomad kazakhs are the one of the last tribes in the world that keep the eagle hunting culture more than 2 thousand years. We would visit and camp right next to Eagle hunter family. This would give us chance to observe and learn more about eagle hunting and nomad culture from up close (B,L,D)' },
+      { day:7, title:'Drive to Ulgii', summary:'After a great breakfast at our temporary camp, we would drive further and get to Ulgii by noon. You would get transferred to hotel and you would have some free time until dinner. This would allow you to visit local museum, black market and souvenir shop by your selves. After visiting many nomad families and getting know about local culture, it would be meaningful to visit local museum(B,L,D)' },
+      { day:8, title:'Departure to UB', summary:'We would pick up you at 6:30am from your hotel and you would get transferred to Ulgii airport. (B)' }
+    ],
+    includes:['All accommodation','All Transportation','Tour Guide', '(Breakfast, Lunch, Dinner, Water&Snacks)', 'Camping tents, tables and chairs','Horses for riding','Transport Airport transfers to and from Ulgii airport'],
+    excludes:['International Flights','Domestic Flight','Accamodation in Ulaanbaatar', 'Excess baggage fee','Personal needs','Travel Insurance', 'Gratitude'],
+    priceTiers:[{minGroup:2,maxGroup:2,priceUsd:1470},{minGroup:3,maxGroup:4,priceUsd:1420},{minGroup:5,maxGroup:8,priceUsd:1390}, {minGroup:9,maxGroup:12,priceUsd:1370},]
+  },
+  
 ];

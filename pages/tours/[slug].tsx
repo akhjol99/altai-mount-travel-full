@@ -77,7 +77,7 @@ export default function TourDetail(){
     <div className="min-h-screen bg-white">
       <Navbar />
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={tour.heroImage} alt={tour.title} className="w-full h-[50vh] object-cover object-center" />
+      <img src={tour.heroImage} alt={tour.title} className="w-full h-[50vh] object-cover object-[25%_75%]" />
 
       <section className="container py-6">
         <Breadcrumbs items={[{href:'/',label:'Home'},{href:'/tours',label:'Tours'},{label: tour.title}]} />

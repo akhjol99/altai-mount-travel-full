@@ -1,6 +1,6 @@
 export const tours = [
   {
-    id:'ATB', slug:'altai tavan bodg BC trekking', title:'Altai Tavan Bogd Base Camp Trekking Tour',
+    id:'ATB', slug:'altai-tavan-bodg-base-camp-trekking', title:'Altai Tavan Bogd Base Camp Trekking Tour',
     summary:'Discover the remote Altai Mountains along Mongolia’s western border. Visit Kazakh and Tuvan communities.',
     durationDays:10, difficulty:'Easy', season:['Jun','Jul','Aug','Sep'], tags:['Trekking','Cultural','Lake', 'Hiking'],
     startingFromUsd:1900, popularity:100,
@@ -60,10 +60,10 @@ export const tours = [
     heroImage:'/images/child.jpg',
     images: ['/images/hunter.jpg', '/images/festival.jpeg', '/images/octhunter.jpeg'],
     highlights:['Eagle Hunting','Felt crafts','Camel ride','Lakeside camp'],
-    quickFacts:{ bestSeason:'June–September', maxAltitudeM:2600, accommodationMix:'Guesthouses + Gers', startEnd:'Ölgii ↔ Ölgii', airport:'Chinggis Khaan Int Airport' },
+    quickFacts:{ bestSeason:'June–September', maxAltitudeM:2600, accommodationMix:'Guesthouses + Gers', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
     itinerary:[
       { day:1, title:'Arrive to Ulaanbaatar ', summary:'Market and local dinner.' },
-      { day:2, title:'Fly to BAYAN ULGII province', summary:'Set off from Ulaanbaatar early in the morning with MIAT Airlines, soaring above Mongolia’s vast landscapes and arriving in Ulgii after a swift 2-hour flight. Upon arrival, our team will be ready to take you to your hotel for a smooth check-in.Depending on your arrival time, we’ll visit Ulgii’s local museum before lunch, offering you a glimpse into the region’s rich history. After lunch, we’ll journey to Boken Mountain, rising 2,700 meters above sea level, where you can capture breathtaking panoramic views of Ulgii town and the surrounding landscapes.Next, dive into the authentic Kazakh nomadic lifestyle with a visit to a local family, gaining insight into their traditions and daily life. In the late afternoon, we’ll return to your hotel for a relaxing evening, followed by a delicious dinner at a renowned Turkish restaurant in town. This day is just the beginning of an unforgettable adventure in Western Mongolia. (B,L,D)' },
+      { day:2, title:'Fly to BAYAN-ULGII province', summary:'Set off from Ulaanbaatar early in the morning with MIAT Airlines, soaring above Mongolia’s vast landscapes and arriving in Ulgii after a swift 2-hour flight. Upon arrival, our team will be ready to take you to your hotel for a smooth check-in.Depending on your arrival time, we’ll visit Ulgii’s local museum before lunch, offering you a glimpse into the region’s rich history. After lunch, we’ll journey to Boken Mountain, rising 2,700 meters above sea level, where you can capture breathtaking panoramic views of Ulgii town and the surrounding landscapes.Next, dive into the authentic Kazakh nomadic lifestyle with a visit to a local family, gaining insight into their traditions and daily life. In the late afternoon, we’ll return to your hotel for a relaxing evening, followed by a delicious dinner at a renowned Turkish restaurant in town. This day is just the beginning of an unforgettable adventure in Western Mongolia. (B,L,D)' },
       { day:3, title:'Experiencing Nomadic culture and True life', summary:'Today we will drive to another eagle hunter’s place and meet new people in that region. Enjoy the hospitality of nomadic Kazakhs (B,L,D)' },
       { day:4, title:'True life Hunting with EAGLE', summary:'Be a part of real eagle hunting in the remote Altai Mountains. Please feel free to photo shoot and have a memorable picture on horseback with an eagle landed on your arm. Also, you have an opportunity to explore nomadic traditions and experience their way of living, such as milking a yak, making a milky product, and herding the animals (B,L,D)' },
       { day:5, title:'Arrive in Ulgii Town', summary:'In the afternoon, we will go to Olgii. You will be transferred to your hotel. Visit the main sights of the city. Enjoy the Traditional Kazakh Museum and dinner at the local restaurant (B,L,D)' },
@@ -77,7 +77,7 @@ export const tours = [
     priceTiers:[{minGroup:2,maxGroup:2,priceUsd:3600},{minGroup:3,maxGroup:4,priceUsd:2800},{minGroup:5,maxGroup:12,priceUsd:2300}]
   },
   {
-    id:'climbing', slug:'climbing', title:'Climb Mount Khuiten',
+    id:'climbing', slug:'climbing Khuiten peak', title:'Climb Mount Khuiten',
     summary:'Mount Khuiten is the highest peak in Mongolia, which is located in the remote area of the Mongolian Altai region. In addition, Altai Tavan Bogd National Park is truly one of the must-see places in Mongolia, as there are stunning snow-capped mountains and an array of beautiful valleys.',
     durationDays:12, difficulty:"Challenging", season:['Jun','Jul','Aug'], tags:['Mountaineering','Cultural'],
     startingFromUsd:2300, popularity:90,
@@ -100,14 +100,14 @@ export const tours = [
     priceTiers:[{minGroup:2,maxGroup:2,priceUsd:3200},{minGroup:3,maxGroup:4,priceUsd:2800},{minGroup:5,maxGroup:8,priceUsd:2600}, {minGroup:9,maxGroup:12,priceUsd:2400},]
   },
   {
-    id:'mixed', slug:'mixed', title:'Altai Mixed Tour with Malchin Peak',
+    id:'mixed', slug:'altai-mixed-tour-malchin-peak-western-mongolia', title:'Altai Mixed Tour with Malchin Peak',
     summary:'In the far western corner of Mongolia lie the Altai Tavan Bogd Mountains, a stunningly beautiful region of snow capped peaks, immense glaciers and large alpine lakes. We explore the region on foot, on horse back and by 4 wheel drive SUVs. Spend a week in the Altai Tavan Bogd National Park. Climb one of the 5 high peaks of Mongolian Altai!',
     durationDays:8, difficulty:"Easy", season:['Jun','Jul','Aug'], tags:['Mountaineering','Cultural', 'Horse', 'Trekking'],
     startingFromUsd:1370, popularity:90,
     heroImage:'/images/bger.jpg',
     images: ['/images/bhorse.jpeg', '/images/malchin.jpg', '/images/beagle.jpeg', '/images/waterfall.jpeg'],
     highlights:['Trekking','Horse riding','Nomadic life', 'Climbing'],
-    quickFacts:{ bestSeason:'June–August', maxAltitudeM:4500, accommodationMix:'Guesthouses + Gers', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
+    quickFacts:{ bestSeason:'June–August', maxAltitudeM:4500, accommodationMix:'Guesthouses + Gers', startEnd:'ULG ↔ ULG', airport:'Chinggis Khaan Int Airport' },
     itinerary:[
       { day:1, title:'Fly in to Ulgii', summary:'You would get picked up at Ulgii airport by our English speaking guide and driver - would drive in to town for quick grocery store. We would drive to one of the most beautiful place in Western Mongolia. This is the region where the Khoton & Khurgan lakes are. We would stop by beautiful spots, to enjoy the view, to have break, to have lunch. Would pass through some high passes where you have chance to take landscape photos and get breathtaking view from up high. After a long yet a beautiful drive, we would get to Khoton lake area and set up our camp at lake shore, backed with beautiful snow caped mountain range which has the border line with China on top. Overnight in tent. Elevation: 2087m Driving distance: 180km (L, D)' },
       { day:2, title:'Horse Trek at lake shore of Khoton', summary:'You would get picked up at Ulgii airport by our English speaking guide and driver - would drive in to town for quick grocery store. We would drive to one of the most beautiful place in Western Mongolia. This is the region where the Khoton & Khurgan lakes are. We would stop by beautiful spots, to enjoy the view, to have break, to(L,D)' },

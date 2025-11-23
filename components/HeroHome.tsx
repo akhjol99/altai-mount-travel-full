@@ -43,7 +43,7 @@ export default function HeroHome() {
 
         <h1 className="text-4xl md:text-6xl font-medium leading-[1.15] tracking-tight text-white 
              drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]">
-            Discover the Western Mongolia
+            Discover Western Mongolia
         </h1>
 
    

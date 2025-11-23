@@ -77,7 +77,7 @@ export const tours = [
     priceTiers:[{minGroup:2,maxGroup:2,priceUsd:3600},{minGroup:3,maxGroup:4,priceUsd:2800},{minGroup:5,maxGroup:12,priceUsd:2300}]
   },
   {
-    id:'climbing', slug:'climbing Khuiten peak', title:'Climb Mount Khuiten',
+    id:'climbing', slug:'climbing-khuiten-peak', title:'Climb Mount Khuiten',
     summary:'Mount Khuiten is the highest peak in Mongolia, which is located in the remote area of the Mongolian Altai region. In addition, Altai Tavan Bogd National Park is truly one of the must-see places in Mongolia, as there are stunning snow-capped mountains and an array of beautiful valleys.',
     durationDays:12, difficulty:"Challenging", season:['Jun','Jul','Aug'], tags:['Mountaineering','Cultural'],
     startingFromUsd:2300, popularity:90,

@@ -11,39 +11,6 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>
-          Western Mongolia Tours &amp; Golden Eagle Festival | Altai Mount Travel
-        </title>
-        <meta
-          name="description"
-          content="Altai Mount Travel is a Kazakh-owned tour operator in Western Mongolia. We offer Altai Mountains trekking tours, Golden Eagle Festival trips, and authentic homestays with eagle hunters in Bayan-Ölgii."
-        />
-        {/* JSON-LD structured data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `
-            {
-              "@context": "https://schema.org",
-              "@type": "TravelAgency",
-              "name": "Altai Mount Travel",
-              "url": "https://altaimount.com",
-              "image": "https://altaimount.com/logo.svg",
-              "description": "Kazakh-owned tour operator offering Altai trekking tours, Golden Eagle Festival trips, and eagle hunter homestays.",
-              "telephone": "+97685428887",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Ölgii",
-                "addressRegion": "Bayan-Ölgii",
-                "addressCountry": "MN"
-              }
-            }
-          `,
-          }}
-        />
-      </Head>
 
       <div className="min-h-screen bg-white text-gray-900">
         <Navbar />
@@ -88,6 +55,5 @@ export default function Home() {
         <CTA />
         <Footer />
       </div>
-    </>
   );
 }

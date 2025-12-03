@@ -19,6 +19,8 @@ export default function Document() {
         {/* Canonical URL */}
         <link rel="canonical" href="https://altaimount.com/" />
 
+        <link rel="icon" href="/favicon.ico" />
+
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"

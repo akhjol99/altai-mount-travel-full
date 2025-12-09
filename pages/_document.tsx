@@ -13,7 +13,7 @@ export default function Document() {
         {/* Meta Description */}
         <meta
           name="description"
-          content="Discover Altai Mountain where you can experience the gorgeous Altai region and nomadic eagle hunting culture and unique traditions in Mongolia."
+          content="Discover the Altai Mountains, where you can experience Mongolia’s stunning landscapes along with its nomadic eagle-hunting culture and unique traditions."
         />
 
         {/* Canonical URL */}

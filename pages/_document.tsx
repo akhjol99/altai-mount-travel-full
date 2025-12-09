@@ -7,13 +7,13 @@ export default function Document() {
 
         {/* SEO Title */}
         <title>
-          Western Mongolia Tours &amp; Golden Eagle Festival | Altai Mount Travel
+        Western Mongolia Tours &amp; Golden Eagle Festival
         </title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Altai Mount Travel is a Kazakh-owned tour operator in Western Mongolia. We offer Altai Mountains trekking tours, Golden Eagle Festival trips, and authentic homestays with eagle hunters in Bayan-Ölgii."
+          content="Discover Altai Mountain where you can experience the gorgeous Altai region and nomadic eagle hunting culture and unique traditions in Mongolia."
         />
 
         {/* Canonical URL */}

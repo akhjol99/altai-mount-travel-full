@@ -56,27 +56,6 @@ export default function Navbar() {
               altaimounttravel@gmail.com
             </a>
 
-            {/* Tripadvisor */}
-            <a
-              href="https://www.tripadvisor.com/Attraction_Review-g680706-d32761497-Reviews-Altai_Mount_Travel-Olgiy_Bayan_Olgii_Province.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-[13px] font-semibold text-brand-800 hover:bg-brand-50"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="#34E0A1"
-                  d="M12 4c3.86 0 7.23 2.19 8.82 5.42L24 7l-3.26 3.68A9.996 9.996 0 0 1 12 22a9.996 9.996 0 0 1-8.74-11.32L0 7l3.18 2.42C4.77 6.19 8.14 4 12 4m4 12a3 3 0 1 0-.001-6.001A3 3 0 0 0 16 16m-8 0a3 3 0 1 0-.001-6.001A3 3 0 0 0 8 16"
-                />
-              </svg>
-              Tripadvisor
-            </a>
-
           </div>
         </div>
       </div>

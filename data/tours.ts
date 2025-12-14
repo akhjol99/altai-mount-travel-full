@@ -1,6 +1,6 @@
 export const tours = [
   {
-    id:'ATB', slug:'altai-tavan-bodg-base-camp-trekking', title:'Altai Tavan Bogd Base Camp Trekking Tour',
+    id:'ATB', slug:'altai-tavan-bogd-base-camp-trekking', title:'Altai Tavan Bogd Base Camp Trekking Tour',
     summary:'Discover the remote Altai Mountains along Mongolia’s western border. Visit Kazakh and Tuvan communities.',
     durationDays:10, difficulty:'Easy', season:['Jun','Jul','Aug','Sep'], tags:['Trekking','Cultural','Lake', 'Hiking'],
     startingFromUsd:1900, popularity:100,

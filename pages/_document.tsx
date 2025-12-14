@@ -20,6 +20,7 @@ export default function Document() {
         <link rel="canonical" href="https://altaimount.com/" />
 
         <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon192.png" />
 
         {/* JSON-LD Structured Data */}
         <script

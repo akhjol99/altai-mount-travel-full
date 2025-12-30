@@ -17,7 +17,7 @@ export default function Document() {
         />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://altaimount.com/" />
+        <link rel="canonical" href="https://www.altaimount.com/" />
 
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="192x192" href="/favicon192.png" />
@@ -31,9 +31,9 @@ export default function Document() {
               "@context": "https://schema.org",
               "@type": "TravelAgency",
               "name": "Altai Mount Travel",
-              "url": "https://altaimount.com",
-              "image": "https://altaimount.com/logo.svg",
-              "description": "Kazakh-owned tour operator offering Altai trekking tours, Golden Eagle Festival trips, and eagle hunter homestays.",
+              "url": "https://www.altaimount.com",
+              "image": "https://www.altaimount.com/logo.svg",
+              "description": "Tour operator offering Altai trekking tours, Golden Eagle Festival trips, and eagle hunter homestays.",
               "telephone": "+97685428887",
               "address": {
                 "@type": "PostalAddress",

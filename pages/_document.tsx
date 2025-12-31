@@ -18,10 +18,10 @@ export default function Document() {
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://www.altaimount.com/" />
-
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="192x192" href="/favicon192.png" />
-
+        <meta property="og:url" content="https://www.altaimount.com/" />
+        <meta property="og:type" content="website" />
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"

@@ -18,7 +18,12 @@ export default function Document() {
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://www.altaimount.com/" />
-        <link rel="icon" href="/favicon.ico" />
+
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
         <link rel="icon" type="image/png" sizes="192x192" href="/favicon192.png" />
         <meta property="og:url" content="https://www.altaimount.com/" />
         <meta property="og:type" content="website" />
@@ -32,7 +37,7 @@ export default function Document() {
               "@type": "TravelAgency",
               "name": "Altai Mount Travel",
               "url": "https://www.altaimount.com",
-              "image": "https://www.altaimount.com/logo.svg",
+              "logo": "https://www.altaimount.com/logo-112.png",
               "description": "Tour operator offering Altai trekking tours, Golden Eagle Festival trips, and eagle hunter homestays.",
               "telephone": "+97685428887",
               "address": {

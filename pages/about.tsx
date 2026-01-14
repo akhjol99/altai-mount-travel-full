@@ -1,252 +1,267 @@
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import { Mountain, Compass, Users, HeartHandshake } from "lucide-react";
+import Link from "next/link";
+
+const BRAND = "Altai Mount Travel";
+const SITE_URL = "https://www.altaimount.com";
+const WHATSAPP = "+97685428887";
+const EMAIL = "altaimounttravel@gmail.com";
 
 export default function AboutPage() {
+  const whatsappLink = `https://wa.me/${WHATSAPP}`;
+
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Akhjol Taukye",
+    jobTitle: "Owner / Tour Manager",
+    worksFor: {
+      "@type": "Organization",
+      name: BRAND,
+      url: SITE_URL,
+    },
+    url: `${"www.altaimount.com"}/about`,
+    image: `${"www.altaimount.com"}/images/akhjol.jpeg`,
+  };
+
   return (
     <>
       <Head>
-        <title>About Us | Altai Mount Travel</title>
+        <title>About Us | {BRAND}</title>
         <meta
           name="description"
-          content="Altai Mount Travel is a locally owned travel company based in Bayan-Ölgii, creating flexible, caring and authentic journeys in Western Mongolia."
+          content="Meet the local team behind Altai Mount Travel in Ölgii, Bayan-Ölgii. Authentic Western Mongolia tours, Altai trekking, and Golden Eagle Festival journeys."
+        />
+        <link rel="canonical" href={`${SITE_URL}/about`} />
+
+        {/* Optional: Owner/Manager Person schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
       </Head>
 
-      <Navbar />
-
-      <main className="bg-gray-50 pb-16">
-        {/* Top hero section */}
-        <section className="pt-24 md:pt-28 pb-12 md:pb-16 bg-gradient-to-b from-sky-50 via-gray-50 to-gray-50">
-          <div className="max-w-5xl mx-auto px-4 md:px-6 text-center">
-            <p className="text-xs font-semibold tracking-[0.24em] uppercase text-sky-700 mb-3">
-              About Altai Mount Travel
+      <main className="min-h-screen bg-stone-50 text-stone-900">
+        {/* HERO */}
+        <section className="relative border-b border-stone-200 bg-white">
+          <div className="absolute inset-0 bg-[radial-gradient(900px_400px_at_15%_0%,rgba(16,185,129,0.12),transparent_60%),radial-gradient(800px_350px_at_85%_10%,rgba(250,204,21,0.10),transparent_55%)]" />
+          <div className="relative mx-auto max-w-6xl px-4 pt-6 pb-4 sm:pt-12 sm:pb-6">
+            <p className="text-xs tracking-[0.25em] uppercase text-stone-600">
+              Based in Ölgii, Bayan-Ölgii • Western Mongolia specialists
             </p>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-gray-900 mb-4">
-              Local Guides. Wild Landscapes. <br className="hidden md:block" />
-              Carefully Planned Journeys.
+
+            <h1 className="mt-4 text-4xl font-semibold leading-tight sm:text-5xl">
+              Travel with locals,{" "}
+              <span className="text-emerald-700">feel the Altai</span>.
             </h1>
-            <p className="text-gray-600 max-w-3xl mx-auto text-sm md:text-base">
-              Altai Mount Travel is a locally owned travel company based in
-              Bayan-Ölgii, Western Mongolia. We design flexible, small–group
-              trips that connect you with the mountains, lakes, and nomadic
-              families of the Mongolian Altai.
-            </p>
-          </div>
-        </section>
 
-        {/* Story section */}
-        <section className="py-10 md:py-14">
-          <div className="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-            <div>
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
-                Our Story
-              </h2>
-              <p className="text-gray-600 text-sm md:text-[15px] leading-relaxed mb-4">
-                Altai Mount Travel was born from a simple idea: to share the
-                wild beauty of the Altai Mountains with travelers in an honest,
-                flexible and caring way. We are from Bayan-Ölgii, and this
-                region is not just our workplace – it is our home.
-              </p>
-              <p className="text-gray-600 text-sm md:text-[15px] leading-relaxed mb-4">
-                Over the past five years, we have hosted guests from many
-                countries on festival trips, trekking expeditions, family
-                journeys, cultural stays with nomadic families and Golden Eagle
-                experiences. Every trip is planned by us personally, with
-                attention to pace, comfort and your own travel style.
-              </p>
-              <p className="text-gray-600 text-sm md:text-[15px] leading-relaxed">
-                We keep our groups small, our prices flexible and our approach
-                personal. You will not just “see” Western Mongolia – you will
-                get to know it.
-              </p>
-            </div>
-
-            <div className="relative h-64 md:h-80 lg:h-96 rounded-3xl overflow-hidden shadow-md">
-              <Image
-                src="/images/bogd.jpg" // <- put a nice landscape / team image here
-                alt="Altai Mountains near Bayan-Ölgii"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Values / Why Us section */}
-        <section className="py-8 md:py-12">
-          <div className="max-w-6xl mx-auto px-4 md:px-6">
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">
-              What We Care About
-            </h2>
-            <p className="text-gray-600 text-sm md:text-[15px] mb-8 max-w-3xl">
-              When you travel with us, you are not just booking a tour. You are
-              trusting us with your time, comfort and safety in a remote
-              region. These are the things we focus on every day:
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-stone-700 sm:text-lg">
+              {BRAND} is a locally based team offering small-group and private journeys into the
+              Altai Mountains — trekking, horse trekking, and the Golden Eagle Festival — with real
+              cultural connection and careful planning.
             </p>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
-              <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-sky-50 mb-3">
-                  <Mountain className="w-5 h-5 text-sky-700" />
-                </div>
-                <h3 className="text-sm font-semibold mb-1.5">
-                  Local Expertise
-                </h3>
-                <p className="text-xs text-gray-600 leading-relaxed">
-                  We are based in Bayan-Ölgii and work directly with local
-                  guides, drivers, horsemen and nomadic families in the Altai.
-                </p>
-              </div>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a
+                href={whatsappLink}
+                className="rounded-2xl bg-emerald-600 px-5 py-3 text-sm font-semibold text-white hover:bg-emerald-500 transition"
+              >
+                WhatsApp us
+              </a>
 
-              <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-emerald-50 mb-3">
-                  <Compass className="w-5 h-5 text-emerald-700" />
-                </div>
-                <h3 className="text-sm font-semibold mb-1.5">
-                  Flexible Planning
-                </h3>
-                <p className="text-xs text-gray-600 leading-relaxed">
-                  We do not force fixed dates or rigid programs. We shape the
-                  route and schedule around your time, interests and pace.
-                </p>
-              </div>
+              <a
+                href={`mailto:${EMAIL}`}
+                className="rounded-2xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 hover:bg-stone-100 transition"
+              >
+                Email us
+              </a>
 
-              <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-amber-50 mb-3">
-                  <Users className="w-5 h-5 text-amber-700" />
-                </div>
-                <h3 className="text-sm font-semibold mb-1.5">
-                  Small Groups
-                </h3>
-                <p className="text-xs text-gray-600 leading-relaxed">
-                  Smaller groups mean more flexibility, safer travel and more
-                  real contact with local people and nature.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
-                <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-rose-50 mb-3">
-                  <HeartHandshake className="w-5 h-5 text-rose-700" />
-                </div>
-                <h3 className="text-sm font-semibold mb-1.5">
-                  Genuine Care
-                </h3>
-                <p className="text-xs text-gray-600 leading-relaxed">
-                  We answer your questions honestly, stay in touch before and
-                  during the trip, and do our best so you leave happy and
-                  satisfied.
-                </p>
-              </div>
+              <Link
+                href="/tours"
+                className="rounded-2xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 hover:bg-stone-100 transition"
+              >
+                View tours
+              </Link>
             </div>
           </div>
         </section>
 
-        {/* How we work / trip process */}
-        <section className="py-10 md:py-14">
-          <div className="max-w-6xl mx-auto px-4 md:px-6 border border-dashed border-gray-200 rounded-3xl bg-white/80 shadow-sm">
-            <div className="grid md:grid-cols-[1.2fr,1fr] gap-8 md:gap-10 items-center p-6 md:p-8">
-              <div>
-                <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
-                  How We Plan Your Trip
-                </h2>
-                <p className="text-gray-600 text-sm md:text-[15px] mb-5">
-                  Every journey starts with a simple conversation. Tell us when
-                  you want to travel, what you are interested in and how active
-                  you want the trip to be, and we will build a plan around you.
+        {/* CONTENT */}
+        <section className="mx-auto max-w-6xl px-4 py-10 sm:py-4">
+          <div className="grid gap-6 lg:grid-cols-12">
+            {/* LEFT */}
+            <div className="lg:col-span-7">
+              <Card>
+                <h2 className="text-xl font-semibold">Our story</h2>
+                <p className="mt-3 leading-relaxed text-stone-700">
+                  We grew up in Western Mongolia among nomadic herders, wide valleys, and Kazakh eagle
+                  hunters. This is our home — and guiding travelers is our way to share the region
+                  with respect and honesty.
                 </p>
+                <p className="mt-3 leading-relaxed text-stone-700">
+                  We don’t aim to show you everything. We aim to show you what matters: high mountain
+                  silence, warm family hospitality, and traditions that are still alive.
+                </p>
+              </Card>
 
-                <ol className="space-y-3 text-sm md:text-[15px] text-gray-700">
+              <div className="h-5" />
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                <Card>
+                  <h3 className="text-base font-semibold">Authentic experiences</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-700">
+                    Homestays with local families, eagle hunters, and real daily life — not staged
+                    performances.
+                  </p>
+                </Card>
+
+                <Card>
+                  <h3 className="text-base font-semibold">Safety & comfort</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-700">
+                    Reliable transport, smart pacing, and guides who know the terrain.
+                  </p>
+                </Card>
+
+                <Card>
+                  <h3 className="text-base font-semibold">Responsible tourism</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-700">
+                    Your trip supports local drivers, hosts, and families in the region.
+                  </p>
+                </Card>
+
+                <Card>
+                  <h3 className="text-base font-semibold">Tailored itineraries</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-700">
+                    Private or small-group tours shaped around your dates, interests, and fitness.
+                  </p>
+                </Card>
+              </div>
+
+              <div className="h-5" />
+
+              <Card>
+                <h2 className="text-xl font-semibold">How your trip comes together</h2>
+                <ol className="mt-3 list-decimal space-y-2 pl-5 text-stone-700">
                   <li>
-                    <span className="font-semibold text-gray-900">
-                      1. Send us an enquiry
-                    </span>{" "}
-                    – Use the enquiry form or email us directly with your rough
-                    dates and ideas.
+                    <span className="font-semibold text-stone-900">Tell us your dates</span> and what
+                    you dream of (trekking, festival, culture).
                   </li>
                   <li>
-                    <span className="font-semibold text-gray-900">
-                      2. We suggest a flexible itinerary
-                    </span>{" "}
-                    – We propose a route, length and activities, and adjust it
-                    together until it feels right.
+                    <span className="font-semibold text-stone-900">We propose a route</span> with
+                    realistic driving times and good pacing.
                   </li>
                   <li>
-                    <span className="font-semibold text-gray-900">
-                      3. Confirm with a deposit
-                    </span>{" "}
-                    – A deposit secures your booking; the rest is paid closer to
-                    departure.
+                    <span className="font-semibold text-stone-900">You confirm</span> and we reserve
+                    hosts, drivers, and logistics.
                   </li>
                   <li>
-                    <span className="font-semibold text-gray-900">
-                      4. Travel with peace of mind
-                    </span>{" "}
-                    – We meet you in Bayan-Ölgii and take care of logistics,
-                    so you can focus on enjoying the journey.
+                    <span className="font-semibold text-stone-900">We meet you</span> and guide you
+                    through the Altai with flexibility and care.
                   </li>
                 </ol>
-              </div>
+              </Card>
 
-              <div className="space-y-4 text-sm md:text-[15px] text-gray-700">
-                <div className="bg-sky-50 border border-sky-100 rounded-2xl p-4">
-                  <h3 className="font-semibold text-gray-900 mb-1">
-                    Sustainable, respectful travel
-                  </h3>
-                  <p className="text-xs md:text-sm text-gray-700 leading-relaxed">
-                    We collaborate directly with local families, drivers and
-                    guides. Your trip supports people who live in the region and
-                    helps keep eagle hunting and nomadic traditions alive.
-                  </p>
-                </div>
+              <div className="h-5" />
 
-                <div className="bg-emerald-50 border border-emerald-100 rounded-2xl p-4">
-                  <h3 className="font-semibold text-gray-900 mb-1">
-                    Clear communication
-                  </h3>
-                  <p className="text-xs md:text-sm text-gray-700 leading-relaxed">
-                    You will always know what is included, what to expect from
-                    the roads and weather, and how to prepare. No rushed
-                    surprises – just straightforward information and support.
-                  </p>
+              <Card>
+                <h2 className="text-xl font-semibold">Quick facts</h2>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  <MiniStat label="Base" value="Ölgii, Bayan-Ölgii" />
+                  <MiniStat label="Focus" value="Altai & Golden Eagle Festival" />
+                  <MiniStat label="Style" value="Small groups / Private tours" />
+                  <MiniStat label="Support" value="Fast replies (usually <24h)" />
                 </div>
+              </Card>
+            </div>
+
+            {/* RIGHT */}
+            <div className="lg:col-span-5">
+              <div className="lg:sticky lg:top-6">
+                <Card className="overflow-hidden p-0">
+                  <div className="p-6">
+                    <p className="text-xs tracking-[0.25em] uppercase text-stone-600">
+                      Meet your local host
+                    </p>
+                    <h3 className="mt-3 text-lg font-semibold">Akhjol Taukye</h3>
+                    <p className="mt-1 text-sm text-stone-700">
+                      Tour Manager • {BRAND}
+                    </p>
+                  </div>
+
+                  <div className="relative aspect-[4/5] w-full border-y border-stone-200 bg-stone-100">
+                    <Image
+                      src="/images/akhjol.jpeg"
+                      alt="Owner and tour manager of Altai Mount Travel"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+
+                  <div className="p-6">
+                    <blockquote className="rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm leading-relaxed text-emerald-900">
+                      “I’ll help you choose the best season, the right route, and the real places
+                      that make Western Mongolia unforgettable.”
+                    </blockquote>
+
+                    <div className="mt-4 flex flex-col gap-3">
+                      <a
+                        href={whatsappLink}
+                        className="w-full rounded-2xl bg-emerald-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-emerald-500 transition"
+                      >
+                        Message on WhatsApp
+                      </a>
+                      <a
+                        href={`mailto:${EMAIL}`}
+                        className="w-full rounded-2xl border border-stone-300 bg-white px-5 py-3 text-center text-sm font-semibold text-stone-800 hover:bg-stone-100 transition"
+                      >
+                        Email us
+                      </a>
+                    </div>
+                  </div>
+                </Card>
+
+            
               </div>
             </div>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="pt-4">
-          <div className="max-w-4xl mx-auto px-4 md:px-6">
-            <div className="bg-gray-900 text-white rounded-3xl px-6 py-7 md:px-8 md:py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-6">
-              <div>
-                <h2 className="text-lg md:text-xl font-semibold mb-1">
-                  Ready to plan your journey?
-                </h2>
-                <p className="text-xs md:text-sm text-white/80 max-w-md">
-                  Tell us your preferred dates and ideas, and we will propose a
-                  flexible plan for your trip in the Mongolian Altai.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href="/contact"
-                  className="inline-flex items-center justify-center rounded-full bg-white text-gray-900 text-sm font-medium px-5 py-2.5 shadow-sm hover:bg-gray-100 transition"
-                >
-                  Enquire Now
-                </a>
-                <a
-                  href="/tours"
-                  className="inline-flex items-center justify-center rounded-full border border-white/40 text-sm font-medium px-5 py-2.5 hover:bg-white/10 transition"
-                >
-                  View Our Tours
-                </a>
-              </div>
-            </div>
+        {/* FOOTER STRIP */}
+        <section className="border-t border-stone-200 bg-stone-100 py-6">
+          <div className="mx-auto max-w-6xl px-4 text-sm text-stone-600">
+            <span className="font-semibold text-stone-900">{BRAND}</span> • Ölgii, Bayan-Ölgii,
           </div>
         </section>
       </main>
     </>
+  );
+}
+
+function Card({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div
+      className={[
+        "rounded-3xl border border-stone-200 bg-white p-6 shadow-sm",
+        className,
+      ].join(" ")}
+    >
+      {children}
+    </div>
+  );
+}
+
+function MiniStat({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-2xl border border-stone-200 bg-stone-50 p-4">
+      <div className="text-xs uppercase tracking-[0.22em] text-stone-500">{label}</div>
+      <div className="mt-2 text-sm font-semibold text-stone-900">{value}</div>
+    </div>
   );
 }

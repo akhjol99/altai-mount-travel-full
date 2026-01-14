@@ -11,7 +11,29 @@ import Head from "next/head";
 
 export default function Home() {
   return (
+    <>
+      <Head>
+        <title>Altai Mount Travel | Western Mongolia Tours & Golden Eagle Festival</title>
 
+        <meta
+          name="description"
+          content="Discover the Altai Mountains, where you can experience Mongolia’s stunning landscapes along with its nomadic eagle-hunting culture and unique traditions."
+        />
+
+        <link rel="canonical" href="https://www.altaimount.com/" />
+
+        <meta property="og:url" content="https://www.altaimount.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Altai Mount Travel" />
+        <meta
+          property="og:description"
+          content="Western Mongolia tours, Altai trekking, Golden Eagle Festival trips, and eagle hunter homestays."
+        />
+
+        {/* Optional but helpful */}
+        <meta name="robots" content="index,follow" />
+      </Head>
+    
       <div className="min-h-screen bg-white text-gray-900">
         <Navbar />
         <HeroHome />
@@ -55,5 +77,6 @@ export default function Home() {
         <CTA />
         <Footer />
       </div>
+      </>
   );
 }

@@ -5,7 +5,7 @@ export const tours = [
     durationDays:10, difficulty:'Easy', season:['Jun','Jul','Aug','Sep'], tags:['Trekking','Cultural','Lake', 'Hiking'],
     startingFromUsd:1900, popularity:100,
     heroImage:'/images/hero.jpeg',
-    images: ['/images/malchin.jpg', '/images/bc.jpeg', '/images/eaglebest.jpg', '/images/van.jpg'],
+    images: ['/images/malchin.jpg', '/images/bc.jpeg', '/images/eaglebest.jpg', '/images/van.jpg', '/images/gal.jpeg'],
     highlights:['Eagle hunters','Tent stay','Camel support','Trekking'],
     quickFacts:{ bestSeason:'Late Sep - early Oct', maxAltitudeM:3500, accommodationMix:'Hotel + Yurt + Tent', startEnd:'UBN ↔ UBN', airport:'Chenggis Khaan Int Airport' },
     itinerary:[
@@ -31,7 +31,7 @@ export const tours = [
     durationDays:12, difficulty:'Moderate', season:['Jun','Jul','Aug'], tags:['Trekking','Glacier','Horse riding'],
     startingFromUsd:2360, popularity:100,
     heroImage:'/images/river.jpeg',
-    images: ['/images/bear.jpeg','/images/hearth_lake.jpeg', '/images/bhorse.jpeg', '/images/trekking.jpeg', '/images/river.jpeg', '/images/bridge.jpg'],
+    images: ['/images/bear.jpeg','/images/hearth_lake.jpeg', '/images/bhorse.jpeg', '/images/trekking.jpeg', '/images/river.jpeg', '/images/bridge.jpg', '/images/meal.jpeg'],
     highlights:['Glacier views','Horse support','Ridge panoramas','Nomad hospitality'],
     quickFacts:{ bestSeason:'July–September', maxAltitudeM:3500, accommodationMix:'Hotel + Yurt + Tent', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
     itinerary:[
@@ -82,7 +82,7 @@ export const tours = [
     durationDays:12, difficulty:"Challenging", season:['Jun','Jul','Aug'], tags:['Mountaineering','Cultural'],
     startingFromUsd:2300, popularity:90,
     heroImage:'/images/kh.jpg',
-    images: ['/images/khuiten.jpg', '/images/tent.jpg'],
+    images: ['/images/khuiten.jpg', '/images/tent.jpg', '/images/wlake.jpeg', '/images/omar.jpeg'],
     highlights:['Climbing','Camel support','Nomadic life'],
     quickFacts:{ bestSeason:'June–August', maxAltitudeM:4500, accommodationMix:'Guesthouses + Gers', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
     itinerary:[
@@ -105,7 +105,7 @@ export const tours = [
     durationDays:8, difficulty:"Easy", season:['Jun','Jul','Aug'], tags:['Mountaineering','Cultural', 'Horse', 'Trekking'],
     startingFromUsd:1370, popularity:90,
     heroImage:'/images/bger.jpg',
-    images: ['/images/bhorse.jpeg', '/images/malchin.jpg', '/images/beagle.jpeg', '/images/waterfall.jpeg'],
+    images: ['/images/bhorse.jpeg', '/images/malchin.jpg', '/images/beagle.jpeg', '/images/waterfall.jpeg', '/images/had.jpeg'],
     highlights:['Trekking','Horse riding','Nomadic life', 'Climbing'],
     quickFacts:{ bestSeason:'June–August', maxAltitudeM:4500, accommodationMix:'Guesthouses + Gers', startEnd:'ULG ↔ ULG', airport:'Chinggis Khaan Int Airport' },
     itinerary:[

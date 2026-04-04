@@ -112,7 +112,7 @@ export default function BlogIndex() {
               href={`/blog/${post.slug}`}
               className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col"
               >
-                <div className="relative h-44">
+                <div className="relative h-56">
                   <Image
                     src={post.image}
                     alt={post.title}

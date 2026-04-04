@@ -44,7 +44,7 @@ export default function BlogPostPage() {
         </Link>
 
         <article className="bg-white rounded-2xl shadow-sm overflow-hidden">
-          <div className="relative h-60 w-full">
+          <div className="relative h-80 w-full">
             <Image
               src={post.image}
               alt={post.title}

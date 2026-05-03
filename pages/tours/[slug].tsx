@@ -3,11 +3,14 @@ import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BookingSidebar from "@/components/BookingSidebar";
 import { tours } from "@/data/tours";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
+import Head from "next/head";
 import { useMemo, useState } from "react";
 import ImageGallery from "@/components/ImageGallery";
+import type { GetStaticPaths, GetStaticProps } from "next";
 
+const SITE = "https://www.altaimount.com";
 
 function Quick({ facts }:{ facts: Record<string,string|number|undefined> }){
   const entries = Object.entries(facts).filter(([,v])=> v!==undefined && v!=='');
@@ -59,10 +62,56 @@ function PriceSelector({ tiers }:{ tiers?: {minGroup:number; maxGroup:number; pr
   );
 }
 
-export default function TourDetail(){
-  const { query } = useRouter();
-  const tour:any = tours.find((t:any)=> t.slug === query.slug);
+function buildTourSchema(tour: any, canonicalUrl: string) {
+  // Use TouristTrip — Google's recommended type for multi-day tours.
+  return {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    name: tour.title,
+    description: tour.summary,
+    url: canonicalUrl,
+    image: tour.images?.length
+      ? (tour.images as string[]).map((img) => `${SITE}${img}`)
+      : tour.heroImage
+        ? [`${SITE}${tour.heroImage}`]
+        : undefined,
+    touristType: tour.tags ?? undefined,
+    itinerary: tour.itinerary?.map((d: any) => ({
+      "@type": "ItemList",
+      name: `Day ${d.day}: ${d.title}`,
+      description: d.summary,
+    })),
+    offers: {
+      "@type": "Offer",
+      price: tour.startingFromUsd,
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: canonicalUrl,
+    },
+    provider: {
+      "@type": "TravelAgency",
+      "@id": `${SITE}/#organization`,
+      name: "Altai Mount Travel",
+      url: SITE,
+    },
+  };
+}
 
+function buildBreadcrumbSchema(tour: any, canonicalUrl: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE },
+      { "@type": "ListItem", position: 2, name: "Tours", item: `${SITE}/tours` },
+      { "@type": "ListItem", position: 3, name: tour.title, item: canonicalUrl },
+    ],
+  };
+}
+
+type Props = { tour: any };
+
+export default function TourDetail({ tour }: Props){
   if(!tour){
     return (
       <div className="min-h-screen bg-white">
@@ -73,11 +122,47 @@ export default function TourDetail(){
     );
   }
 
+  const canonical = `${SITE}/tours/${tour.slug}`;
+  const ogImage = tour.heroImage ? `${SITE}${tour.heroImage}` : `${SITE}/logo-112.png`;
+  const metaTitle = `${tour.title} | Altai Mount Travel`;
+  const metaDescription = tour.summary?.slice(0, 160) || `${tour.title} — ${tour.durationDays}-day tour in Western Mongolia with Altai Mount Travel.`;
+
   return (
     <div className="min-h-screen bg-white">
+      <Head>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={tour.title} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={ogImage} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={tour.title} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={ogImage} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildTourSchema(tour, canonical)) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildBreadcrumbSchema(tour, canonical)) }}
+        />
+      </Head>
+
       <Navbar />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={tour.heroImage} alt={tour.title} className="w-full h-[50vh] object-cover object-[25%_75%]" />
+      <div className="relative w-full h-[50vh]">
+        <Image
+          src={tour.heroImage}
+          alt={tour.title}
+          fill
+          sizes="100vw"
+          priority
+          className="object-cover object-[25%_75%]"
+        />
+      </div>
 
       <section className="container py-6">
         <Breadcrumbs items={[{href:'/',label:'Home'},{href:'/tours',label:'Tours'},{label: tour.title}]} />
@@ -149,3 +234,17 @@ export default function TourDetail(){
     </div>
   )
 }
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: (tours as { slug: string }[]).map((t) => ({ params: { slug: t.slug } })),
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const slug = params?.slug as string;
+  const tour = (tours as any[]).find((t) => t.slug === slug) || null;
+  if (!tour) return { notFound: true };
+  return { props: { tour } };
+};

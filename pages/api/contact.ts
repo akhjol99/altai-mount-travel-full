@@ -26,9 +26,50 @@ export const config = { api: { bodyParser: true } };
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method Not Allowed" });
 
-  const { name, email, phone, tour, startDate, groupSize, message } = req.body || {};
+  const {
+    name,
+    email,
+    phone,
+    tour,
+    dates,
+    travelers,
+    message,
+    // Honeypot field — real users won't fill this in. Bots typically fill every field.
+    website,
+  } = req.body || {};
+
+  // Silently accept honeypot-triggered submissions so bots don't learn to bypass.
+  if (website) {
+    return res.status(200).json({ ok: true });
+  }
+
+  // Basic input validation — reject obviously bad payloads.
+  if (!name || !email || !message) {
+    return res.status(400).json({ error: "Missing required fields" });
+  }
+  if (
+    typeof name !== "string" ||
+    typeof email !== "string" ||
+    typeof message !== "string" ||
+    name.length > 200 ||
+    email.length > 200 ||
+    message.length > 5000
+  ) {
+    return res.status(400).json({ error: "Invalid input" });
+  }
+
+  const groupSize = travelers != null ? String(travelers) : "";
+
   try {
-    const pdfBuffer = await getPdfBuffer({ name, email, phone, tour, startDate, groupSize, message });
+    const pdfBuffer = await getPdfBuffer({
+      Name: name,
+      Email: email,
+      Phone: phone,
+      Tour: tour,
+      Dates: dates,
+      Travelers: groupSize,
+      Message: message,
+    });
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || "smtp.sendgrid.net",
@@ -43,13 +84,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     await transporter.sendMail({
       from: `"Altai Mount Travel" <${process.env.MAIL_FROM || "altaimounttravel@gmail.com"}>`,
       to: process.env.MAIL_TO || "altaimounttravel@gmail.com",
+      replyTo: email,
       subject: `New tour enquiry from ${name || "Guest"}`,
       text: `Name: ${name}
 Email: ${email}
-Phone: ${phone}
-Tour: ${tour}
-Start: ${startDate}
-Group: ${groupSize}
+Phone: ${phone || "-"}
+Tour: ${tour || "-"}
+Dates: ${dates || "-"}
+Travelers: ${groupSize || "-"}
 Message: ${message}`,
       attachments: [{ filename: `Enquiry-${name || "guest"}.pdf`, content: pdfBuffer, contentType: "application/pdf" }],
     });

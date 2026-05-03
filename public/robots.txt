@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block low-value paths
+Disallow: /api/
+
+Sitemap: https://www.altaimount.com/sitemap.xml

@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const BRAND = "Altai Mount Travel";
 const SITE_URL = "https://www.altaimount.com";
@@ -41,11 +44,20 @@ export default function AboutPage() {
         />
       </Head>
 
-      <main className="min-h-screen bg-stone-50 text-stone-900">
+      <div className="min-h-screen bg-stone-50 text-stone-900">
+        <Navbar />
+        <main>
         {/* HERO */}
         <section className="relative border-b border-stone-200 bg-white">
           <div className="absolute inset-0 bg-[radial-gradient(900px_400px_at_15%_0%,rgba(16,185,129,0.12),transparent_60%),radial-gradient(800px_350px_at_85%_10%,rgba(250,204,21,0.10),transparent_55%)]" />
           <div className="relative mx-auto max-w-6xl px-4 pt-6 pb-4 sm:pt-12 sm:pb-6">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-1 text-sm text-stone-600 hover:text-emerald-700 mb-4"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to home
+            </Link>
             <p className="text-xs tracking-[0.25em] uppercase text-stone-600">
               Based in Ölgii, Bayan-Ölgii • Western Mongolia specialists
             </p>
@@ -233,7 +245,9 @@ export default function AboutPage() {
             <span className="font-semibold text-stone-900">{BRAND}</span> • Ölgii, Bayan-Ölgii,
           </div>
         </section>
-      </main>
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

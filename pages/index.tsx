@@ -5,11 +5,15 @@ import TourCard from "@/components/TourCard";
 import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
+import { fetchAltaiNow, type AltaiNowData } from "@/components/AltaiNow";
 import { tours } from "@/data/tours";
 import Link from "next/link";
 import Head from "next/head";
+import type { GetStaticProps } from "next";
 
-export default function Home() {
+type HomeProps = { altaiNow: AltaiNowData };
+
+export default function Home({ altaiNow }: HomeProps) {
   return (
     <>
       <Head>
@@ -29,6 +33,10 @@ export default function Home() {
           property="og:description"
           content="Western Mongolia tours, Altai trekking, Golden Eagle Festival trips, and eagle hunter homestays."
         />
+        <meta property="og:image" content="https://www.altaimount.com/images/5bogd.jpg" />
+        <meta name="twitter:title" content="Altai Mount Travel" />
+        <meta name="twitter:description" content="Western Mongolia tours, Altai trekking, Golden Eagle Festival trips, and eagle hunter homestays." />
+        <meta name="twitter:image" content="https://www.altaimount.com/images/5bogd.jpg" />
 
         {/* Optional but helpful */}
         <meta name="robots" content="index,follow" />
@@ -36,7 +44,7 @@ export default function Home() {
     
       <div className="min-h-screen bg-white text-gray-900">
         <Navbar />
-        <HeroHome />
+        <HeroHome altaiNow={altaiNow} />
         <WhyUs />
 
         <section className="container pb-4">
@@ -80,3 +88,12 @@ export default function Home() {
       </>
   );
 }
+
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const altaiNow = await fetchAltaiNow();
+  return {
+    props: { altaiNow },
+    // Refresh weather/sunrise data every 30 minutes via ISR.
+    revalidate: 1800,
+  };
+};

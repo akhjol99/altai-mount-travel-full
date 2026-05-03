@@ -19,10 +19,9 @@ const structuredData = {
     addressCountry: "MN",
   },
   areaServed: ["Western Mongolia", "Altai Mountains", "Bayan-Ölgii"],
-  // Optional but recommended (replace with your real pages)
   sameAs: [
-    "https://www.facebook.com/YOURPAGE",
-    "https://www.instagram.com/YOURPAGE"
+    "https://www.facebook.com/profile.php?id=61570342360210",
+    "https://www.tripadvisor.com/Attraction_Review-g680706-d32761497-Reviews-Altai_Mount_Travel-Olgiy_Bayan_Olgii_Province.html",
   ],
 };
 
@@ -36,6 +35,12 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/favicon192.png" />
+
+        {/* Site-wide social defaults — individual pages can override og:title / og:image */}
+        <meta property="og:site_name" content="Altai Mount Travel" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@altaimount" />
 
         {/* Organization / TravelAgency JSON-LD */}
         <script

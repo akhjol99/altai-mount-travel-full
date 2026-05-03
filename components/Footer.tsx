@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { Facebook, MapPin } from "lucide-react";
 
-const FACEBOOK_URL = "https://www.facebook.com/YOUR_PAGE_LINK"; // <-- change this
-
 export default function Footer() {
   return (
     <footer className="bg-brand-800 text-brand-50 mt-16">
@@ -141,8 +139,19 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-white/10 py-4 text-sm text-brand-50/70">
-          © {new Date().getFullYear()} Altai Mount Travel. All rights reserved.
+        <div className="border-t border-white/10 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-sm text-brand-50/70">
+          <div>© {new Date().getFullYear()} Altai Mount Travel. All rights reserved.</div>
+          <ul className="flex flex-wrap gap-x-5 gap-y-1">
+            <li>
+              <Link href="/legal/privacy" className="hover:text-white">Privacy</Link>
+            </li>
+            <li>
+              <Link href="/legal/terms" className="hover:text-white">Terms</Link>
+            </li>
+            <li>
+              <Link href="/legal/cancellation" className="hover:text-white">Cancellation</Link>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

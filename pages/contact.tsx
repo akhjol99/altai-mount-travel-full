@@ -2,8 +2,11 @@
 
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { MessageSquare, Shield, CreditCard, Clock } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowLeft, MessageSquare, Shield, CreditCard, Clock } from 'lucide-react';
 import { tours } from '@/data/tours';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function Contact() {
   const router = useRouter();
@@ -16,6 +19,8 @@ export default function Contact() {
     dates: '',
     travelers: 2,
     message: '',
+    // Honeypot — must stay empty. Hidden from real users via CSS + aria-hidden.
+    website: '',
   });
   const [loading, setLoading] = useState(false);
 
@@ -71,6 +76,7 @@ export default function Contact() {
           dates: '',
           travelers: 2,
           message: '',
+          website: '',
         });
 
         // Redirect to home page after success
@@ -87,20 +93,31 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-12 md:py-16">
-      <div className="max-w-6xl mx-auto px-4">
-        {/* Heading */}
-        <div className="mb-8">
-          <h1 className="text-2xl md:text-3xl font-bold mb-2 flex items-center gap-2">
-            <MessageSquare className="w-6 h-6 text-primary" />
-            Enquire Now
-          </h1>
-          <p className="text-gray-600 max-w-2xl">
-            Tell us about your dream trip to the Mongolian Altai. After you send
-            your enquiry, we will contact you immediately and guide you through
-            the next steps.
-          </p>
-        </div>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <section id="contact" className="py-12 md:py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          {/* Back to home */}
+          <Link
+            href="/"
+            className="inline-flex items-center gap-1 text-sm text-gray-600 hover:text-brand-800 mb-6"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to home
+          </Link>
+
+          {/* Heading */}
+          <div className="mb-8">
+            <h1 className="text-2xl md:text-3xl font-bold mb-2 flex items-center gap-2">
+              <MessageSquare className="w-6 h-6 text-primary" />
+              Enquire Now
+            </h1>
+            <p className="text-gray-600 max-w-2xl">
+              Tell us about your dream trip to the Mongolian Altai. After you send
+              your enquiry, we will contact you immediately and guide you through
+              the next steps.
+            </p>
+          </div>
 
         <div className="grid gap-8 md:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
           {/* ================= FORM ================= */}
@@ -110,6 +127,31 @@ export default function Contact() {
                 onSubmit={handleSubmit}
                 className="grid md:grid-cols-2 gap-4 md:gap-5"
               >
+                {/* Honeypot: hidden from humans, visible to bots */}
+                <div
+                  aria-hidden="true"
+                  style={{
+                    position: 'absolute',
+                    left: '-10000px',
+                    top: 'auto',
+                    width: '1px',
+                    height: '1px',
+                    overflow: 'hidden',
+                  }}
+                >
+                  <label>
+                    Website (leave blank)
+                    <input
+                      type="text"
+                      name="website"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={state.website}
+                      onChange={handleChange}
+                    />
+                  </label>
+                </div>
+
                 {/* Name */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -319,6 +361,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+      <Footer />
+    </div>
   );
 }

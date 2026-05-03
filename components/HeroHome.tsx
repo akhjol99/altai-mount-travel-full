@@ -1,6 +1,8 @@
 'use client';
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import AltaiNow, { type AltaiNowData } from "@/components/AltaiNow";
 
 const heroImages = [
   "/images/5bogd.jpg",
@@ -8,7 +10,9 @@ const heroImages = [
   "/images/eagle_hero.png"
 ];
 
-export default function HeroHome() {
+type HeroHomeProps = { altaiNow?: AltaiNowData };
+
+export default function HeroHome({ altaiNow }: HeroHomeProps) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -21,11 +25,14 @@ export default function HeroHome() {
   return (
     <section className="relative mt-16 md:mt-0 overflow-hidden h-[90vh]">
       {heroImages.map((img, i) => (
-        <img
+        <Image
           key={i}
           src={img}
           alt="Altai Mountains"
-          className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-[1200ms] ${
+          fill
+          sizes="100vw"
+          priority={i === 0}
+          className={`object-cover object-top transition-opacity duration-[1200ms] ${
             i === current ? "opacity-100" : "opacity-0"
           }`}
         />
@@ -54,25 +61,15 @@ export default function HeroHome() {
               Plan my trip
             </Link>
           </div>
-          {/* Trust bar */}
-          <div className="flex flex-wrap gap-6 mt-10 pt-8 border-t border-white/20">
-            <div>
-              <div className="text-white text-xl font-semibold">5+</div>
-              <div className="text-white/60 text-xs mt-0.5">Years guiding</div>
+          {/* Live from Ölgii — replaces static trust bar with on-the-ground proof */}
+          {altaiNow && (
+            <div className="mt-10 pt-8 border-t border-white/20">
+              <div className="text-[11px] uppercase tracking-[0.22em] text-white/60 mb-3">
+                Live from Ölgii, Bayan-Ölgii
+              </div>
+              <AltaiNow data={altaiNow} />
             </div>
-            <div>
-              <div className="text-white text-xl font-semibold">100%</div>
-              <div className="text-white/60 text-xs mt-0.5">Local team</div>
-            </div>
-            <div>
-              <div className="text-white text-xl font-semibold">★ 5.0</div>
-              <div className="text-white/60 text-xs mt-0.5">TripAdvisor</div>
-            </div>
-            <div>
-              <div className="text-white text-xl font-semibold">No</div>
-              <div className="text-white/60 text-xs mt-0.5">Hidden fees</div>
-            </div>
-          </div>
+          )}
         </div>
       </div>
 

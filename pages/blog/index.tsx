@@ -1,11 +1,12 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import { Clock, Tag } from "lucide-react";
 import { POSTS } from "@/data/blog";
 
-
-
+const SITE = "https://www.altaimount.com";
 
 
 
@@ -20,9 +21,34 @@ function formatDate(dateStr: string) {
 
 export default function BlogIndex() {
   const [featured, ...rest] = POSTS;
+  const ogImage = featured?.image ? `${SITE}${featured.image}` : `${SITE}/images/5bogd.jpg`;
 
   return (
-    <>
+    <div className="min-h-screen bg-gray-50">
+    <Head>
+      <title>Blog | Altai Mount Travel — Western Mongolia Travel Stories & Tips</title>
+      <meta
+        name="description"
+        content="Travel guides, planning tips, and stories from the Mongolian Altai — written by locals in Bayan-Ölgii. Eagle festival, trekking, packing lists, and more."
+      />
+      <link rel="canonical" href={`${SITE}/blog`} />
+      <meta property="og:url" content={`${SITE}/blog`} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Altai Mount Travel — Blog" />
+      <meta
+        property="og:description"
+        content="Travel guides, planning tips, and stories from the Mongolian Altai — written by locals in Bayan-Ölgii."
+      />
+      <meta property="og:image" content={ogImage} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Altai Mount Travel — Blog" />
+      <meta
+        name="twitter:description"
+        content="Travel guides, planning tips, and stories from the Mongolian Altai — written by locals in Bayan-Ölgii."
+      />
+      <meta name="twitter:image" content={ogImage} />
+      <meta name="robots" content="index,follow" />
+    </Head>
     <Navbar/>
     <main className="py-12 md:py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
@@ -141,6 +167,7 @@ export default function BlogIndex() {
         </section>
       </div>
     </main>
-            </>
+    <Footer />
+    </div>
   );
 }

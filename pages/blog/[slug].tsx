@@ -4,6 +4,9 @@ import Head from "next/head";
 import { Clock, ArrowLeft } from "lucide-react";
 import { POSTS, type BlogPost } from "@/data/blog";
 import type { GetStaticPaths, GetStaticProps } from "next";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import BlogTourCTA from "@/components/BlogTourCTA";
 
 const SITE = "https://www.altaimount.com";
 
@@ -52,11 +55,18 @@ type Props = { post: BlogPost | null };
 export default function BlogPostPage({ post }: Props) {
   if (!post) {
     return (
-      <main className="py-12">
-        <div className="max-w-3xl mx-auto px-4">
-          <p>Post not found.</p>
-        </div>
-      </main>
+      <div className="min-h-screen bg-gray-50">
+        <Navbar />
+        <main className="py-12">
+          <div className="max-w-3xl mx-auto px-4">
+            <p>Post not found.</p>
+            <Link className="btn-ghost mt-4 inline-block" href="/blog">
+              Back to blog
+            </Link>
+          </div>
+        </main>
+        <Footer />
+      </div>
     );
   }
 
@@ -65,7 +75,7 @@ export default function BlogPostPage({ post }: Props) {
   const metaTitle = `${post.title} | Altai Mount Travel`;
 
   return (
-    <>
+    <div className="min-h-screen bg-gray-50">
       <Head>
         <title>{metaTitle}</title>
         <meta name="description" content={post.excerpt} />
@@ -87,6 +97,7 @@ export default function BlogPostPage({ post }: Props) {
         />
       </Head>
 
+      <Navbar />
       <main className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
           <Link
@@ -129,9 +140,13 @@ export default function BlogPostPage({ post }: Props) {
               />
             </div>
           </article>
+
+          {/* Next-step CTA: post-specific tour recommendation */}
+          <BlogTourCTA postSlug={post.slug} />
         </div>
       </main>
-    </>
+      <Footer />
+    </div>
   );
 }
 

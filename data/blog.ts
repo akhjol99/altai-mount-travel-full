@@ -179,17 +179,13 @@ export type BlogPost = {
       </ul>
     
       <h3>📩 Travel Assistance</h3>
-      <p>Local tour operators can help organize your trip, including flights, guides, and experiences:</p>
+      <p>Our team can help organize your trip, including domestic flights, guides, and unique experiences in the Altai:</p>
       <ul>
-        <li><strong>Kazakh Tour</strong><br/>
-        Email: dosjan@kazakhtour.com<br/>
-        WhatsApp: https://wa.me/97699422006</li>
-    
-        <li style="margin-top:10px;"><strong>Altai Mount Team</strong><br/>
+        <li><strong>Altai Mount Team</strong><br/>
         Email: altaimounttravel@gmail.com<br/>
         Phone: +976 8542 8887</li>
       </ul>
-    
+
       <p>Bayan-Ölgii is a destination for travelers seeking adventure, culture, and untouched nature. It’s not just a place to visit — it’s an experience you’ll never forget.</p>
       `
     },

@@ -77,6 +77,28 @@ export const tours = [
     priceTiers:[{minGroup:2,maxGroup:2,priceUsd:3600},{minGroup:3,maxGroup:4,priceUsd:2800},{minGroup:5,maxGroup:12,priceUsd:2300}]
   },
   {
+    id:'nomad', slug:'live-with-kazakh-nomad-family', title:'Live with a Kazakh Nomad Family',
+    summary:'Spend a week inside a Kazakh nomadic family in the Altai foothills — milk yaks at dawn, learn felt-making with the women, ride horses across summer pasture, and share every meal around the stove.',
+    durationDays:7, difficulty:'Easy', season:['Jun','Jul','Aug','Sep'], tags:['Cultural','Homestay','Horse riding','Nomadic'],
+    startingFromUsd:1450, popularity:88,
+    heroImage:'/images/nomad1.jpg',
+    images: ['/images/nomad2.jpg', '/images/nomad3.jpg', '/images/nomad4.jpg'],
+    highlights:['Family homestay','Felt making','Eagle hunter visit','Horse riding'],
+    quickFacts:{ bestSeason:'July–September', maxAltitudeM:2400, accommodationMix:'Hotel + Ger (homestay)', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
+    itinerary:[
+      { day:1, title:'Arrival in Ulaanbaatar', summary:'Arrive in Ulaanbaatar and transfer to your centrally located 4-star hotel. In the afternoon, a guided walking tour introduces you to Sukhbaatar Square and the National Museum of Mongolia. At 6pm, attend a traditional show featuring throat singing, contortion, and folk music. Welcome dinner at a local restaurant. (Hotel/D)' },
+      { day:2, title:'Fly to Bayan-Ölgii, drive to your host family', summary:'Early morning flight to Ulgii (3 hours), the capital of the Kazakh-majority Bayan-Ölgii province. Meet your guide and driver at the airport. After a quick stop in town for groceries, drive 3-4 hours into the Altai foothills to your host family\'s summer camp. The family has been briefed about your arrival. Settle into the guest ger, share a welcome meal of besbarmak (the Kazakh national dish), and watch the sun set over the pastures. (Ger/B,L,D)' },
+      { day:3, title:'A day in nomadic life', summary:'Wake with the family at first light. Help milk the yaks and goats, churn butter, and bake fresh bread on the stove. Walk out with the herders as they move the animals to fresh grazing — bring a camera but keep your hands free. Lunch back at camp with airag (fermented mare\'s milk) if it\'s available. Afternoon is unstructured: walk the riverbed, watch the women work felt, or sit with the elders and listen through your guide as they translate stories of past winters. Evening tea, dinner, and dombra music around the stove. (Ger/B,L,D)' },
+      { day:4, title:'Eagle hunter visit & horseback ride', summary:'Drive a short distance to a neighboring eagle hunter\'s ger. Meet his golden eagle, hear how he trapped and trained her, and pose for photos with the eagle on your arm if you wish. After lunch, saddle up sturdy Mongolian horses and ride out across the steppe — the pace is relaxed, no riding experience required. Return by late afternoon for a sauna-style steam bath if the family has one set up, or a swim in the river. (Ger/B,L,D)' },
+      { day:5, title:'Felt-making, embroidery & Kazakh crafts', summary:'A full day with the women of the family learning the craft of shyrdak (Kazakh felt rugs) — beating sheep wool, rolling it with hot water, dyeing the wool with natural pigments, and stitching the geometric patterns that make Bayan-Ölgii felt instantly recognizable. Smaller crafts on the side: embroidery, leather work, and traditional Kazakh hat-making. You leave with a small handmade piece. Evening: a farewell feast prepared by your hosts, dombra performance, and Kazakh songs. (Ger/B,L,D)' },
+      { day:6, title:'Return to Ulgii & free afternoon', summary:'Say goodbye to the family in the morning and drive back to Ulgii (3-4 hours). Check in to the Eagle Nest hotel — the best in town. Free afternoon: visit the Aimag Museum to put what you saw into context, browse the bazaar for Kazakh handicrafts and dried fruits from the Pamirs, or simply rest. Dinner at a Turkish restaurant in town. (Hotel/B,L,D)' },
+      { day:7, title:'Fly back to Ulaanbaatar & departure', summary:'Morning flight back to Ulaanbaatar. Depending on your international flight time, transfer directly to the airport or enjoy a few free hours in the city for shopping. (B)' },
+    ],
+    includes:['English-speaking guide','All ground transport','Accomodations in UB & Ulgii','Homestay with Kazakh family','All meals during the tour','Horse hire','Eagle hunter family visit','Felt-making workshop','Welcome & farewell dinners','Pick up & drop off services'],
+    excludes:['International and local flights','Travel insurance','Tips & personal items','Excess luggage fees on internal flights'],
+    priceTiers:[{minGroup:2,maxGroup:2,priceUsd:1750},{minGroup:3,maxGroup:4,priceUsd:1620},{minGroup:5,maxGroup:8,priceUsd:1500},{minGroup:9,maxGroup:12,priceUsd:1450}]
+  },
+  {
     id:'climbing', slug:'climbing-khuiten-peak', title:'Climb Mount Khuiten',
     summary:'Mount Khuiten is the highest peak in Mongolia, which is located in the remote area of the Mongolian Altai region. In addition, Altai Tavan Bogd National Park is truly one of the must-see places in Mongolia, as there are stunning snow-capped mountains and an array of beautiful valleys.',
     durationDays:12, difficulty:"Challenging", season:['Jun','Jul','Aug'], tags:['Mountaineering','Cultural'],

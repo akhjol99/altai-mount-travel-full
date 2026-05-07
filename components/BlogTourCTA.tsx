@@ -31,8 +31,8 @@ const POST_TO_TOUR: Record<string, Mapping> = {
     lead: "Ready to put your gear to use?",
   },
   "staying-with-nomadic-families": {
-    slug: "golden-eagle-festival",
-    lead: "Experience this firsthand",
+    slug: "live-with-kazakh-nomad-family",
+    lead: "Live this for a week",
   },
   "bayan-ulgii-travel-guide": {
     slug: "altai-tavan-bogd-base-camp-trekking",

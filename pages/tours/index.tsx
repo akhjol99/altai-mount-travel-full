@@ -83,6 +83,7 @@ export default function ToursPage() {
                       image: t.heroImage,
                       summary: t.summary,
                       highlights: t.highlights,
+                      season: t.season,
                     }}
                   />
                 ))}

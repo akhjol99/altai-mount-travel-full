@@ -5,7 +5,7 @@ export const tours = [
     durationDays:10, difficulty:'Easy', season:['Jun','Jul','Aug','Sep'], tags:['Trekking','Cultural','Lake', 'Hiking'],
     startingFromUsd:1900, popularity:100,
     heroImage:'/images/hero.jpeg',
-    images: ['/images/malchin.jpg', '/images/bc.jpeg', '/images/eaglebest.jpg', '/images/van.jpg', '/images/gal.jpeg'],
+    images: ['/images/malchin.jpg', '/images/bc.jpeg', '/images/eaglebest.jpg', '/images/van.jpg', '/images/gal.jpeg', '/images/tree.png'],
     highlights:['Eagle hunters','Tent stay','Camel support','Trekking'],
     quickFacts:{ bestSeason:'Late Sep - early Oct', maxAltitudeM:3500, accommodationMix:'Hotel + Yurt + Tent', startEnd:'UBN ↔ UBN', airport:'Chenggis Khaan Int Airport' },
     itinerary:[
@@ -31,7 +31,7 @@ export const tours = [
     durationDays:12, difficulty:'Moderate', season:['Jun','Jul','Aug'], tags:['Trekking','Glacier','Horse riding'],
     startingFromUsd:2360, popularity:100,
     heroImage:'/images/river.jpeg',
-    images: ['/images/bear.jpeg','/images/hearth_lake.jpeg', '/images/bhorse.jpeg', '/images/trekking.jpeg', '/images/river.jpeg', '/images/bridge.jpg', '/images/meal.jpeg'],
+    images: ['/images/bear.jpeg','/images/hearth_lake.jpeg', '/images/bhorse.jpeg', '/images/trekking.jpeg', '/images/river.jpeg', '/images/bridge.jpg', '/images/meal.jpeg', '/images/tree.png', '/images/flowers.png'],
     highlights:['Glacier views','Horse support','Ridge panoramas','Nomad hospitality'],
     quickFacts:{ bestSeason:'July–September', maxAltitudeM:3500, accommodationMix:'Hotel + Yurt + Tent', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
     itinerary:[
@@ -58,7 +58,7 @@ export const tours = [
     durationDays:9, difficulty:'Easy', season:['Sep', 'Oct'], tags:['Cultural', 'Festival'],
     startingFromUsd:2300, popularity:90,
     heroImage:'/images/child.jpg',
-    images: ['/images/hunter.jpg', '/images/festival.jpeg', '/images/octhunter.jpeg'],
+    images: ['/images/hunter.jpg', '/images/festival.jpeg', '/images/octhunter.jpeg', '/images/hulin_eagle2.png', '/images/hulin_eagle3.jpg'],
     highlights:['Eagle Hunting','Felt crafts','Camel ride','Lakeside camp'],
     quickFacts:{ bestSeason:'June–September', maxAltitudeM:2600, accommodationMix:'Guesthouses + Gers', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
     itinerary:[
@@ -127,7 +127,7 @@ export const tours = [
     durationDays:8, difficulty:"Easy", season:['Jun','Jul','Aug'], tags:['Mountaineering','Cultural', 'Horse', 'Trekking'],
     startingFromUsd:1370, popularity:90,
     heroImage:'/images/bger.jpg',
-    images: ['/images/bhorse.jpeg', '/images/malchin.jpg', '/images/beagle.jpeg', '/images/waterfall.jpeg', '/images/had.jpeg'],
+    images: ['/images/bhorse.jpeg', '/images/malchin.jpg', '/images/beagle.jpeg', '/images/waterfall.jpeg', '/images/had.jpeg', '/images/tree.png'],
     highlights:['Trekking','Horse riding','Nomadic life', 'Climbing'],
     quickFacts:{ bestSeason:'June–August', maxAltitudeM:4500, accommodationMix:'Guesthouses + Tent', startEnd:'ULG ↔ ULG', airport:'Ulgii airport' },
     itinerary:[

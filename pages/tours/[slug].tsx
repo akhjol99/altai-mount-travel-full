@@ -8,6 +8,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { useMemo, useState } from "react";
 import ImageGallery from "@/components/ImageGallery";
+import ItinerarySection from "@/components/ItinerarySection";
 import type { GetStaticPaths, GetStaticProps } from "next";
 
 const SITE = "https://www.altaimount.com";
@@ -153,78 +154,111 @@ export default function TourDetail({ tour }: Props){
       </Head>
 
       <Navbar />
-      <div className="relative w-full h-[50vh]">
+      <div className="relative w-full h-[60vh] md:h-[70vh]">
         <Image
           src={tour.heroImage}
           alt={tour.title}
           fill
           sizes="100vw"
           priority
-          className="object-cover object-[25%_75%]"
+          className="object-cover object-center"
         />
+        {/* Gradient overlay so breadcrumb/title below reads clearly */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/50" />
+        {/* Tour title overlaid on hero */}
+        <div className="absolute bottom-0 left-0 right-0 px-6 py-8 max-w-6xl mx-auto">
+          <span className="text-xs font-semibold tracking-widest uppercase text-amber-400 mb-2 block">
+            {tour.tags?.[0]}
+          </span>
+          <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg leading-tight">
+            {tour.title}
+          </h1>
+          <p className="text-white/80 mt-2 max-w-2xl text-sm md:text-base">
+            {tour.summary?.slice(0, 120)}{tour.summary?.length > 120 ? "…" : ""}
+          </p>
+        </div>
       </div>
 
       <section className="container py-6">
         <Breadcrumbs items={[{href:'/',label:'Home'},{href:'/tours',label:'Tours'},{label: tour.title}]} />
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10">
-          <article>
-            <h1 className="text-3xl font-semibold">{tour.title}</h1>
-            <p className="text-gray-600 mt-2">{tour.summary}</p>
-            <ImageGallery images={tour.images || []} />
-            <Quick facts={{
-              "Duration": `${tour.durationDays} days`,
-              "Difficulty": tour.difficulty,
-              "Best season": tour.quickFacts?.bestSeason ?? '',
-              "Max altitude": tour.quickFacts?.maxAltitudeM ? `${tour.quickFacts.maxAltitudeM} m` : '',
-              "Accommodation": tour.quickFacts?.accommodationMix ?? '',
-              "Start/End": tour.quickFacts?.startEnd ?? '',
-              "Airport": tour.quickFacts?.airport ?? ''
-            }} />
+          <article className="space-y-10">
 
-            <div className="mt-6">
-              <h3 className="font-semibold mb-2">Highlights</h3>
-              <ul className="list-disc ml-5 text-gray-700 space-y-1">
-                {tour.highlights.map((h:string)=> <li key={h}>{h}</li>)}
-              </ul>
+            {/* Photo gallery */}
+            <ImageGallery images={tour.images || []} />
+
+            {/* Quick facts strip */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+              {[
+                { label: "Duration", value: `${tour.durationDays} days`, icon: "🗓" },
+                { label: "Difficulty", value: tour.difficulty, icon: "⚡" },
+                { label: "Best season", value: tour.quickFacts?.bestSeason, icon: "☀️" },
+                { label: "Max altitude", value: tour.quickFacts?.maxAltitudeM ? `${tour.quickFacts.maxAltitudeM} m` : null, icon: "🏔" },
+                { label: "Accommodation", value: tour.quickFacts?.accommodationMix, icon: "🛏" },
+                { label: "Start / End", value: tour.quickFacts?.startEnd, icon: "✈️" },
+              ].filter(f => f.value).map(f => (
+                <div key={f.label} className="bg-stone-50 border border-stone-100 rounded-2xl p-4 flex flex-col gap-1">
+                  <span className="text-2xl">{f.icon}</span>
+                  <span className="text-[11px] uppercase tracking-wide text-stone-400 font-semibold">{f.label}</span>
+                  <span className="text-sm font-semibold text-stone-800">{f.value}</span>
+                </div>
+              ))}
             </div>
 
-            <div className="mt-8">
-              <h3 className="font-semibold mb-3">Itinerary</h3>
-              <div className="divide-y">
-                {tour.itinerary?.map((d:any)=> (
-                  <details key={d.day} className="py-3">
-                    <summary className="cursor-pointer font-medium">Day {d.day}: {d.title}</summary>
-                    <div className="mt-2 text-gray-700">
-                      <p>{d.summary}</p>
-                      <div className="text-sm text-gray-500 mt-1">
-                        {d.hours ? <>Hours: {d.hours} &nbsp;</> : null}
-                        {d.distanceKm ? <>Distance: {d.distanceKm} km &nbsp;</> : null}
-                        {d.accommodation ? <>• {d.accommodation} &nbsp;</> : null}
-                        {d.meals?.length ? <>• Meals: {d.meals.join(',')}</> : null}
-                      </div>
-                    </div>
-                  </details>
+            {/* Highlights */}
+            <div>
+              <h3 className="text-xl font-bold text-stone-900 mb-4">Tour Highlights</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {tour.highlights.map((h: string) => (
+                  <div key={h} className="flex items-center gap-3 bg-emerald-50 border border-emerald-100 rounded-xl px-4 py-3">
+                    <span className="text-emerald-500 text-lg">✦</span>
+                    <span className="text-sm font-medium text-stone-800">{h}</span>
+                  </div>
                 ))}
               </div>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="font-semibold mb-2">Included</h3>
-                <ul className="list-disc ml-5 text-gray-700 space-y-1">
-                  {tour.includes?.map((i:string)=> <li key={i}>{i}</li>)}
+            {/* Itinerary */}
+            <ItinerarySection
+              itinerary={tour.itinerary || []}
+              images={tour.images || []}
+              heroImage={tour.heroImage}
+            />
+
+            {/* Included / Not included */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-emerald-50 border border-emerald-100 rounded-2xl p-6">
+                <h3 className="text-base font-bold text-stone-900 mb-4 flex items-center gap-2">
+                  <span className="text-emerald-500">✓</span> What's Included
+                </h3>
+                <ul className="space-y-2">
+                  {tour.includes?.map((i: string) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-stone-700">
+                      <span className="text-emerald-500 mt-0.5 shrink-0">✓</span>
+                      {i}
+                    </li>
+                  ))}
                 </ul>
               </div>
-              <div>
-                <h3 className="font-semibold mb-2">Not Included</h3>
-                <ul className="list-disc ml-5 text-gray-700 space-y-1">
-                  {tour.excludes?.map((i:string)=> <li key={i}>{i}</li>)}
+              <div className="bg-stone-50 border border-stone-200 rounded-2xl p-6">
+                <h3 className="text-base font-bold text-stone-900 mb-4 flex items-center gap-2">
+                  <span className="text-stone-400">✕</span> Not Included
+                </h3>
+                <ul className="space-y-2">
+                  {tour.excludes?.map((i: string) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-stone-500">
+                      <span className="text-stone-400 mt-0.5 shrink-0">✕</span>
+                      {i}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
 
+            {/* Price tiers */}
             <PriceSelector tiers={tour.priceTiers} />
+
           </article>
 
           <BookingSidebar price={tour.startingFromUsd} />

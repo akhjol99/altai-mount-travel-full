@@ -11,16 +11,40 @@ export type TourCardType = {
   image: string;
   summary: string;
   highlights: string[];
+  season?: string[];
+  urgencyBadge?: string; // e.g. "Only 6 spots left"
 };
 
 const difficultyStyles: Record<string, string> = {
   Easy: "bg-green-100 text-green-800",
   Moderate: "bg-amber-100 text-amber-800",
+  Challenging: "bg-red-100 text-red-800",
   Hard: "bg-red-100 text-red-800",
+};
+
+// Per-slug urgency config
+const URGENCY: Record<string, { label: string; color: string }> = {
+  "golden-eagle-festival": {
+    label: "🔥 Filling fast · Oct 2026",
+    color: "bg-red-500 text-white",
+  },
+  "climbing-khuiten-peak": {
+    label: "⚡ Limited spots",
+    color: "bg-amber-500 text-white",
+  },
+  "altai-tavan-bogd-trek": {
+    label: "⭐ Most popular",
+    color: "bg-brand-700 text-white",
+  },
 };
 
 export default function TourCard({ t }: { t: TourCardType }) {
   const href = `/tours/${t.slug}`;
+  const urgency = URGENCY[t.slug];
+  const seasonLabel = t.season?.length
+    ? t.season[0] + (t.season.length > 1 ? `–${t.season[t.season.length - 1]}` : "")
+    : null;
+
   return (
     <div className="card overflow-hidden group flex flex-col">
       <div className="relative h-56 overflow-hidden">
@@ -32,17 +56,40 @@ export default function TourCard({ t }: { t: TourCardType }) {
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+
+        {/* Duration — top left */}
         <div className="absolute top-3 left-3">
           <span className="text-xs font-medium bg-white/90 backdrop-blur-sm text-gray-800 px-2.5 py-1 rounded-full">
             {t.duration}
           </span>
         </div>
+
+        {/* Difficulty — top right */}
         <div className="absolute top-3 right-3">
           <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${difficultyStyles[t.difficulty] ?? "bg-gray-100 text-gray-800"}`}>
             {t.difficulty}
           </span>
         </div>
+
+        {/* Urgency badge — bottom left */}
+        {urgency && (
+          <div className="absolute bottom-3 left-3">
+            <span className={`text-xs font-semibold px-2.5 py-1 rounded-full shadow ${urgency.color}`}>
+              {urgency.label}
+            </span>
+          </div>
+        )}
+
+        {/* Season — bottom right */}
+        {seasonLabel && (
+          <div className="absolute bottom-3 right-3">
+            <span className="text-xs font-medium bg-black/50 backdrop-blur-sm text-white px-2.5 py-1 rounded-full">
+              {seasonLabel}
+            </span>
+          </div>
+        )}
       </div>
+
       <div className="p-5 flex flex-col flex-1">
         <h3 className="text-base font-semibold text-gray-900 mb-1.5 leading-snug">{t.title}</h3>
         <p className="text-gray-500 text-sm leading-relaxed mb-3 flex-1">{t.summary}</p>

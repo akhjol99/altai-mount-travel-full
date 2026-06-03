@@ -69,6 +69,7 @@ export default function Home({ altaiNow }: HomeProps) {
                   price: t.startingFromUsd,
                   image: t.heroImage,
                   highlights: t.highlights,
+                  season: t.season,
                 }}
               />
             ))}

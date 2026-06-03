@@ -70,7 +70,7 @@ export type BlogPost = {
       category: "Festival",
       excerpt:
         "Everything you need to know about the Golden Eagle Festival in Bayan-Ölgii — dates, weather, photography tips, and how to plan your visit.",
-      image: "/images/ai1.png",
+      image: "/images/hulin_eagle4.png",
       content: `
   <h2>Golden Eagle Festival: The Complete Guide</h2>
   <p>The Golden Eagle Festival, held every autumn in Bayan-Ölgii, is one of Mongolia’s most spectacular cultural events. Eagle hunters from across the Altai gather to compete in traditional games that have existed for centuries.</p>
@@ -198,7 +198,7 @@ export type BlogPost = {
       category: "Planning",
       excerpt:
         "A complete seasonal guide comparing spring, summer, autumn, and winter in the Altai Mountains — choose the perfect month for your adventure.",
-      image: "/images/ai2.png",
+      image: "/images/altai_blog.jpg",
       content: `
   <h2>Best Time to Visit the Altai Mountains</h2>
   <p>The Mongolian Altai has four dramatically different seasons. Each season offers a unique experience, depending on what kind of traveler you are.</p>
@@ -393,7 +393,7 @@ export type BlogPost = {
         category: "Culture",
         excerpt:
           "What it's really like to stay with Kazakh nomadic families in the Altai — hospitality, daily life, food, and cultural traditions.",
-        image: "/images/ai4.png",
+        image: "/images/1.jpg",
         content: `
     <h2>Staying With Nomadic Families in Bayan-Ölgii</h2>
     <p>Staying with a Kazakh nomadic family is one of the most memorable experiences you can have in Mongolia. These moments bring you closer to the local culture, traditions, and way of life.</p>

@@ -13,6 +13,11 @@ body { background:#fff; color:#0b1220; }
 .prose p { @apply text-gray-700 leading-relaxed; }
 
 @layer utilities {
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+  }
+
+@layer utilities {
     /* Global vertical rhythm: adds margin between siblings */
     .stack > * + * {
       @apply mt-16 md:mt-24;  /* ~64px mobile, ~96px md+ */

@@ -182,7 +182,7 @@ export default function TourDetail({ tour }: Props){
       <section className="container py-6">
         <Breadcrumbs items={[{href:'/',label:'Home'},{href:'/tours',label:'Tours'},{label: tour.title}]} />
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10 items-start">
           <article className="space-y-10">
 
             {/* Photo gallery */}

@@ -48,9 +48,9 @@ export default function ItinerarySection({ itinerary, images, heroImage }: Props
                   {day.day}
                 </div>
 
-                <div className={`rounded-2xl overflow-hidden shadow-sm border border-stone-100 bg-white grid md:grid-cols-[280px_1fr]`}>
-                  {/* Image */}
-                  <div className="relative h-52 md:h-auto">
+                <div className="rounded-2xl overflow-hidden shadow-sm border border-stone-100 bg-white flex flex-col md:flex-row">
+                  {/* Image — fixed 240px wide, full card height on desktop */}
+                  <div className="relative h-52 md:h-auto md:w-60 md:min-h-[200px] shrink-0">
                     <Image
                       src={img}
                       alt={day.title}

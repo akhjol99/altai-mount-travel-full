@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Utensils, BedDouble, Clock, MapPin } from "lucide-react";
 
 type Day = {
-  day: number;
+  day: number | string;
   title: string;
   summary: string;
   hours?: number;
@@ -44,7 +44,7 @@ export default function ItinerarySection({ itinerary, images, heroImage }: Props
             return (
               <div key={day.day} className="relative md:pl-16">
                 {/* Timeline dot */}
-                <div className="hidden md:flex absolute left-0 top-6 w-10 h-10 rounded-full bg-brand-700 text-white items-center justify-center text-sm font-bold shadow-md z-10">
+                <div className="hidden md:flex absolute left-0 top-6 w-10 h-10 rounded-full bg-brand-700 text-white items-center justify-center font-bold shadow-md z-10 text-xs">
                   {day.day}
                 </div>
 

@@ -7,7 +7,8 @@ import AltaiNow, { type AltaiNowData } from "@/components/AltaiNow";
 const heroImages = [
   "/images/5bogd.jpg",
   "/images/mount.jpeg",
-  "/images/eagle_hero.png"
+  "/images/eagle_hero.png",
+  "/images/baga_turgen_guur.png"
 ];
 
 type HeroHomeProps = { altaiNow?: AltaiNowData };

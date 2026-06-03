@@ -81,7 +81,7 @@ export default function Home({ altaiNow }: HomeProps) {
           </div>
         </section>
 
-        <Testimonials />
+<Testimonials />
         <CTA />
         <Footer />
       </div>

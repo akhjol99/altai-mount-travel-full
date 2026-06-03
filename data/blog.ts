@@ -14,7 +14,7 @@ export type BlogPost = {
     {
       slug: "domestic-flight-schedule-mongolia-2026",
       title: "Domestic Flight Schedule – Western Mongolia Summer 2026",
-      date: "2026-03-02",
+      date: "2026-02-14",
       readTime: "3 min read",
       category: "Travel Info",
       excerpt:
@@ -65,7 +65,7 @@ export type BlogPost = {
     {
       slug: "golden-eagle-festival-guide",
       title: "Golden Eagle Festival: How to Plan Your Trip",
-      date: "2025-09-01",
+      date: "2025-08-12",
       readTime: "7 min read",
       category: "Festival",
       excerpt:
@@ -121,7 +121,7 @@ export type BlogPost = {
     {
       slug: "bayan-ulgii-travel-guide",
       title: "Bayan-Ölgii Travel Guide: Discover Mongolia’s Altai Region",
-      date: "2024-01-17",
+      date: "2023-04-09",
       readTime: "6 min read",
       category: "Travel Guide",
       excerpt:
@@ -193,7 +193,7 @@ export type BlogPost = {
     {
       slug: "when-to-visit-altai-mountains",
       title: "When Is the Best Time to Visit the Mongolian Altai?",
-      date: "2025-06-12",
+      date: "2024-03-22",
       readTime: "6 min read",
       category: "Planning",
       excerpt:
@@ -244,7 +244,7 @@ export type BlogPost = {
     {
       slug: "what-to-pack-for-altai-trek",
       title: "What to Pack for an Altai Trek",
-      date: "2023-04-28",
+      date: "2023-07-18",
       readTime: "5 min read",
       category: "Gear",
       excerpt:
@@ -293,9 +293,102 @@ export type BlogPost = {
     },
   
       {
-        slug: "staying-with-nomadic-families",
+        slug: "kazakh-eagle-hunters-western-mongolia",
+      title: "Kazakh Eagle Hunters of Western Mongolia: Who They Are and How to Visit",
+      date: "2025-10-17",
+      readTime: "12 min read",
+      category: "Culture",
+      excerpt: "In the high valleys of Bayan-Ölgii, Kazakh hunters ride out each winter with a golden eagle on their arm. Here's who they are, how the tradition works, and how to visit respectfully.",
+      image: "/images/ata_eagle.jpg",
+      content: `
+  <h2>Kazakh Eagle Hunters of Western Mongolia</h2>
+  <p>There are few places left on earth where an ancient tradition is still lived rather than performed. Western Mongolia is one of them.</p>
+
+  <p>Here, in the high valleys of Bayan-Ölgii province, Kazakh hunters ride out each winter morning on horseback, a golden eagle — sometimes weighing up to seven kilograms — balanced on one heavily gloved arm. The bird is not a prop. It is a hunting partner, trained over years, treated like family, and eventually released back to the wild. This is <strong>berkutchi</strong>: the art of eagle hunting, and it has been passed from father to son — and increasingly, mother to daughter — for nearly a thousand years.</p>
+
+  <h2>Who Are the Kazakh Eagle Hunters?</h2>
+  <p>The eagle hunters of western Mongolia are ethnic Kazakhs — members of a Central Asian people who make up the overwhelming majority of Bayan-Ölgii's population of around 110,000. Unlike the Khalkha Mongolians who dominate the rest of the country, the Kazakhs of Bayan-Ölgii have their own language, their own Islamic faith, their own music, embroidery traditions, and food — and their own extraordinary relationship with golden eagles.</p>
+
+  <p>In Kazakh, an eagle hunter is called a <strong>burkitshi</strong> (also spelled berkutchi), from <em>burkit</em>, meaning golden eagle. Being a burkitshi is a cultural identity — a statement of who you are, where you come from, and what you refuse to let disappear.</p>
+
+  <p>Of the roughly 110,000 Kazakhs living in western Mongolia today, only around <strong>240</strong> still practice traditional eagle hunting. Every one of them is a keeper of something the modern world has nearly lost everywhere else.</p>
+
+  <h2>The History: Nearly 1,000 Years of an Unbroken Tradition</h2>
+  <p>Eagle hunting among the Kazakhs dates back at least 1,000 years, with some historical accounts suggesting the practice is closer to 2,000–4,000 years old across the wider Central Asian steppe. It developed out of necessity: in the brutal Altai winters, when temperatures drop to –40°C and snow covers the ground for months, golden eagles could hunt foxes and hares in terrain no human could easily navigate on foot.</p>
+
+  <p>The burkitshi would capture a young female eagle from her nest at altitude, and spend years building a relationship of trust and training. After around <strong>seven to ten years</strong> of hunting partnership, the burkitshi releases the eagle back to the wild — hunters describe it as losing a member of the family.</p>
+
+  <h2>UNESCO Recognition: Why It Matters</h2>
+  <p>In 2021, UNESCO added Kazakh eagle hunting to its <strong>List of Intangible Cultural Heritage of Humanity</strong>. This was a landmark recognition — a global acknowledgement that this practice represents something irreplaceable in human culture.</p>
+
+  <p>When you visit a burkitshi family through a reputable local operator, you are not just a tourist. You are part of the reason the tradition continues.</p>
+
+  <h2>How Eagle Training Works</h2>
+  <p>A young female golden eagle is typically captured from a mountain nest when she is around one year old. From that moment, the burkitshi becomes her world. She sleeps in the family ger, eats meat fed to her by hand, and travels everywhere with her hunter.</p>
+
+  <p>Training begins with basics: learning to sit calmly on the glove, to wear a leather hood during travel, and to return to the glove for food. Over months and years, the distance grows. The eagle learns to pursue foxes and hares across mountain terrain at speed, stoop from altitude, and make the kill.</p>
+
+  <p>The hunting season runs from <strong>late October to early February</strong>, when snow covers the ground and the fox fur is at its thickest.</p>
+
+  <h2>The Golden Eagle Festival</h2>
+  <p>Every year in early October, eagle hunters from across Bayan-Ölgii gather near Ölgii town for the <strong>Golden Eagle Festival</strong> — one of the most spectacular cultural events in Asia. Hunters compete in eagle speed, accuracy, horsemanship, and traditional dress.</p>
+
+  <ul>
+    <li><strong>2026 Golden Eagle Festival:</strong> First weekend of October, at Shar Nuur (~15 km from Ölgii). Book at least 6 months in advance.</li>
+    <li><strong>Sagsai Festival:</strong> September, ~30 km from Ölgii. Smaller, more intimate, and community-rooted.</li>
+  </ul>
+
+  <h2>How to Visit an Eagle Hunter Family</h2>
+  <p>Visiting a burkitshi family is not like visiting a tourist attraction. You are a guest in a working family's home.</p>
+
+  <h3>Staying in a Ger</h3>
+  <p>You'll sleep in a traditional felt tent, eat together with the family — Kazakh bread, dried dairy, mutton, and salted milk tea — and spend evenings in conversation through your guide-interpreter.</p>
+
+  <h3>Meeting the Eagle</h3>
+  <p>Your host will introduce you to their eagle by name. You'll see it up close, learn how the hood and glove work, and can hold the eagle on your own gloved arm if you're comfortable.</p>
+
+  <h3>Best Time to Visit</h3>
+  <ul>
+    <li><strong>September–October:</strong> Festival season — exciting and culturally rich. Book far ahead.</li>
+    <li><strong>November–February:</strong> Active hunting season. Cold (–20°C to –40°C) but the most authentic experience.</li>
+    <li><strong>June–August:</strong> Combine a family visit with trekking in Altai Tavan Bogd National Park.</li>
+  </ul>
+
+  <h2>How to Get to Bayan-Ölgii</h2>
+  <ol>
+    <li>Fly to <strong>Ulaanbaatar</strong></li>
+    <li>Take a <strong>domestic flight to Ölgii</strong> (2.5 hours, several times per week)</li>
+    <li>Altai Mount Travel meets you in Ölgii — eagle hunter communities are 30 min to a few hours away by 4WD</li>
+  </ol>
+
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin: 32px 0;">
+    <iframe
+      src="https://www.youtube.com/embed/liekG77FQvQ?start=436"
+      title="Kazakh Eagle Hunters of Western Mongolia"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:12px;"
+    ></iframe>
+  </div>
+
+  <h2>Visit With Altai Mount Travel</h2>
+  <p>We are a locally-owned tour operator based in Ölgii with genuine relationships with eagle hunter families across the province. When you stay with one of these families through us, the family knows we are coming, they are compensated fairly, and your guide speaks Kazakh.</p>
+
+  <ul>
+    <li><strong>Golden Eagle Festival Tour 2026</strong> — 9 days, from $2,300 USD</li>
+    <li><strong>Altai Tavan Bogd Base Camp Trek</strong> — 10 days, from $1,900 USD</li>
+    <li><strong>Custom itineraries</strong> — built around your dates and interests</li>
+  </ul>
+
+  <p>📧 altaimounttravel@gmail.com &nbsp;|&nbsp; 📱 WhatsApp: +976 8542 8887</p>
+      `
+    },
+
+    {
+      slug: "staying-with-nomadic-families",
         title: "Staying With Nomadic Families in Bayan-Ölgii",
-        date: "2023-02-10",
+        date: "2024-11-05",
         readTime: "8 min read",
         category: "Culture",
         excerpt:

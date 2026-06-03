@@ -7,6 +7,7 @@ import type { GetStaticPaths, GetStaticProps } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BlogTourCTA from "@/components/BlogTourCTA";
+import BlogSidebar from "@/components/BlogSidebar";
 
 const SITE = "https://www.altaimount.com";
 
@@ -99,7 +100,7 @@ export default function BlogPostPage({ post }: Props) {
 
       <Navbar />
       <main className="py-12 md:py-16 bg-gray-50">
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <Link
             href="/blog"
             className="inline-flex items-center gap-1 text-sm text-gray-600 hover:text-brand-800 mb-4"
@@ -108,41 +109,51 @@ export default function BlogPostPage({ post }: Props) {
             Back to blog
           </Link>
 
-          <article className="bg-white rounded-2xl shadow-sm overflow-hidden">
-            <div className="relative h-80 w-full">
-              <Image
-                src={post.image}
-                alt={post.title}
-                fill
-                sizes="(min-width: 768px) 768px, 100vw"
-                className="object-cover"
-                priority
-              />
-            </div>
-            <div className="p-6 md:p-8">
-              <p className="text-xs uppercase tracking-wide text-brand-700 mb-1">
-                {post.category}
-              </p>
-              <h1 className="text-2xl md:text-3xl font-bold mb-3">
-                {post.title}
-              </h1>
-              <div className="flex items-center gap-3 text-xs text-gray-500 mb-6">
-                <span>{formatDate(post.date)}</span>
-                <span>•</span>
-                <span className="inline-flex items-center gap-1">
-                  <Clock className="w-4 h-4" />
-                  {post.readTime}
-                </span>
-              </div>
-              <div
-                className="prose prose-sm md:prose-base max-w-none text-gray-800"
-                dangerouslySetInnerHTML={{ __html: post.content }}
-              />
-            </div>
-          </article>
+          <div className="grid lg:grid-cols-[1fr_300px] gap-8 items-start">
+            {/* Main content */}
+            <div>
+              <article className="bg-white rounded-2xl shadow-sm overflow-hidden">
+                <div className="relative h-80 w-full">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    sizes="(min-width: 1024px) 700px, 100vw"
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+                <div className="p-6 md:p-8">
+                  <p className="text-xs uppercase tracking-wide text-brand-700 mb-1">
+                    {post.category}
+                  </p>
+                  <h1 className="text-2xl md:text-3xl font-bold mb-3">
+                    {post.title}
+                  </h1>
+                  <div className="flex items-center gap-3 text-xs text-gray-500 mb-6">
+                    <span>{formatDate(post.date)}</span>
+                    <span>•</span>
+                    <span className="inline-flex items-center gap-1">
+                      <Clock className="w-4 h-4" />
+                      {post.readTime}
+                    </span>
+                  </div>
+                  <div
+                    className="prose prose-sm md:prose-base max-w-none text-gray-800"
+                    dangerouslySetInnerHTML={{ __html: post.content }}
+                  />
+                </div>
+              </article>
 
-          {/* Next-step CTA: post-specific tour recommendation */}
-          <BlogTourCTA postSlug={post.slug} />
+              {/* Next-step CTA: post-specific tour recommendation */}
+              <BlogTourCTA postSlug={post.slug} />
+            </div>
+
+            {/* Sidebar */}
+            <div className="lg:sticky lg:top-24">
+              <BlogSidebar />
+            </div>
+          </div>
         </div>
       </main>
       <Footer />

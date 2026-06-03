@@ -82,7 +82,7 @@ export const tours = [
     durationDays:7, difficulty:'Easy', season:['Jun','Jul','Aug','Sep'], tags:['Cultural','Homestay','Horse riding','Nomadic'],
     startingFromUsd:1450, popularity:88,
     heroImage:'/images/nomad1.jpg',
-    images: ['/images/nomad2.jpg', '/images/nomad3.jpg', '/images/nomad4.jpg'],
+    images: ['/images/nomad2.jpg', '/images/nomad3.jpg', '/images/nomad4.jpg', '/images/yurt.png', '/images/kazan.jpg',  '/images/interior.png'],
     highlights:['Family homestay','Felt making','Eagle hunter visit','Horse riding'],
     quickFacts:{ bestSeason:'July–September', maxAltitudeM:2400, accommodationMix:'Hotel + Ger (homestay)', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
     itinerary:[

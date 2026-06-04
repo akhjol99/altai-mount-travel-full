@@ -93,10 +93,13 @@ export default function Footer() {
 
             <form className="flex gap-2">
               <input
-                className="flex-1 rounded-xl px-3 py-2 text-black"
+                className="min-w-0 flex-1 rounded-xl px-3 py-2 text-sm text-black"
                 placeholder="Your email"
               />
-              <button className="btn-primary" type="button">
+              <button
+                className="shrink-0 rounded-xl bg-amber-500 hover:bg-amber-400 text-amber-950 font-semibold px-4 py-2 text-sm transition-colors"
+                type="button"
+              >
                 Subscribe
               </button>
             </form>

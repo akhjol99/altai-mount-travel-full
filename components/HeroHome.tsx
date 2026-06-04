@@ -4,11 +4,31 @@ import Link from "next/link";
 import Image from "next/image";
 import AltaiNow, { type AltaiNowData } from "@/components/AltaiNow";
 
-const heroImages = [
-  "/images/5bogd.jpg",
-  "/images/mount.jpeg",
-  "/images/eagle_hero.png",
-  "/images/baga_turgen_guur.png"
+const heroSlides = [
+  {
+    image: "/images/5bogd.jpg",
+    tag: "Western Mongolia · Est. 2019",
+    title: "Discover the Altai Mountains",
+    subtitle: "Small-group expeditions with local guides. Trek glaciers, stay with nomads, and witness the world's greatest eagle festival.",
+  },
+  {
+    image: "/images/mount.jpeg",
+    tag: "Trekking & Adventure",
+    title: "Summit the Roof of Mongolia",
+    subtitle: "Multi-day treks through high passes, across glaciers, and into valleys untouched by mass tourism.",
+  },
+  {
+    image: "/images/hulin_eagle.jpg",
+    tag: "Kazakh Eagle Hunters · UNESCO Heritage",
+    title: "Hunt with a Golden Eagle",
+    subtitle: "Stay with a burkitshi family in Bayan-Ölgii and experience one of the last great falconry traditions on earth.",
+  },
+  {
+    image: "/images/baga_turgen_guur.png",
+    tag: "Western Mongolia · Pristine Wilderness",
+    title: "Untouched Nature of Mongolia",
+    subtitle: "Glaciers, alpine lakes, and valleys where no tourist crowds exist — only you, your guide, and the mountains.",
+  },
 ];
 
 type HeroHomeProps = { altaiNow?: AltaiNowData };
@@ -18,18 +38,18 @@ export default function HeroHome({ altaiNow }: HeroHomeProps) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % heroImages.length);
+      setCurrent((prev) => (prev + 1) % heroSlides.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section className="relative mt-16 md:mt-0 overflow-hidden h-[90vh]">
-      {heroImages.map((img, i) => (
+      {heroSlides.map((slide, i) => (
         <Image
           key={i}
-          src={img}
-          alt="Altai Mountains"
+          src={slide.image}
+          alt={slide.title}
           fill
           sizes="100vw"
           priority={i === 0}
@@ -45,14 +65,14 @@ export default function HeroHome({ altaiNow }: HeroHomeProps) {
       {/* Text Content */}
       <div className="relative z-10 flex items-end justify-start h-full px-6 md:px-16 pb-16 md:pb-24">
         <div className="max-w-2xl">
-          <span className="inline-block text-xs font-semibold tracking-widest uppercase text-amber-400 mb-4">
-            Western Mongolia · Est. 2019
+          <span className="inline-block text-xs font-semibold tracking-widest uppercase text-amber-400 mb-4 transition-all duration-700">
+            {heroSlides[current].tag}
           </span>
-          <h1 className="text-4xl md:text-6xl font-medium leading-[1.15] tracking-tight text-white mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]">
-            Discover the Altai Mountains
+          <h1 className="text-4xl md:text-6xl font-medium leading-[1.15] tracking-tight text-white mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)] transition-all duration-700">
+            {heroSlides[current].title}
           </h1>
-          <p className="text-white/80 text-lg mb-8 leading-relaxed">
-            Small-group expeditions with local guides. Trek glaciers, stay with nomads, and witness the world's greatest eagle festival.
+          <p className="text-white/80 text-lg mb-8 leading-relaxed transition-all duration-700">
+            {heroSlides[current].subtitle}
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/tours" className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-amber-950 font-semibold px-6 py-3 rounded-full transition-colors">
@@ -76,7 +96,7 @@ export default function HeroHome({ altaiNow }: HeroHomeProps) {
 
       {/* Slide indicators */}
       <div className="absolute bottom-6 right-6 z-10 flex gap-2">
-        {heroImages.map((_, i) => (
+        {heroSlides.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}

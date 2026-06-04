@@ -22,6 +22,7 @@ function buildSitemap(): string {
     urlEntry(`${SITE}/blog`, today, "0.8", "weekly"),
     urlEntry(`${SITE}/about`, today, "0.6", "monthly"),
     urlEntry(`${SITE}/contact`, today, "0.7", "monthly"),
+    urlEntry(`${SITE}/tailor-made`, today, "0.8", "monthly"),
     urlEntry(`${SITE}/faq`, today, "0.5", "monthly"),
     urlEntry(`${SITE}/legal/privacy`, today, "0.3", "yearly"),
     urlEntry(`${SITE}/legal/terms`, today, "0.3", "yearly"),

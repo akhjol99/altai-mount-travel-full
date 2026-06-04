@@ -55,11 +55,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/tours/live-with-kazakh-nomad-family"
-                  className="hover:text-white"
-                >
+                <Link href="/tours/live-with-kazakh-nomad-family" className="hover:text-white">
                   Kazakh Nomad Stay
+                </Link>
+              </li>
+              <li>
+                <Link href="/tailor-made" className="hover:text-white">
+                  Tailor-Made Tour
                 </Link>
               </li>
             </ul>

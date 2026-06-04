@@ -8,6 +8,7 @@ import { Menu, X, MessageCircle, Mail } from "lucide-react";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/tours", label: "Tours" },
+  { href: "/tailor-made", label: "Tailor Made" },
   { href: "/blog", label: "Blog" },
   { href: "/faq", label: "FAQ" },
   { href: "/about", label: "About" },

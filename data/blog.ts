@@ -132,7 +132,7 @@ export type BlogPost = {
     
       <p>Bayan-Ölgii is Mongolia’s westernmost province, famous for its dramatic Altai Mountains, rich Kazakh culture, and traditional eagle hunters. It is one of the most unique destinations in Central Asia, offering both cultural and adventure travel experiences.</p>
     
-      <img src="/images/bayan-ulgii-landscape.jpg" alt="Altai Mountains in Bayan-Ulgii Mongolia" style="width:100%; border-radius:12px; margin: 20px 0;" />
+      <img src="/images/5bogd.jpg" alt="Altai Mountains in Bayan-Ulgii Mongolia" style="width:100%; border-radius:12px; margin: 20px 0;" />
     
       <h3>📍 Where is Bayan-Ölgii?</h3>
       <p>Bayan-Ölgii is located in western Mongolia, bordering Kazakhstan, China, and Russia. Its remote location makes it less crowded and perfect for travelers looking for authentic experiences.</p>
@@ -425,5 +425,221 @@ export type BlogPost = {
     
     <p>Staying with nomadic families supports local communities and gives you a genuine experience of Kazakh culture.</p>
     `
-      }
+      },
+
+    {
+      slug: "how-much-does-a-mongolia-trek-cost",
+      title: "How Much Does a Mongolia Trek Cost? Complete 2026 Price Guide",
+      date: "2025-11-10",
+      readTime: "7 min read",
+      category: "Travel Info",
+      excerpt: "A full breakdown of what a Western Mongolia trekking trip actually costs in 2026 — tours, flights, gear, visas, and hidden expenses explained.",
+      image: "/images/trekking.jpeg",
+      content: `
+      <h2>How Much Does a Mongolia Trek Cost?</h2>
+
+      <p>One of the most common questions we get is: <strong>"How much will this actually cost me?"</strong> The honest answer depends on your route, group size, and travel style — but this guide gives you a realistic total for a Western Mongolia trip in 2026.</p>
+
+      <img src="/images/trekking.jpeg" alt="Trekking in the Altai Mountains, Western Mongolia" style="width:100%; border-radius:12px; margin: 20px 0;" />
+
+      <h3>🏔 Tour Package Cost</h3>
+      <p>Most visitors book an all-inclusive tour with a local operator. In Western Mongolia, prices typically range from:</p>
+      <ul>
+        <li><strong>Budget group tour (6–8 people):</strong> $800–$1,200 USD per person</li>
+        <li><strong>Small group (2–4 people):</strong> $1,200–$2,000 USD per person</li>
+        <li><strong>Private tour (solo or couple):</strong> $1,800–$3,000 USD per person</li>
+      </ul>
+      <p>Altai Mount Travel's tours start from <strong>$890 USD</strong> per person (group of 4+). This includes guide, transport, meals, accommodation, and all permits.</p>
+
+      <h3>✈️ International Flights</h3>
+      <p>Flights to Ulaanbaatar (ULN) vary widely by origin:</p>
+      <ul>
+        <li><strong>From Europe:</strong> $600–$1,200 USD return</li>
+        <li><strong>From USA/Canada:</strong> $900–$1,600 USD return</li>
+        <li><strong>From Southeast Asia:</strong> $400–$800 USD return</li>
+      </ul>
+
+      <h3>✈️ Domestic Flights to Ölgii</h3>
+      <p>You'll need a domestic flight from Ulaanbaatar to Ölgii (ULG). These cost <strong>$120–$200 USD</strong> one way and should be booked well in advance, especially for the Eagle Festival season (September–October). We can arrange these for you.</p>
+
+      <h3>🗒 Visa</h3>
+      <p>Most nationalities enter Mongolia <strong>visa-free for up to 30 days</strong>. If you need a visa, expect to pay $50–$100 USD. Check with the Mongolian Embassy in your country.</p>
+
+      <h3>🎒 Gear & Equipment</h3>
+      <p>If you don't own trekking gear, budget:</p>
+      <ul>
+        <li>Hiking boots: $100–$200</li>
+        <li>Sleeping bag (rated to -5°C): $80–$150</li>
+        <li>Rain gear and layers: $100–$200</li>
+      </ul>
+      <p>We provide tents and cooking equipment on all treks, so you don't need to bring those.</p>
+
+      <h3>🌍 Travel Insurance</h3>
+      <p>Budget $80–$150 USD for comprehensive travel insurance including emergency evacuation, which is strongly recommended for remote mountain areas.</p>
+
+      <h3>💵 Total Budget Estimate</h3>
+      <p>For a 10-day Western Mongolia trip including flights from Europe:</p>
+      <ul>
+        <li>Tour package: $1,400 USD</li>
+        <li>International flights: $900 USD</li>
+        <li>Domestic flight: $300 USD (return)</li>
+        <li>Visa + insurance: $150 USD</li>
+        <li>Personal spending: $200 USD</li>
+        <li><strong>Total: ~$2,950 USD</strong></li>
+      </ul>
+
+      <h3>💡 How to Save Money</h3>
+      <ul>
+        <li>Travel in a group of 4+ — prices drop significantly</li>
+        <li>Book domestic flights early (3–6 months ahead)</li>
+        <li>Visit in June or September instead of peak July–August</li>
+        <li>Combine multiple tours to reduce per-day costs</li>
+      </ul>
+
+      <p>Have more questions about costs? <a href="/contact" style="color:#d97706;font-weight:600;">Get in touch</a> — we'll give you a personalised quote for your group and dates.</p>
+      `
+    },
+
+    {
+      slug: "is-mongolia-safe-for-travelers",
+      title: "Is Mongolia Safe for Travelers? Everything You Need to Know",
+      date: "2025-09-22",
+      readTime: "6 min read",
+      category: "Travel Guide",
+      excerpt: "Mongolia is one of the safest destinations in Asia. Here's an honest guide to safety in Western Mongolia — crime, health, altitude, weather, and wildlife.",
+      image: "/images/nomad1.jpg",
+      content: `
+      <h2>Is Mongolia Safe for Travelers?</h2>
+
+      <p>The short answer: <strong>yes — Mongolia is very safe</strong>, and Western Mongolia in particular is one of the most welcoming and peaceful destinations in Asia. Crime against tourists is extremely rare, and locals are famously hospitable.</p>
+
+      <img src="/images/nomad1.jpg" alt="Nomad family in Western Mongolia" style="width:100%; border-radius:12px; margin: 20px 0;" />
+
+      <h3>🏙 Crime & Personal Safety</h3>
+      <p>Petty crime exists in Ulaanbaatar (pickpocketing in crowded areas), but in Western Mongolia — Ölgii, the Altai Mountains, and the surrounding region — crime is extremely rare. Travelers regularly report feeling completely safe, even when camping alone in remote areas.</p>
+      <p>Basic common sense applies: keep valuables secure in the city, avoid showing large amounts of cash, and stay alert in busy markets. In rural areas, you're a guest — and Mongolian and Kazakh hospitality traditions mean you'll be treated accordingly.</p>
+
+      <h3>🏔 Altitude & Physical Risks</h3>
+      <p>The main safety consideration in Western Mongolia is <strong>altitude</strong>. The Altai Tavan Bogd region sits above 3,000m, with trekking routes reaching 4,000m+. Altitude sickness is possible if you ascend too quickly.</p>
+      <ul>
+        <li>Ascend gradually and take rest days</li>
+        <li>Stay hydrated and avoid alcohol at high altitude</li>
+        <li>Descend immediately if symptoms become severe</li>
+      </ul>
+      <p>All our guides carry basic medical kits and satellite communicators for emergencies.</p>
+
+      <h3>🌦 Weather & Temperature</h3>
+      <p>Western Mongolia has extreme weather. Even in summer, nights in the mountains can drop below freezing. Always bring layered clothing regardless of the season. Storms can arrive quickly in the mountains — our guides know the terrain and will not push into dangerous conditions.</p>
+
+      <h3>🐺 Wildlife</h3>
+      <p>The Altai is home to snow leopards, wolves, and brown bears — but encounters are extremely rare and these animals are shy. Follow your guide's advice and store food properly when camping. We have never had a wildlife incident with any of our guests.</p>
+
+      <h3>🏥 Health & Medical</h3>
+      <p>The nearest hospital is in Ölgii. For remote treks, we strongly recommend comprehensive <strong>travel insurance that includes emergency helicopter evacuation</strong>. There are no hospitals in the mountains.</p>
+      <p>Common health issues are minor: blisters, sunburn (the UV is strong at altitude), stomach upset from unfamiliar food. Bring a basic first aid kit and any personal medications.</p>
+
+      <h3>🛡 Our Safety Standards</h3>
+      <ul>
+        <li>All guides carry satellite communicators</li>
+        <li>First aid kits on every trek</li>
+        <li>Emergency evacuation plans for all remote routes</li>
+        <li>Small group sizes for better management</li>
+        <li>No pushing schedules in bad weather</li>
+      </ul>
+
+      <p>Have questions about safety for your specific trip? <a href="/contact" style="color:#d97706;font-weight:600;">Ask us directly</a> — we know every route and can give honest advice.</p>
+      `
+    },
+
+    {
+      slug: "what-to-pack-western-mongolia",
+      title: "What to Pack for Western Mongolia: The Complete Packing List",
+      date: "2025-08-05",
+      readTime: "8 min read",
+      category: "Travel Tips",
+      excerpt: "Everything you need to pack for a Western Mongolia trip — trekking, the Golden Eagle Festival, and nomad homestays. What to bring, what to leave behind.",
+      image: "/images/camp.jpeg",
+      content: `
+      <h2>What to Pack for Western Mongolia</h2>
+
+      <p>Packing for Western Mongolia requires thinking about three things: cold nights, remote conditions, and cultural respect. This list covers everything you'll need for trekking, festival visits, and nomad homestays.</p>
+
+      <img src="/images/camp.jpeg" alt="Camp in the Altai Mountains, Western Mongolia" style="width:100%; border-radius:12px; margin: 20px 0;" />
+
+      <h3>🧥 Clothing (Layering is Key)</h3>
+      <p>Even in July, temperatures can drop to 5°C at night in the mountains. A layering system is essential:</p>
+      <ul>
+        <li><strong>Base layer:</strong> Merino wool or synthetic moisture-wicking tops and bottoms (2–3 sets)</li>
+        <li><strong>Mid layer:</strong> Fleece jacket or light down jacket</li>
+        <li><strong>Outer layer:</strong> Waterproof and windproof jacket (essential — weather changes fast)</li>
+        <li><strong>Trekking trousers:</strong> Quick-dry, convertible trousers work well</li>
+        <li><strong>Warm hat and gloves:</strong> Even in summer for early mornings</li>
+        <li><strong>Sun hat:</strong> UV is intense at altitude</li>
+        <li><strong>Buff/neck gaiter:</strong> For wind and dust</li>
+      </ul>
+
+      <h3>👟 Footwear</h3>
+      <ul>
+        <li><strong>Hiking boots:</strong> Waterproof, ankle-supporting boots broken in before the trip</li>
+        <li><strong>Camp shoes/sandals:</strong> For ger stays and relaxing at camp</li>
+        <li><strong>Wool socks:</strong> At least 3–4 pairs (merino wool preferred)</li>
+      </ul>
+
+      <h3>🎒 Gear & Equipment</h3>
+      <ul>
+        <li><strong>Daypack (20–30L):</strong> For day hikes (we carry the main luggage)</li>
+        <li><strong>Sleeping bag:</strong> Rated to at least -5°C (we provide tents)</li>
+        <li><strong>Trekking poles:</strong> Highly recommended for mountain terrain</li>
+        <li><strong>Headlamp + spare batteries</strong></li>
+        <li><strong>Water bottles or hydration system:</strong> 2L capacity</li>
+        <li><strong>Sunglasses:</strong> UV-rated, wraparound style</li>
+        <li><strong>Dry bags or zip-lock bags:</strong> To protect electronics from rain</li>
+      </ul>
+
+      <h3>🏥 Health & Personal</h3>
+      <ul>
+        <li>Personal medications + prescription copies</li>
+        <li>Altitude sickness tablets (consult your doctor — Diamox)</li>
+        <li>High-SPF sunscreen (SPF 50+ recommended)</li>
+        <li>Lip balm with SPF</li>
+        <li>Insect repellent</li>
+        <li>Basic first aid kit: blister plasters, ibuprofen, antidiarrheal</li>
+        <li>Hand sanitiser and wet wipes (no running water in remote areas)</li>
+      </ul>
+
+      <h3>📱 Electronics</h3>
+      <ul>
+        <li><strong>Power bank</strong> (large capacity — limited charging opportunities)</li>
+        <li>Universal adaptor (Mongolia uses Type C/E sockets)</li>
+        <li>Camera with extra memory cards (you will take a lot of photos)</li>
+        <li>Downloaded offline maps (Maps.me or Google Maps offline)</li>
+        <li>Local SIM card (available in Ölgii — Mobicom has the best coverage)</li>
+      </ul>
+
+      <h3>📋 Documents</h3>
+      <ul>
+        <li>Passport (valid 6+ months beyond travel dates)</li>
+        <li>Travel insurance documents (printed and digital)</li>
+        <li>Emergency contacts</li>
+        <li>Copies of all documents stored separately</li>
+      </ul>
+
+      <h3>🏠 For Ger Stays & Cultural Visits</h3>
+      <ul>
+        <li><strong>Small gifts:</strong> Sweets, tea, or small toys for children are appreciated</li>
+        <li><strong>Modest clothing:</strong> Cover shoulders and knees when visiting families</li>
+        <li><strong>Patience and curiosity:</strong> Your most important item</li>
+      </ul>
+
+      <h3>❌ What to Leave Behind</h3>
+      <ul>
+        <li>Valuables you can't afford to lose</li>
+        <li>Excessive luggage — we travel by small vehicles and horse</li>
+        <li>High heels or fashion shoes</li>
+        <li>Anything that can't handle dust, mud, or rain</li>
+      </ul>
+
+      <p>We send all confirmed guests a detailed, customised packing list specific to their tour. <a href="/book" style="color:#d97706;font-weight:600;">Book a tour</a> to receive yours.</p>
+      `
+    },
   ];

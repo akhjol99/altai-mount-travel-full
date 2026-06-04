@@ -41,7 +41,7 @@ export default function ImageGallery({ images = [] }: { images: string[] }) {
           >
             <Image
               src={img}
-              alt=""
+              alt={`Tour photo ${i + 1}`}
               fill
               sizes="80px"
               className="object-cover"

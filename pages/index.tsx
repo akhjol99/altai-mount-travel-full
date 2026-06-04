@@ -21,7 +21,7 @@ export default function Home({ altaiNow }: HomeProps) {
 
         <meta
           name="description"
-          content="Discover the Altai Mountains, where you can experience Mongolia’s stunning landscapes along with its nomadic eagle-hunting culture and unique traditions."
+          content="Small-group tours to Western Mongolia with local guides. Trek the Altai Mountains, attend the Golden Eagle Festival in Bayan-Ölgii, stay with Kazakh nomads, and climb Khuiten Peak. Operating since 2019."
         />
 
         <link rel="canonical" href="https://www.altaimount.com/" />
@@ -46,6 +46,25 @@ export default function Home({ altaiNow }: HomeProps) {
         <Navbar />
         <HeroHome altaiNow={altaiNow} />
         <WhyUs />
+
+        {/* Social proof strip */}
+        <section className="bg-stone-900 text-white py-8">
+          <div className="container">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              {[
+                { value: "300+", label: "Travelers served" },
+                { value: "5★", label: "TripAdvisor rating" },
+                { value: "Since 2019", label: "Operating locally" },
+                { value: "7 tours", label: "Across Western Mongolia" },
+              ].map((s) => (
+                <div key={s.label}>
+                  <div className="text-2xl md:text-3xl font-black text-amber-400">{s.value}</div>
+                  <div className="text-xs text-white/60 uppercase tracking-wide mt-1">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="container pb-4">
           <div className="mb-6">

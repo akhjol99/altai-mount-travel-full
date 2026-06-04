@@ -4,10 +4,11 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { tours } from '@/data/tours';
-import { CheckCircle, Phone, Send, Shield, CreditCard, Clock, ArrowLeft } from 'lucide-react';
+import { CheckCircle, Phone, Send, Shield, CreditCard, Clock, ArrowLeft, AlertCircle } from 'lucide-react';
 
 export default function Book() {
   const router = useRouter();
@@ -24,6 +25,7 @@ export default function Book() {
   });
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState('');
 
   // Pre-fill tour from URL param or sessionStorage
   useEffect(() => {
@@ -83,6 +85,7 @@ export default function Book() {
     e.preventDefault();
     if (!isValid) return;
     setLoading(true);
+    setError('');
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
@@ -92,10 +95,10 @@ export default function Book() {
       if (res.ok) {
         setSent(true);
       } else {
-        alert('Something went wrong. Please try again or use WhatsApp.');
+        setError('Something went wrong. Please try again or use WhatsApp below.');
       }
     } catch {
-      alert('Network error. Please try WhatsApp instead.');
+      setError('Network error. Please check your connection or use WhatsApp instead.');
     } finally {
       setLoading(false);
     }
@@ -103,6 +106,10 @@ export default function Book() {
 
   return (
     <div className="min-h-screen bg-stone-50">
+      <Head>
+        <title>Book a Tour | Altai Mount Travel</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <Navbar />
 
       {/* Hero */}
@@ -237,6 +244,12 @@ export default function Book() {
                   <Shield className="w-3.5 h-3.5 shrink-0" />
                   Your details are never shared. No payment required at this stage.
                 </p>
+                {error && (
+                  <div className="flex items-center gap-2 text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm mt-2">
+                    <AlertCircle className="w-4 h-4 shrink-0" />
+                    {error}
+                  </div>
+                )}
               </form>
             </div>
 

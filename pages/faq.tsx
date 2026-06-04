@@ -2,9 +2,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ChevronDown, Phone, Mail, MapPin, Clock, Shield, Mountain, Utensils, Plane } from "lucide-react";
+
+const SITE = "https://www.altaimount.com";
 
 const categories = [
   {
@@ -139,9 +142,32 @@ function FAQItem({ q, a, color }: { q: string; a: string; color: string }) {
   );
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: categories.flatMap((cat) =>
+    cat.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    }))
+  ),
+};
+
 export default function FAQ() {
   return (
     <div className="min-h-screen bg-stone-50">
+      <Head>
+        <title>FAQ — Western Mongolia Travel Questions | Altai Mount Travel</title>
+        <meta name="description" content="Answers to the most common questions about travelling to Western Mongolia — best time to visit, how to get to Ölgii, tours, accommodation, permits, and safety." />
+        <link rel="canonical" href={`${SITE}/faq`} />
+        <meta property="og:url" content={`${SITE}/faq`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="FAQ — Western Mongolia Travel | Altai Mount Travel" />
+        <meta property="og:description" content="Everything you need to know before visiting Western Mongolia — flights, tours, eagle festival, trekking, accommodation, and more." />
+        <meta property="og:image" content={`${SITE}/images/5bogd.jpg`} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      </Head>
       <Navbar />
 
       {/* Hero */}

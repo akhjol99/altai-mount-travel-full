@@ -43,8 +43,14 @@ export default function ToursPage() {
   return (
     <>
       <Head>
-        <title>All Tours | Altai Mount Travel</title>
-        <meta name="description" content="Browse all Western Mongolia tours — eagle festival, Altai trekking, and nomadic cultural experiences. Flexible dates, local guides." />
+        <title>Western Mongolia Tours | Altai Mount Travel</title>
+        <meta name="description" content="Browse all Western Mongolia tours — Golden Eagle Festival, Altai Tavan Bogd trekking, Khuiten Peak climbing, and Kazakh nomadic cultural experiences. Small groups, local guides, flexible dates." />
+        <link rel="canonical" href="https://www.altaimount.com/tours" />
+        <meta property="og:url" content="https://www.altaimount.com/tours" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Western Mongolia Tours | Altai Mount Travel" />
+        <meta property="og:description" content="Golden Eagle Festival, Altai trekking, Khuiten Peak, and Kazakh nomadic experiences. Small groups, local guides." />
+        <meta property="og:image" content="https://www.altaimount.com/images/5bogd.jpg" />
       </Head>
       <div className="min-h-screen bg-white">
         <Navbar />

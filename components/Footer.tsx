@@ -56,10 +56,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/tours/western-mongolia-cultural-explorer"
+                  href="/tours/live-with-kazakh-nomad-family"
                   className="hover:text-white"
                 >
-                  Cultural Explorer
+                  Kazakh Nomad Stay
                 </Link>
               </li>
             </ul>

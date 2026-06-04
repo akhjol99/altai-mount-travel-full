@@ -3,19 +3,24 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, MessageCircle, AlertCircle } from 'lucide-react';
+
+const SITE = 'https://www.altaimount.com';
 
 export default function Contact() {
   const [state, setState] = useState({ name: '', email: '', message: '', website: '' });
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState('');
 
   const isValid = state.name && /.+@.+\..+/.test(state.email) && state.message;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
+    setError('');
     setState((s) => ({ ...s, [name]: value }));
   };
 
@@ -23,6 +28,7 @@ export default function Contact() {
     e.preventDefault();
     if (!isValid) return;
     setLoading(true);
+    setError('');
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
@@ -33,10 +39,10 @@ export default function Contact() {
         setSent(true);
         setState({ name: '', email: '', message: '', website: '' });
       } else {
-        alert('Sorry, something went wrong. Please try again.');
+        setError('Something went wrong. Please try again or use WhatsApp.');
       }
     } catch {
-      alert('Network error. Please try again.');
+      setError('Network error. Please check your connection and try again.');
     } finally {
       setLoading(false);
     }
@@ -44,6 +50,16 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-stone-50">
+      <Head>
+        <title>Contact Us | Altai Mount Travel — Western Mongolia Tours</title>
+        <meta name="description" content="Get in touch with Altai Mount Travel. Ask us anything about Western Mongolia tours, the Golden Eagle Festival, trekking, or planning your trip. We reply within 24 hours." />
+        <link rel="canonical" href={`${SITE}/contact`} />
+        <meta property="og:url" content={`${SITE}/contact`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact Altai Mount Travel" />
+        <meta property="og:description" content="Based in Ölgii, Western Mongolia. Ask us about tours, the Eagle Festival, trekking, or anything else. We reply within 24 hours." />
+        <meta property="og:image" content={`${SITE}/images/mount.jpeg`} />
+      </Head>
       <Navbar />
 
       {/* Hero */}
@@ -121,6 +137,12 @@ export default function Contact() {
                       {loading ? 'Sending…' : 'Send message'}
                     </button>
                   </div>
+                  {error && (
+                    <div className="flex items-center gap-2 text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm mt-2">
+                      <AlertCircle className="w-4 h-4 shrink-0" />
+                      {error}
+                    </div>
+                  )}
                 </form>
               </>
             )}

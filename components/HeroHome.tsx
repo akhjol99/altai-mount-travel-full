@@ -9,25 +9,25 @@ const heroSlides = [
     image: "/images/5bogd.jpg",
     tag: "Western Mongolia · Est. 2019",
     title: "Discover the Altai Mountains",
-    subtitle: "Small-group expeditions with local guides. Trek glaciers, stay with nomads, and witness the world's greatest eagle festival.",
+    subtitle: "Small-group expeditions led by local guides deep into Western Mongolia. Trek across glaciers, sleep in nomad gers under a sky full of stars, and witness the world's greatest eagle festival.",
   },
   {
     image: "/images/mount.jpeg",
     tag: "Trekking & Adventure",
     title: "Summit the Roof of Mongolia",
-    subtitle: "Multi-day treks through high passes, across glaciers, and into valleys untouched by mass tourism.",
+    subtitle: "Multi-day treks through ancient high passes, across living glaciers, and into remote valleys where mass tourism has never reached. Every step feels like the first.",
   },
   {
     image: "/images/hulin_eagle.jpg",
     tag: "Kazakh Eagle Hunters · UNESCO Heritage",
     title: "Hunt with a Golden Eagle",
-    subtitle: "Stay with a burkitshi family in Bayan-Ölgii and experience one of the last great falconry traditions on earth.",
+    subtitle: "Stay with a burkitshi family in the mountains of Bayan-Ölgii, ride on horseback with a golden eagle on your arm, and experience one of the last great falconry traditions on earth.",
   },
   {
     image: "/images/baga_turgen_guur.png",
     tag: "Western Mongolia · Pristine Wilderness",
     title: "Untouched Nature of Mongolia",
-    subtitle: "Glaciers, alpine lakes, and valleys where no tourist crowds exist — only you, your guide, and the mountains.",
+    subtitle: "Glaciers that have never been mapped, alpine lakes reflecting snow-capped peaks, and valleys where no tourist crowds exist — only you, your guide, and the endless mountains.",
   },
 ];
 

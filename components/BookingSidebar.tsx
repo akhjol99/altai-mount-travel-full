@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { CheckCircle, Phone } from "lucide-react";
 
-export default function BookingSidebar({ price }: { price: number }) {
+export default function BookingSidebar({ price, tourTitle }: { price: number; tourTitle?: string }) {
+  const bookHref = tourTitle ? `/book?tour=${encodeURIComponent(tourTitle)}` : '/book';
   return (
     <aside className="sticky top-6 self-start space-y-4">
       {/* Price + Book card */}
@@ -28,7 +29,7 @@ export default function BookingSidebar({ price }: { price: number }) {
         </ul>
 
         <Link
-          href="/contact"
+          href={bookHref}
           className="mt-5 flex items-center justify-center w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl transition-colors shadow-md shadow-emerald-200 text-sm"
         >
           Plan / Book this Tour

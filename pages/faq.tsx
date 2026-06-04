@@ -204,7 +204,8 @@ export default function FAQ() {
             fill
             className="object-cover object-[center_30%]"
           />
-          <div className="relative z-10 bg-gradient-to-r from-black/80 to-black/40 px-8 py-10 md:py-14 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="absolute inset-0 bg-black/55" />
+          <div className="relative z-10 px-8 py-10 md:py-14 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-2xl font-bold text-white mb-1">Still have questions?</h3>
               <p className="text-white/70 text-sm max-w-md">

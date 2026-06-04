@@ -261,7 +261,7 @@ export default function TourDetail({ tour }: Props){
 
           </article>
 
-          <BookingSidebar price={tour.startingFromUsd} />
+          <BookingSidebar price={tour.startingFromUsd} tourTitle={tour.title} />
         </div>
       </section>
       <Footer />

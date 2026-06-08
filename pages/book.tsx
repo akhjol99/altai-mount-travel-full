@@ -43,7 +43,7 @@ export default function Book() {
     } catch { /* ignore */ }
   }, [router.query.tour]);
 
-  const isValid = state.name && /.+@.+\..+/.test(state.email) && state.travelers >= 1;
+  const isValid = state.name && /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(state.email) && state.travelers >= 1;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;

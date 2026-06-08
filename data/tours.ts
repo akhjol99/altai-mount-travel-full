@@ -27,7 +27,7 @@ export const tours = [
   },
   {
     id:'altai', slug:'altai-tavan-bogd-trek', title:'Altai Mountain Trekking Tour',
-    summary:'Experience glaciers, serene alpine lakes, and brilliant starry nights under the Milky Way.s',
+    summary:'Experience glaciers, serene alpine lakes, and brilliant starry nights under the Milky Way.',
     durationDays:12, difficulty:'Moderate', season:['Jun','Jul','Aug'], tags:['Trekking','Glacier','Horse riding'],
     startingFromUsd:2360, popularity:100,
     heroImage:'/images/river.jpeg',
@@ -104,7 +104,7 @@ export const tours = [
     durationDays:12, difficulty:"Challenging", season:['Jun','Jul','Aug'], tags:['Mountaineering','Cultural'],
     startingFromUsd:2300, popularity:90,
     heroImage:'/images/kh.jpg',
-    images: ['/images/khuiten.jpg', '/images/tent.jpg', '/images/wlake.jpeg', '/images/omar.jpeg', '/images/tent.jpeg'],
+    images: ['/images/khuiten1.jpg', '/images/khuiten2.jpg', '/images/khuiten3.jpg', '/images/khuiten.jpg', '/images/tent.jpg', '/images/wlake.jpeg', '/images/omar.jpeg', '/images/tent.jpeg'],
     highlights:['Climbing','Camel support','Nomadic life'],
     quickFacts:{ bestSeason:'June–August', maxAltitudeM:4500, accommodationMix:'Guesthouses + Gers', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
     itinerary:[
@@ -146,7 +146,7 @@ export const tours = [
   },
   {
     id:'gobi', slug:'mongolian-gobi-desert', title:'Mongolian Gobi Desert Tour 5 days',
-    summary:'Explore the Gobi Desert"s best highlights—nomadic ger visits, Flaming Cliffs, Vulture"s Canyon, White Stupa, and camel rides across the Singing Sand Dunes. Comfortable lodges, expert guides, and unforgettable starry nights included.',
+    summary:"Explore the Gobi Desert's best highlights — nomadic ger visits, Flaming Cliffs, Vulture's Canyon, White Stupa, and camel rides across the Singing Sand Dunes. Comfortable lodges, expert guides, and unforgettable starry nights included.",
     durationDays:5, difficulty:"Easy", season:['Jun','Jul','Aug', 'Sep', 'Oct'], tags:['Gobi','Cultural', 'Camel'],
     startingFromUsd:1920, popularity:95,
     heroImage:'/images/camel.jpg',

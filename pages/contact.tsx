@@ -16,7 +16,7 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState('');
 
-  const isValid = state.name && /.+@.+\..+/.test(state.email) && state.message;
+  const isValid = state.name && /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(state.email) && state.message;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;

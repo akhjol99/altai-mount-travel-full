@@ -13,114 +13,228 @@ export type BlogPost = {
     
     {
       slug: "domestic-flight-schedule-mongolia-2026",
-      title: "Domestic Flight Schedule – Western Mongolia Summer 2026",
-      date: "2026-02-14",
-      readTime: "3 min read",
+      title: "How to Fly to Ölgii: Domestic Flight Guide for Western Mongolia 2026",
+      date: "2026-06-08",
+      readTime: "4 min read",
       category: "Travel Info",
       excerpt:
-        "Updated summer 2026 domestic flight schedule for Ölgii and Khovd, including MIAT and Hunnu Air routes, dates, and booking details.",
+        "Everything you need to know about flying from Ulaanbaatar to Ölgii in 2026 — airlines, schedules, booking tips, and what to expect.",
       image: "/images/miat.png",
       content: `
-      <h2>Domestic Flight Schedule – Western Mongolia Summer 2026</h2>
-    
-      <p>The domestic flight schedule for Western Mongolia, including Ölgii and Khovd, has been confirmed for the summer 2026 season. These routes provide convenient access to the Altai region.</p>
-    
-      <img src="/images/flight_schedule.png" alt="MIAT flight schedule for Ölgii and Khovd summer 2026" style="width:100%; border-radius:12px; margin: 20px 0;" />
-    
-      <h3>✈️ MIAT Mongolian Airlines</h3>
+      <h2>How to Fly to Ölgii: Domestic Flight Guide for Western Mongolia 2026</h2>
+
+      <p>Getting to Bayan-Ölgii requires a domestic flight from Ulaanbaatar — there is no practical overland route that most travelers will consider. The good news is that flights now operate frequently through the summer season, and the 2.5-hour flight from Ulaanbaatar's domestic terminal lands you directly in the Altai.</p>
+
+      <p>This guide covers the current airlines, schedules, how to book, and what the experience is like.</p>
+
+      <img src="/images/miat.png" alt="Domestic flight to Ölgii, Western Mongolia" style="width:100%; border-radius:12px; margin: 20px 0;" />
+
+      <h2>Flying to Ölgii (ULG)</h2>
+
+      <h3>MIAT Mongolian Airlines</h3>
+      <p>MIAT operates the main scheduled route between Ulaanbaatar (Buyant-Ukhaa domestic terminal) and Ölgii. In summer 2026 the schedule is:</p>
       <ul>
-        <li><strong>Ticket sales open:</strong> March 2, 2026</li>
-        <li><strong>Route:</strong> Ulaanbaatar ↔ Ölgii</li>
-        <li><strong>Schedule:</strong> Mondays, Wednesdays, Saturdays (June–August)</li>
-        <li><strong>Booking:</strong> www.miat.com</li>
+        <li><strong>Route:</strong> Ulaanbaatar (ULN) ↔ Ölgii (ULG)</li>
+        <li><strong>Days:</strong> Monday, Wednesday, Saturday</li>
+        <li><strong>Season:</strong> June – September (some October flights for Eagle Festival season)</li>
+        <li><strong>Flight time:</strong> Approximately 2.5 hours</li>
+        <li><strong>Book at:</strong> www.miat.com</li>
       </ul>
-      
-      <h3>✈️ Hunnu Air (Charter Flights to Ölgii)</h3>
-      <p><strong>Operating months:</strong> July & August</p>
-      <p><strong>Flight dates:</strong></p>
+      <p>MIAT tickets sell out fast, especially in late September and early October around the Golden Eagle Festival. Book at least 6–8 weeks ahead for festival dates.</p>
+
+      <h3>Hunnu Air (Charter Flights)</h3>
+      <p>Hunnu Air runs charter flights to Ölgii in July and August, adding extra capacity during peak trekking season. 2026 dates:</p>
       <ul>
-        <li>July: 3, 7, 10, 14, 17, 21, 24, 28, 31</li>
-        <li>August: 4, 7, 11, 14, 18, 21, 25, 28</li>
+        <li><strong>July:</strong> 3, 7, 10, 14, 17, 21, 24, 28, 31</li>
+        <li><strong>August:</strong> 4, 7, 11, 14, 18, 21, 25, 28</li>
+        <li><strong>Book at:</strong> www.hunnuair.com or www.tapatrip.com</li>
       </ul>
-      <p><strong>Booking:</strong> www.tapatrip.com or www.hunnuair.com</p>
-      
-      <h3>✈️ Flights to Khovd</h3>
+      <p>Hunnu Air charter fares are often slightly cheaper than MIAT and can be a good option when MIAT is sold out.</p>
+
+      <h2>Flying to Khovd (HVD)</h2>
+
+      <p>Khovd is the second major gateway to Western Mongolia, used by travelers heading to the southern Altai or combining Bayan-Ölgii with Khovd province. It is also a useful exit point — fly in to Ölgii, tour, and fly out from Khovd.</p>
+
       <ul>
         <li><strong>Route:</strong> Ulaanbaatar ↔ Khovd</li>
-        <li><strong>Schedule:</strong> Tuesdays, Fridays, Sundays</li>
+        <li><strong>Days:</strong> Tuesday, Friday, Sunday (summer season)</li>
+        <li><strong>Flight time:</strong> Approximately 2 hours</li>
       </ul>
-      
-      <h3>📩 Booking Assistance</h3>
-      <p>You can contact local tour operators for help with booking domestic flights:</p>
-      
-      <ul>  
-        <li style="margin-top:10px;"><strong>Altai Mount Team</strong><br/>
-        Email: altaimounttravel@gmail.com<br/>
-        Phone: +976 8542 8887</li>
+
+      <h2>Practical Tips for Booking</h2>
+
+      <ul>
+        <li><strong>Book early:</strong> July and August flights fill up 4–6 weeks ahead. October (festival) flights fill even faster.</li>
+        <li><strong>Carry-on only:</strong> Domestic flights have tight baggage allowances — typically 10 kg checked, 5 kg carry-on. Trekking gear will likely cost extra.</li>
+        <li><strong>Airport transfer:</strong> Ölgii airport is 3 km from the town centre. Local taxis meet every flight; agree on a fare before you get in (around 5,000–8,000 MNT).</li>
+        <li><strong>Delays are common:</strong> Domestic Mongolian aviation is weather-dependent. Build buffer days into your itinerary — don't book an international departure the same day as your domestic return flight.</li>
+        <li><strong>Book through your tour operator:</strong> Altai Mount Travel can book domestic flights on your behalf and coordinate arrival times with your guide. This is the simplest option for most visitors.</li>
       </ul>
-      
-      <p>These flight options offer flexible travel combinations, making it easier to explore the Altai region during the summer season.</p>
+
+      <h2>Getting Help With Flights</h2>
+
+      <p>If you are booking as part of a tour with us, we handle the domestic leg. If you are booking independently, we are happy to advise on the best combination of dates and airlines for your itinerary.</p>
+
+      <p>📧 altaimounttravel@gmail.com &nbsp;|&nbsp; 📱 WhatsApp: +976 8542 8887</p>
       `
     },
     {
       slug: "golden-eagle-festival-guide",
-      title: "Golden Eagle Festival: How to Plan Your Trip",
-      date: "2025-08-12",
-      readTime: "7 min read",
+      title: "Golden Eagle Festival 2026: The Complete Guide",
+      date: "2026-06-01",
+      readTime: "12 min read",
       category: "Festival",
       excerpt:
-        "Everything you need to know about the Golden Eagle Festival in Bayan-Ölgii — dates, weather, photography tips, and how to plan your visit.",
+        "Everything you need to know about the Golden Eagle Festival 2026 in Bayan-Ölgii — exact dates, ticket prices, day-by-day schedule, photography spots, what to wear, and how to plan your trip.",
       image: "/images/hulin_eagle4.png",
       content: `
-  <h2>Golden Eagle Festival: The Complete Guide</h2>
-  <p>The Golden Eagle Festival, held every autumn in Bayan-Ölgii, is one of Mongolia’s most spectacular cultural events. Eagle hunters from across the Altai gather to compete in traditional games that have existed for centuries.</p>
-  
-  <h3>📍 History of Eagle Hunting</h3>
-  <p>Kazakh nomads have trained golden eagles for generations. These powerful birds help hunters catch foxes and small game during the harsh winter months. The festival celebrates this tradition and ensures it continues to the next generation.</p>
-  
-  <h3>📅 When and Where</h3>
+  <h2>Golden Eagle Festival 2026: The Complete Guide</h2>
+
+  <p>The Golden Eagle Festival is one of the most extraordinary cultural events on earth. Each October, eagle hunters from across the Altai mountains ride into Sagsai on horseback, their golden eagles perched on their arms, dressed in the elaborate fur and embroidered garments their families have worn for generations. If you are planning to visit Western Mongolia, this is the event you should build your whole trip around.</p>
+
+  <p>This guide covers everything: exact 2026 dates, how to buy tickets, what happens on each day, where to stand for photographs, what to pack for October weather, where to sleep, and how to make the most of the full week around the festival.</p>
+
+  <img src="/images/hulin_eagle4.png" alt="Kazakh eagle hunter at the Golden Eagle Festival in Bayan-Ölgii, Mongolia" style="width:100%; border-radius:12px; margin: 24px 0;" />
+
+  <h2>2026 Festival Dates</h2>
+
+  <p>There are two festivals in the Bayan-Ölgii region each autumn:</p>
+
   <ul>
-    <li><strong>Main festival:</strong> First weekend of October – Sagsai, near Ölgii</li>
-    <li><strong>Smaller festival:</strong> Late September – more local, less crowded</li>
+    <li><strong>Sagsai Eagle Festival (main event):</strong> 3–4 October 2026</li>
+    <li><strong>Ölgii Eagle Festival (smaller, more local):</strong> Late September 2026 — typically the last weekend of September</li>
   </ul>
-  
-  <h3>🦅 Festival Highlights</h3>
+
+  <p>The Sagsai festival, held about 40 km from Ölgii town, is the main event that most international visitors attend. It is larger, more competitive, and draws eagle hunters from the most remote corners of the province. The late-September Ölgii festival is smaller and less touristy — if you can attend both, you should.</p>
+
+  <p><strong>Important:</strong> Book flights and accommodation at least 3–4 months in advance. October is high season for this festival and rooms in Ölgii sell out fast.</p>
+
+  <h2>Tickets and Entry</h2>
+
+  <p>Entry to the festival grounds costs approximately <strong>30,000–50,000 MNT (around $9–15 USD)</strong> for foreign visitors. Tickets are sold at the gate on both days — there is no advance booking for general entry. A VIP area with reserved seating and better sightlines costs around <strong>80,000–100,000 MNT (~$24–30 USD)</strong> and is worth the extra amount if you are primarily there for photography.</p>
+
+  <p>If you book through a tour operator, your guide will handle tickets and position you in the best viewing areas. Going independently is possible but you may miss the context of what you are watching without a guide to explain the scoring and announce results.</p>
+
+  <h2>What Happens at the Festival</h2>
+
+  <h3>The Competition Format</h3>
+
+  <p>The Golden Eagle Festival is a formal competition judged by a panel of senior eagle hunters. Hunters are scored on the speed of their eagle's descent, accuracy in hitting the target, and the beauty of their traditional costume. Points from all events are combined to crown an overall winner — usually a hunter who has been training the same eagle for several years.</p>
+
+  <h3>Day One: Opening and Eagle Speed Competitions</h3>
+
+  <p>The festival opens with a procession of eagle hunters riding in on horseback — this is one of the most cinematic moments of the entire event. Dozens of hunters enter the field together, eagles on their arms, crowd roaring. Find a high vantage point for this; it takes only a few minutes but the images are extraordinary.</p>
+
+  <p>The main competition on Day One is the <strong>eagle calling contest</strong>. A hunter rides to the top of a steep hillside above the arena, holds their eagle up, then releases it. Another family member — usually a son or younger relative — stands in the valley below waving a fox-fur lure. The eagle must spot its handler from the summit and fly down to land on their arm. Speed, directness, and obedience are all scored.</p>
+
+  <p>Watching eagles descend from a ridge at full speed — sometimes covering 300 meters in under ten seconds — is genuinely breathtaking. The crowd falls quiet as the eagle drops, then erupts when it lands cleanly on the glove.</p>
+
+  <p>Day One also includes a <strong>costume judging competition</strong>, where hunters are scored on their traditional dress. Kazakh festival dress is elaborate — thick fox and wolf fur hats, heavily embroidered robes, ornate leather saddles, and decorative silver accessories. Many of these costumes are family heirlooms, made by grandmothers or great-grandmothers and worn only for festivals. This is the best time to ask hunters if you can take a portrait. Most are happy to oblige, especially if you ask through a guide.</p>
+
+  <h3>Day Two: Accuracy Tests and Horseback Games</h3>
+
+  <p>Day Two begins with the <strong>accuracy test</strong>, where a dragged fox-fur target is pulled across the ground on a rope behind a galloping horse. Hunters release their eagles from a fixed point and scoring is based on whether the eagle strikes the target and how quickly.</p>
+
+  <p>The afternoon brings the horseback games, the most physically spectacular part of the festival:</p>
+
   <ul>
-    <li><strong>Eagle Calling Competition:</strong> Hunters call their eagles from the mountainside.</li>
-    <li><strong>Accuracy Test:</strong> Eagles chase a moving fox-fur target.</li>
-    <li><strong>Horseback Games:</strong> Including “kiz kuar” and “tiyn teru”.</li>
-    <li><strong>Best Traditional Outfit:</strong> Showcasing fur, embroidery, and handmade saddles.</li>
+    <li><strong>Kiz Kuar (girl chasing):</strong> A young man chases a young woman on horseback. If she outruns him, she is allowed to whip him on the way back. This is a traditional courtship game, now performed as sport.</li>
+    <li><strong>Tiyn Teru (coin picking):</strong> Riders gallop at speed and try to pick up coins from the ground without dismounting — a test of horsemanship and balance.</li>
+    <li><strong>Kokpar (tug-of-war on horseback):</strong> Two teams on horseback fight over a goat carcass and try to carry it to a goal. This is chaotic, physical, and extremely fun to watch.</li>
   </ul>
-  
-  <h3>📷 Photography Tips</h3>
+
+  <p>Day Two ends with the awards ceremony, where the champion eagle hunter and their eagle are announced. This is a deeply emotional moment for many hunters — winning is a point of immense family pride. If you can stay until the end, do so.</p>
+
+  <h2>Photography Guide</h2>
+
+  <h3>Best Positions</h3>
+
+  <p>For the eagle calling competition, position yourself halfway up the hillside opposite the launch point. From here you can photograph the hunters on the summit with a wide lens, then switch to a longer lens (200mm+) when the eagle launches. Shooting up the hill from the valley floor gives dramatic backgrounds but means the eagle is small in the frame until the final seconds of the descent.</p>
+
+  <p>For the costume parade and awards, get close. A 50mm or 85mm lens works well here. The light on Day One morning is usually excellent — the sun comes over the eastern ridge around 9 am and illuminates the hunters from the front for about two hours. By midday the light is harsh and flat; this is a good time to take a break, eat, and talk to hunters at the sidelines.</p>
+
+  <h3>Lenses to Bring</h3>
   <ul>
-    <li>Bring a zoom lens (70–200mm or more).</li>
-    <li>Stand behind the judges for the best angles.</li>
-    <li>Sunrise and sunset give the best light.</li>
+    <li><strong>70–200mm f/2.8:</strong> Essential for eagle action shots</li>
+    <li><strong>24–70mm:</strong> Crowd scenes, costumes, wide establishing shots</li>
+    <li><strong>50mm or 85mm:</strong> Portraits of hunters</li>
+    <li><strong>Teleconverter (1.4x or 2x):</strong> Useful if you want to reach eagles in flight at distance</li>
   </ul>
-  
-  <h3>🌤 Weather in October</h3>
-  <p>Expect chilly temperatures:</p>
+
+  <h3>Settings and Timing</h3>
+
+  <p>Eagles in steep descent move extremely fast. Set your shutter speed to at least 1/1600s, ideally 1/2500s, to freeze wing movement. Use continuous autofocus (AI Servo on Canon, AF-C on Nikon/Sony) and burst mode. Of every twenty frames, perhaps two or three will be keepers — that is normal.</p>
+
+  <p>The golden hour at Sagsai is genuinely golden. Arrive before 8 am to photograph hunters warming up with their eagles before the official programme begins. These quiet morning moments — a hunter adjusting a hood on their eagle, a horse standing still against the mountains — are often more powerful than the action shots.</p>
+
+  <h2>Weather and What to Wear</h2>
+
+  <p>October in Bayan-Ölgii is genuinely cold. Temperatures during the festival typically range from <strong>5°C to 12°C</strong> during the day and drop to <strong>-5°C to -10°C</strong> at night. The Sagsai valley is exposed and wind can make it feel colder. Rain is possible but less common than in summer; light snow is occasionally seen on the surrounding peaks.</p>
+
+  <p>Pack as though you are going to stand outside in near-freezing wind for six hours — because you are. Layers are essential:</p>
+
   <ul>
-    <li>Daytime: 5°C – 10°C</li>
-    <li>Night: -5°C – -10°C</li>
+    <li>Thermal base layer (top and bottom)</li>
+    <li>Insulating mid layer — fleece or down</li>
+    <li>Windproof outer jacket</li>
+    <li>Warm hat, gloves, and a scarf</li>
+    <li>Sturdy, waterproof boots — the ground can be frozen or muddy</li>
+    <li>Hand warmers for the camera hand</li>
   </ul>
-  
-  <h3>🏕 Combine the Festival With a Tour</h3>
-  <p>Many travelers combine the festival with:</p>
+
+  <p>Sunscreen is not optional — the Altai sun at altitude is strong even in October, especially at the midday break.</p>
+
+  <h2>Getting to Sagsai</h2>
+
+  <p>Sagsai is approximately 40 km west of Ölgii town, a 45–60 minute drive on a paved road followed by a short stretch of dirt track. If you are on a tour, your guide will arrange transport. Independent travelers can hire a driver in Ölgii the evening before; agree on a price in advance (typically 80,000–120,000 MNT for the round trip, per vehicle).</p>
+
+  <p>Shared minivans also run from Ölgii town centre on festival mornings — ask your guesthouse for the current departure point. These fill up fast and leave early; aim to be at the van by 7:30 am.</p>
+
+  <h2>Where to Stay</h2>
+
+  <p>Most accommodation for the festival is in Ölgii town, which has a range of guesthouses and simple hotels. The best-known options book out months in advance for festival weekend. Book in October as early as January or February.</p>
+
   <ul>
-    <li>Altai Tavan Bogd National Park</li>
-    <li>Khoton & Khurgan Lakes</li>
-    <li>Nomadic family stay</li>
-    <li>Day trips with eagle hunters</li>
+    <li><strong>Guesthouses in Ölgii town:</strong> Most popular option — basic rooms with shared bathrooms, breakfast sometimes included. Budget around $15–30 per person per night.</li>
+    <li><strong>Ger camps near Sagsai:</strong> A handful of operators run ger camps specifically during the festival. Sleeping in a ger near the festival grounds is atmospheric and means you do not have to commute each morning. Prices are higher during festival week — expect $40–70 per person including meals.</li>
+    <li><strong>Homestay with a local family:</strong> Altai Mount Travel can arrange homestays in Ölgii or in nomadic family gers outside town. This is the most authentic experience and often the most affordable.</li>
   </ul>
-  
-  <p>The Golden Eagle Festival is a once-in-a-lifetime experience — full of rich culture, dramatic landscapes, and unforgettable photography opportunities.</p>
+
+  <h2>Beyond the Festival: What to Do in the Area</h2>
+
+  <p>Most visitors who come for the Golden Eagle Festival extend their trip into a wider tour of Western Mongolia. The region is extraordinary in autumn — the Altai mountains are post-summer green but not yet fully snow-covered, and the low-angled October light makes everything glow. Popular add-ons include:</p>
+
+  <ul>
+    <li><strong>Day with an eagle hunter family:</strong> Visit a hunter at their home, learn how an eagle is trained from chick to adult, try holding the eagle yourself. This one-on-one time is far more personal than the festival crowds allow.</li>
+    <li><strong>Altai Tavan Bogd National Park:</strong> The five sacred peaks, Potanin Glacier, and Khoton Lake are an easy day's drive from Ölgii. In October the crowds are gone and the light is superb.</li>
+    <li><strong>Nomadic family stay:</strong> Spend one or two nights with a Kazakh nomadic family — completely different from the festival experience and equally memorable.</li>
+    <li><strong>Ölgii town exploration:</strong> The town itself is worth a half-day — the central market, mosque, and craft shops selling handmade Kazakh felt work and embroidered textiles.</li>
+  </ul>
+
+  <h2>Cultural Etiquette at the Festival</h2>
+
+  <p>The Golden Eagle Festival is a living cultural ceremony, not a performance put on for tourists. Treat it as such.</p>
+
+  <ul>
+    <li>Ask before photographing individuals — a nod and pointing at your camera is universally understood</li>
+    <li>Do not approach or touch the eagles without invitation from the hunter</li>
+    <li>If a hunter invites you for tea or food, accept — refusing is considered impolite</li>
+    <li>Stay behind the ropes during competitions; judges and organizers take safety seriously</li>
+    <li>Bring small gifts for eagle hunter families if you are visiting privately — chocolates, nuts, or a simple scarf are appreciated</li>
+  </ul>
+
+  <h2>How to Book a Festival Tour</h2>
+
+  <p>Altai Mount Travel runs a dedicated <strong>Golden Eagle Festival tour</strong> that combines festival attendance with a nomadic family stay, an eagle hunter day visit, and optional extension to Altai Tavan Bogd. The tour runs from 30 September to 7 October 2026 and includes airport transfers, all accommodation, a fluent English-speaking guide, all transport, and most meals.</p>
+
+  <p>Spots are limited to groups of 8 or fewer to ensure a quality experience. <strong>October 2026 bookings are already filling.</strong> If you are considering this trip, reach out now.</p>
+
+  <p>📧 altaimounttravel@gmail.com &nbsp;|&nbsp; 📱 WhatsApp: +976 8542 8887</p>
   `
     },
     {
       slug: "bayan-ulgii-travel-guide",
-      title: "Bayan-Ölgii Travel Guide: Discover Mongolia’s Altai Region",
+      title: "Bayan-Ölgii Travel Guide: Discover Mongolia's Altai Region",
       date: "2023-04-09",
       readTime: "6 min read",
       category: "Travel Guide",
@@ -130,7 +244,7 @@ export type BlogPost = {
       content: `
       <h2>Bayan-Ölgii Travel Guide</h2>
     
-      <p>Bayan-Ölgii is Mongolia’s westernmost province, famous for its dramatic Altai Mountains, rich Kazakh culture, and traditional eagle hunters. It is one of the most unique destinations in Central Asia, offering both cultural and adventure travel experiences.</p>
+      <p>Bayan-Ölgii is Mongolia's westernmost province, famous for its dramatic Altai Mountains, rich Kazakh culture, and traditional eagle hunters. It is one of the most unique destinations in Central Asia, offering both cultural and adventure travel experiences.</p>
     
       <img src="/images/5bogd.jpg" alt="Altai Mountains in Bayan-Ulgii Mongolia" style="width:100%; border-radius:12px; margin: 20px 0;" />
     
@@ -146,7 +260,7 @@ export type BlogPost = {
       </ul>
     
       <h3>🏔 Nature & Landscapes</h3>
-      <p>Bayan-Ölgii offers some of Mongolia’s most stunning scenery:</p>
+      <p>Bayan-Ölgii offers some of Mongolia's most stunning scenery:</p>
       <ul>
         <li>Altai Tavan Bogd National Park</li>
         <li>Potanin Glacier</li>
@@ -186,7 +300,7 @@ export type BlogPost = {
         Phone: +976 8542 8887</li>
       </ul>
 
-      <p>Bayan-Ölgii is a destination for travelers seeking adventure, culture, and untouched nature. It’s not just a place to visit — it’s an experience you’ll never forget.</p>
+      <p>Bayan-Ölgii is a destination for travelers seeking adventure, culture, and untouched nature. It's not just a place to visit — it's an experience you'll never forget.</p>
       `
     },
   
@@ -387,43 +501,122 @@ export type BlogPost = {
 
     {
       slug: "staying-with-nomadic-families",
-        title: "Staying With Nomadic Families in Bayan-Ölgii",
+        title: "Staying With Nomadic Families in Bayan-Ölgii: What to Expect",
         date: "2024-11-05",
-        readTime: "8 min read",
+        readTime: "9 min read",
         category: "Culture",
         excerpt:
-          "What it's really like to stay with Kazakh nomadic families in the Altai — hospitality, daily life, food, and cultural traditions.",
+          "What it's really like to stay with Kazakh nomadic families in the Altai — daily life, food, cultural etiquette, what to bring, and how to prepare.",
         image: "/images/1.jpg",
         content: `
-    <h2>Staying With Nomadic Families in Bayan-Ölgii</h2>
-    <p>Staying with a Kazakh nomadic family is one of the most memorable experiences you can have in Mongolia. These moments bring you closer to the local culture, traditions, and way of life.</p>
-    
-    <h3>🤗 Hospitality & First Impressions</h3>
-    <p>Guests are welcomed warmly with milk tea, bread, and homemade dairy products. Gers are decorated with colorful carpets, handmade crafts, and a central stove.</p>
-    
-    <h3>🍽 Traditional Meals</h3>
+    <h2>Staying With Nomadic Families in Bayan-Ölgii: What to Expect</h2>
+
+    <p>There are travel experiences and there are life experiences. Spending one or two nights with a Kazakh nomadic family in the Altai falls firmly into the second category. No amount of reading or research fully prepares you for the moment you duck through a low wooden door into a ger — a round felt tent — and find yourself surrounded by intricate hand-stitched wall hangings, a crackling stove at the centre, and a family who has probably never met a visitor from your country and is genuinely glad you are here.</p>
+
+    <p>This guide tells you exactly what to expect: the first moments, the food, the daily rhythm, what is expected of you as a guest, and how to make the experience as meaningful as possible for both you and the family.</p>
+
+    <img src="/images/1.jpg" alt="Inside a Kazakh nomadic family ger in Bayan-Ölgii, Western Mongolia" style="width:100%; border-radius:12px; margin: 24px 0;" />
+
+    <h2>Arriving at the Ger</h2>
+
+    <p>When you arrive, the family will likely be outside waiting for you. Greet the oldest member first — age is respected deeply in Kazakh culture and it matters who you acknowledge first. Handshakes are the norm; receiving something with both hands, or with your right hand supported at the elbow by your left, signals respect.</p>
+
+    <p>Remove your shoes before entering the ger. Inside, move clockwise and sit on the left side (the women's side) or the right side (the men's side) as directed by your host. The back of the ger, directly opposite the door, is the place of honour — you will sit there when the family wants to show you respect.</p>
+
+    <p>Within minutes of sitting down, you will be handed a bowl of <em>suutei tsai</em> — milk tea. It is hot, slightly salty, and unlike any tea you have had before. Drink it. Even if you do not like it, accepting it is the single most important thing you can do to set the right tone for your stay. Refusing food or drink offered by a nomadic family is considered one of the most unwelcome things a guest can do.</p>
+
+    <h2>Inside the Ger: Understanding the Space</h2>
+
+    <p>A Kazakh ger is a marvel of engineering. The lattice-and-felt structure can be assembled or disassembled in a few hours, and the family does this two or three times a year as they move their herds between seasonal pastures. Yet inside, the ger is warm, surprisingly spacious, and decorated with a level of craft and colour that will astonish you.</p>
+
+    <p>The walls are lined with <em>tuskiiz</em> — large embroidered felt panels in geometric patterns. The floor is covered with layers of felt mats and woven rugs. Wooden chests painted in red and orange hold the family's valuables. The central stove — burning dried dung or wood — keeps the ger at a comfortable temperature even when outside temperatures drop below zero.</p>
+
+    <p>A single bare lightbulb, powered by a small solar panel on the roof, provides light at night. There is no running water, no flush toilet, no shower. The outhouse is behind the ger; a bowl of water is provided for hand washing. This is the reality of nomadic life, and embracing it rather than resisting it is half the experience.</p>
+
+    <h2>A Typical Day With a Nomadic Family</h2>
+
+    <h3>Early Morning (6–8 am)</h3>
+    <p>Nomadic life starts early. The first sounds you will hear are the animals — the low groaning of camels, the bells on the goats, occasionally the sharp bark of the herding dogs. The grandmother or mother of the family is usually the first up, relighting the stove, heating water, and starting the first pot of milk tea before the sun has fully risen.</p>
+
+    <p>Morning chores begin immediately after tea: milking the goats, yaks, or horses takes place before the animals are released to graze. If you want to try milking, ask. Most families find a guest attempting to milk a goat highly entertaining, and it breaks the ice beautifully.</p>
+
+    <h3>Late Morning (8 am – noon)</h3>
+    <p>Breakfast is typically bread with butter and cream, sometimes fried dough called <em>boorsog</em>, with more tea. After breakfast, the men and older boys often head out with the herd, sometimes on horseback, sometimes on motorbike. This is a good time to go with them if you are interested — riding alongside a herder as he checks on his flock against a backdrop of the Altai is an experience that does not translate well into photographs but stays with you for years.</p>
+
+    <p>At the ger, the women and younger children process milk — separating cream, making yogurt, pressing <em>aaruul</em> (hard dried cheese), or churning <em>airag</em> (fermented mare's milk, though this is more commonly a summer drink). You are welcome to help and your clumsy attempts will be warmly received.</p>
+
+    <h3>Afternoon (noon – 6 pm)</h3>
+    <p>Lunch is the main meal of the day — often a substantial mutton dish. The most traditional is <em>tsuivan</em>, hand-pulled noodles cooked with mutton and vegetables in a single pot. <em>Khuushuur</em> (deep-fried meat dumplings) may appear if there is something worth celebrating. Everything is made from scratch, in that ger, with ingredients the family has grown or raised themselves.</p>
+
+    <p>Afternoons are quieter. This is when longer conversations happen through your guide, when the father might show you his eagle or his horse, when the grandmother might demonstrate how she makes felt or embroiders a panel. Do not rush these moments. Some of the best connections between travellers and nomadic families happen in unhurried afternoon hours over cups of tea.</p>
+
+    <h3>Evening (6 pm onward)</h3>
+    <p>Dinner is lighter than lunch — leftovers from midday, bread, tea. As the light drops, the family gathers closer to the stove. If there is a <em>dombra</em> — the two-stringed Kazakh lute — someone may play. Traditional songs are sung at the end of the day, and if you know any song from your own country, you will be asked to perform it. This is not optional. Prepare something in advance.</p>
+
+    <p>Sleeping arrangements are simple: a wooden bed frame with a thick felt mattress and heavy blankets. You will sleep remarkably well. The silence in the Altai at night is total.</p>
+
+    <h2>Food: What You Will Eat</h2>
+
+    <p>Kazakh nomadic cuisine is built around two things: meat and dairy. If you are vegetarian, tell your tour operator in advance so the family can be informed. It is possible to accommodate dietary needs, but the family's default assumption is that guests eat everything.</p>
+
     <ul>
-      <li>Mutton or beef dishes</li>
-      <li>Fresh dairy — yogurt, cream, butter</li>
-      <li>Handmade bread</li>
+      <li><strong>Suutei tsai:</strong> The milk tea you will drink at every meal — salty, warming, and an acquired taste that most visitors come to love.</li>
+      <li><strong>Boorsog:</strong> Fried dough, eaten with butter, jam, or cream. Often the first thing offered to guests.</li>
+      <li><strong>Tsuivan:</strong> The nomadic staple — hand-pulled noodles with mutton, fried and then steamed. Deeply satisfying.</li>
+      <li><strong>Khuushuur:</strong> Flat fried dumplings filled with minced meat and onion. Similar to a pastie and universally loved by visitors.</li>
+      <li><strong>Aaruul:</strong> Hard dried cheese, white or yellowish, often shared as a snack. Very strong in flavour. Chew slowly.</li>
+      <li><strong>Qymyz / Airag:</strong> Fermented mare's milk — mildly alcoholic, slightly fizzy, and very much an acquired taste. Summer drink mainly, but you may be offered it.</li>
     </ul>
-    
-    <h3>🐎 Daily Life Experience</h3>
-    <p>Depending on the season, you may join:</p>
+
+    <h2>Cultural Etiquette: What to Know Before You Go</h2>
+
+    <p>Kazakh hospitality is genuine and unconditional, but there are customs that, if you observe them, will deepen the connection between you and the family enormously.</p>
+
     <ul>
-      <li>Milking yaks or goats</li>
-      <li>Horse riding</li>
-      <li>Eagle training sessions</li>
-      <li>Cooking local meals</li>
+      <li><strong>Accept everything offered to you</strong> — tea, food, a seat, a gift. Refusal is taken personally.</li>
+      <li><strong>Never step on the threshold</strong> of the ger door. Step over it. This is taken seriously.</li>
+      <li><strong>Never lean on the support poles</strong> of the ger structure.</li>
+      <li><strong>Don't whistle inside the ger</strong> — it is considered to invite bad spirits.</li>
+      <li><strong>Pass objects with your right hand</strong>, or with both hands, not just the left.</li>
+      <li><strong>Ask before photographing</strong>, especially the women. Men are generally happy to be photographed; women may prefer not to be, or may want a female guide to ask on your behalf.</li>
+      <li><strong>Show interest in the children</strong> — playing simple games with the kids will warm the whole family to you faster than anything else.</li>
     </ul>
-    
-    <h3>🎶 Culture</h3>
-    <p>Evenings often include stories, music, and explanations of traditional customs.</p>
-    
-    <h3>🛏 Accommodation</h3>
-    <p>Expect simple but clean sleeping arrangements with warm blankets.</p>
-    
-    <p>Staying with nomadic families supports local communities and gives you a genuine experience of Kazakh culture.</p>
+
+    <h2>What to Bring as a Guest</h2>
+
+    <p>Bringing a small gift is not obligatory, but it is one of the most appreciated things a guest can do. Bring something from your home country if possible — it becomes a talking point and something the family will remember. Good options include:</p>
+
+    <ul>
+      <li>Chocolates or hard sweets (especially for children)</li>
+      <li>Coffee or specialty tea from your home country</li>
+      <li>A scarf or simple item of clothing</li>
+      <li>A printed photograph of your family or home — nomadic families are curious about where their guests come from</li>
+      <li>Notebooks, pencils, or crayons for children</li>
+    </ul>
+
+    <p>Avoid bringing alcohol unless you know the family drinks it — many Kazakh families are Muslim and do not.</p>
+
+    <h2>Practical Preparations</h2>
+
+    <p>A few things to organise before you arrive at the ger:</p>
+
+    <ul>
+      <li><strong>Wet wipes and hand sanitiser</strong> — water for washing is limited, and you will appreciate these.</li>
+      <li><strong>Headlamp</strong> — the outhouse requires navigating in the dark.</li>
+      <li><strong>Warm sleeping layer</strong> — even in summer the nights in the Altai are cold. In September and October, bring a hat and warm socks to sleep in.</li>
+      <li><strong>Earplugs</strong> — not for the family, but for the roosters, dogs, and camels that will begin the day at 5 am.</li>
+      <li><strong>A positive attitude about basic sanitation</strong> — there is no shower for one or two nights. This is fine.</li>
+    </ul>
+
+    <h2>How a Nomadic Stay Is Arranged</h2>
+
+    <p>Most nomadic family stays are arranged through a local tour operator who has an ongoing relationship with specific families. This matters. A family that has been doing homestays for years knows how to bridge the communication gap and create a comfortable experience for both sides. An ad-hoc arrangement, especially with no shared language, is far less likely to result in a meaningful exchange.</p>
+
+    <p>Altai Mount Travel has long-standing relationships with several Kazakh nomadic families across Bayan-Ölgii province. Our guide stays with you, acts as interpreter, and provides context for everything you observe. We pay the family directly and fairly, and a portion of every tour fee is returned to the hosting community.</p>
+
+    <p>A nomadic family stay is included in several of our tours, or can be arranged as a standalone two-night experience. If you are coming specifically for the Golden Eagle Festival, we strongly recommend adding a family stay — the contrast between the spectacle of the festival and the quiet of a night in a ger with a family is one of the defining experiences of Western Mongolia.</p>
+
+    <p>📧 altaimounttravel@gmail.com &nbsp;|&nbsp; 📱 WhatsApp: +976 8542 8887</p>
     `
       },
 

@@ -4,6 +4,10 @@ import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Mountain, ArrowLeft, Compass } from "lucide-react";
+import { tours } from "@/data/tours";
+
+// Pick 3 varied tours to suggest on the 404 page
+const SUGGESTED = tours.slice(0, 3);
 
 export default function NotFound() {
   return (
@@ -55,6 +59,34 @@ export default function NotFound() {
         <Link href="/" className="inline-flex items-center gap-2 text-sm text-stone-500 hover:text-stone-800 transition-colors">
           <ArrowLeft className="w-4 h-4" /> Back to homepage
         </Link>
+      </div>
+
+      {/* Suggested tours */}
+      <div className="max-w-5xl mx-auto px-4 pb-16">
+        <h3 className="text-center text-lg font-bold text-stone-900 mb-6">Popular tours to explore</h3>
+        <div className="grid sm:grid-cols-3 gap-5">
+          {SUGGESTED.map((t) => (
+            <Link
+              key={t.slug}
+              href={`/tours/${t.slug}`}
+              className="group bg-white rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="relative h-44">
+                <Image
+                  src={t.heroImage}
+                  alt={t.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-4">
+                <div className="text-[11px] uppercase tracking-wide text-amber-600 font-semibold mb-1">{t.durationDays} days</div>
+                <h4 className="text-sm font-bold text-stone-900 group-hover:text-amber-700 transition-colors leading-snug">{t.title}</h4>
+                <p className="text-xs text-stone-500 mt-1">From ${t.startingFromUsd.toLocaleString()} USD</p>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
 
       <Footer />

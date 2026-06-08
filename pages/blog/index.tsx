@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import { useState } from "react";
 import { Clock, Tag } from "lucide-react";
 import { POSTS } from "@/data/blog";
 
@@ -20,8 +21,11 @@ function formatDate(dateStr: string) {
 }
 
 export default function BlogIndex() {
-  const [featured, ...rest] = POSTS;
-  const ogImage = featured?.image ? `${SITE}${featured.image}` : `${SITE}/images/5bogd.jpg`;
+  const [activeCategory, setActiveCategory] = useState<string>("All");
+  const categories = ["All", ...Array.from(new Set(POSTS.map((p) => p.category)))];
+  const filteredPosts = activeCategory === "All" ? POSTS : POSTS.filter((p) => p.category === activeCategory);
+  const [featured, ...rest] = filteredPosts;
+  const ogImage = POSTS[0]?.image ? `${SITE}${POSTS[0].image}` : `${SITE}/images/5bogd.jpg`;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -126,9 +130,23 @@ export default function BlogIndex() {
 
         {/* Other posts */}
         <section>
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold">Latest articles</h2>
-            {/* reserved for future filter or category chips */}
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
+            <h2 className="text-lg font-semibold shrink-0">Latest articles</h2>
+            <div className="flex flex-wrap gap-2">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
+                    activeCategory === cat
+                      ? "bg-brand-800 text-white border-brand-800"
+                      : "bg-white text-stone-600 border-stone-200 hover:border-brand-700 hover:text-brand-700"
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

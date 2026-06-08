@@ -5,6 +5,8 @@ import TourFilters, { FilterState } from "@/components/TourFilters";
 import { tours } from "@/data/tours";
 import { useMemo, useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
+import { Sparkles } from "lucide-react";
 
 const defaultFilters: FilterState = {
   duration: "all",
@@ -106,6 +108,31 @@ export default function ToursPage() {
                 )}
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Tailor-made callout */}
+        <section className="container pb-16">
+          <div className="relative overflow-hidden bg-brand-800 rounded-3xl p-8 md:p-12 text-white">
+            <div className="relative z-10 max-w-xl">
+              <div className="flex items-center gap-2 mb-3">
+                <Sparkles className="w-5 h-5 text-amber-400" />
+                <span className="text-xs font-semibold uppercase tracking-widest text-amber-400">Custom itineraries</span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-tight">None of these quite right?</h2>
+              <p className="text-white/70 mb-6 leading-relaxed">
+                Tell us your dates, interests, and group size — we'll build an itinerary around you. Eagle hunting, trekking, photography, family travel, or something completely off the beaten path.
+              </p>
+              <Link
+                href="/tailor-made"
+                className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-amber-950 font-semibold px-6 py-3 rounded-xl text-sm transition-colors"
+              >
+                <Sparkles className="w-4 h-4" /> Build my custom tour
+              </Link>
+            </div>
+            {/* Decorative background circles */}
+            <div className="absolute right-0 top-0 w-64 h-64 rounded-full bg-white/5 translate-x-1/3 -translate-y-1/3 pointer-events-none" />
+            <div className="absolute right-20 bottom-0 w-40 h-40 rounded-full bg-amber-400/10 translate-y-1/2 pointer-events-none" />
           </div>
         </section>
 

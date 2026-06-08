@@ -10,6 +10,7 @@ import { tours } from "@/data/tours";
 import Link from "next/link";
 import Head from "next/head";
 import type { GetStaticProps } from "next";
+import { AlertCircle } from "lucide-react";
 
 type HomeProps = { altaiNow: AltaiNowData };
 
@@ -43,6 +44,16 @@ export default function Home({ altaiNow }: HomeProps) {
       </Head>
     
       <div className="min-h-screen bg-white text-gray-900">
+        {/* Urgency banner */}
+        <div className="bg-amber-500 text-amber-950 text-center text-sm font-semibold py-2.5 px-4 flex items-center justify-center gap-2">
+          <AlertCircle className="w-4 h-4 shrink-0" />
+          <span>
+            Golden Eagle Festival 2026 (Oct 3–4) — limited spots available.{" "}
+            <Link href="/tours/golden-eagle-festival" className="underline underline-offset-2 hover:text-amber-900">
+              Book now →
+            </Link>
+          </span>
+        </div>
         <Navbar />
         <HeroHome altaiNow={altaiNow} />
         <WhyUs />

@@ -110,15 +110,20 @@ export default function Footer() {
               We send a few updates per season.
             </p>
 
-            {/* Facebook link (visible + clickable) */}
+            {/* Facebook card */}
             <a
-              href="https://www.facebook.com/profile.php?id=61570342360210"
+              href="https://www.facebook.com/altaimountgercamp"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-brand-50/85 hover:text-white"
+              className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 px-3 py-2.5 transition-colors"
             >
-              <Facebook className="h-4 w-4" />
-              Follow us on Facebook
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#1877F2]">
+                <Facebook className="h-4 w-4 text-white" />
+              </div>
+              <div className="leading-tight">
+                <div className="text-xs font-semibold text-white">Follow on Facebook</div>
+                <div className="text-[11px] text-brand-50/60">@altaimountgercamp</div>
+              </div>
             </a>
           </div>
         </div>

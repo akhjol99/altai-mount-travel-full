@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import { Clock, ArrowLeft } from "lucide-react";
+import BackToTop from "@/components/BackToTop";
 import { POSTS, type BlogPost } from "@/data/blog";
 import type { GetStaticPaths, GetStaticProps } from "next";
 import Navbar from "@/components/Navbar";
@@ -51,6 +52,7 @@ function buildArticleSchema(post: BlogPost, canonicalUrl: string) {
   };
 }
 
+
 type Props = { post: BlogPost | null };
 
 export default function BlogPostPage({ post }: Props) {
@@ -98,6 +100,7 @@ export default function BlogPostPage({ post }: Props) {
         />
       </Head>
 
+      <BackToTop />
       <Navbar />
       <main className="py-12 md:py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">

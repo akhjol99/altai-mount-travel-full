@@ -56,7 +56,7 @@ export const tours = [
     id:'eagle', slug:'golden-eagle-festival', title:'Golden Eagle Festival Tour 2026',
     summary:'Witness Mongolia’s legendary Golden Eagle Festival and stay with Kazakh nomad families in Ölgii.',
     durationDays:9, difficulty:'Easy', season:['Sep', 'Oct'], tags:['Cultural', 'Festival'],
-    startingFromUsd:2300, popularity:90,
+    startingFromUsd:2100, popularity:90,
     heroImage:'/images/child.jpg',
     images: ['/images/hunter.jpg', '/images/festival.jpeg', '/images/octhunter.jpeg', '/images/hulin_eagle2.png', '/images/hulin_eagle3.jpg'],
     highlights:['Eagle Hunting','Felt crafts','Camel ride','Lakeside camp'],
@@ -74,7 +74,7 @@ export const tours = [
     ],
     includes:['All accommodation','All Transportation','Domestic Flight','Mountain Guide', '(Breakfast, Lunch, Dinner, Water&Snacks)', 'Camel Support', 'Pick up & drop off services'],
     excludes:['International Flights','Excess baggage fee','Personal needs','Travel Insurance', 'Gratitude'],
-    priceTiers:[{minGroup:2,maxGroup:2,priceUsd:3600},{minGroup:3,maxGroup:4,priceUsd:2800},{minGroup:5,maxGroup:12,priceUsd:2300}]
+    priceTiers:[{minGroup:2,maxGroup:2,priceUsd:3200},{minGroup:3,maxGroup:4,priceUsd:2500},{minGroup:5,maxGroup:12,priceUsd:2100}]
   },
   {
     id:'nomad', slug:'live-with-kazakh-nomad-family', title:'Live with a Kazakh Nomad Family',

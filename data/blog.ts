@@ -91,7 +91,7 @@ export type BlogPost = {
  content: `
  <h2>Golden Eagle Festival 2026: The Complete Guide</h2>
 
- <p>The Golden Eagle Festival is one of the most extraordinary cultural events on earth. Each October, eagle hunters from across the Altai mountains ride into Sagsai on horseback, their golden eagles perched on their arms, dressed in the elaborate fur and embroidered garments their families have worn for generations. If you are planning to visit Western Mongolia, this is the event you should build your whole trip around.</p>
+ <p>The Golden Eagle Festival is one of the most extraordinary cultural events on earth. Each October, eagle hunters from across the Altai mountains ride to Shar Nuur on horseback, their golden eagles perched on their arms, dressed in the elaborate fur and embroidered garments their families have worn for generations. If you are planning to visit Western Mongolia, this is the event you should build your whole trip around.</p>
 
  <p>This guide covers everything: exact 2026 dates, how to buy tickets, what happens on each day, where to stand for photographs, what to pack for October weather, where to sleep, and how to make the most of the full week around the festival.</p>
 
@@ -102,11 +102,11 @@ export type BlogPost = {
  <p>There are two festivals in the Bayan-Ölgii region each autumn:</p>
 
  <ul>
- <li><strong>Sagsai Eagle Festival (main event):</strong> 3–4 October 2026</li>
+ <li><strong>Shar Nuur Eagle Festival (main event):</strong> 3–4 October 2026</li>
  <li><strong>Ölgii Eagle Festival (smaller, more local):</strong> Late September 2026 — typically the last weekend of September</li>
  </ul>
 
- <p>The Sagsai festival, held about 40 km from Ölgii town, is the main event that most international visitors attend. It is larger, more competitive, and draws eagle hunters from the most remote corners of the province. The late-September Ölgii festival is smaller and less touristy — if you can attend both, you should.</p>
+ <p>The Shar Nuur festival, held at Shar Nuur (Shar Lake) about 15 km from Ölgii town, is the main event that most international visitors attend. It is larger, more competitive, and draws eagle hunters from the most remote corners of the province. The late-September Ölgii festival is smaller and less touristy — if you can attend both, you should.</p>
 
  <p><strong>Important:</strong> Book flights and accommodation at least 3–4 months in advance. October is high season for this festival and rooms in Ölgii sell out fast.</p>
 
@@ -166,11 +166,11 @@ export type BlogPost = {
 
  <p>Eagles in steep descent move extremely fast. Set your shutter speed to at least 1/1600s, ideally 1/2500s, to freeze wing movement. Use continuous autofocus (AI Servo on Canon, AF-C on Nikon/Sony) and burst mode. Of every twenty frames, perhaps two or three will be keepers — that is normal.</p>
 
- <p>The golden hour at Sagsai is genuinely golden. Arrive before 8 am to photograph hunters warming up with their eagles before the official programme begins. These quiet morning moments — a hunter adjusting a hood on their eagle, a horse standing still against the mountains — are often more powerful than the action shots.</p>
+ <p>The golden hour at Shar Nuur is genuinely golden. Arrive before 8 am to photograph hunters warming up with their eagles before the official programme begins. These quiet morning moments — a hunter adjusting a hood on their eagle, a horse standing still against the mountains — are often more powerful than the action shots.</p>
 
  <h2>Weather and What to Wear</h2>
 
- <p>October in Bayan-Ölgii is genuinely cold. Temperatures during the festival typically range from <strong>5°C to 12°C</strong> during the day and drop to <strong>-5°C to -10°C</strong> at night. The Sagsai valley is exposed and wind can make it feel colder. Rain is possible but less common than in summer; light snow is occasionally seen on the surrounding peaks.</p>
+ <p>October in Bayan-Ölgii is genuinely cold. Temperatures during the festival typically range from <strong>5°C to 12°C</strong> during the day and drop to <strong>-5°C to -10°C</strong> at night. The Shar Nuur site is exposed and wind can make it feel colder. Rain is possible but less common than in summer; light snow is occasionally seen on the surrounding peaks.</p>
 
  <p>Pack as though you are going to stand outside in near-freezing wind for six hours — because you are. Layers are essential:</p>
 
@@ -185,9 +185,9 @@ export type BlogPost = {
 
  <p>Sunscreen is not optional — the Altai sun at altitude is strong even in October, especially at the midday break.</p>
 
- <h2>Getting to Sagsai</h2>
+ <h2>Getting to Shar Nuur</h2>
 
- <p>Sagsai is approximately 40 km west of Ölgii town, a 45–60 minute drive on a paved road followed by a short stretch of dirt track. If you are on a tour, your guide will arrange transport. Independent travelers can hire a driver in Ölgii the evening before; agree on a price in advance (typically 80,000–120,000 MNT for the round trip, per vehicle).</p>
+ <p>Shar Nuur is approximately 15 km from Ölgii town — a short 20-minute drive. If you are on a tour, your guide will arrange transport. Independent travelers can hire a driver in Ölgii the evening before; agree on a price in advance (typically 40,000–60,000 MNT for the round trip, per vehicle).</p>
 
  <p>Shared minivans also run from Ölgii town centre on festival mornings — ask your guesthouse for the current departure point. These fill up fast and leave early; aim to be at the van by 7:30 am.</p>
 
@@ -197,7 +197,7 @@ export type BlogPost = {
 
  <ul>
  <li><strong>Guesthouses in Ölgii town:</strong> Most popular option — basic rooms with shared bathrooms, breakfast sometimes included. Budget around $15–30 per person per night.</li>
- <li><strong>Ger camps near Sagsai:</strong> A handful of operators run ger camps specifically during the festival. Sleeping in a ger near the festival grounds is atmospheric and means you do not have to commute each morning. Prices are higher during festival week — expect $40–70 per person including meals.</li>
+ <li><strong>Ger camps near Shar Nuur:</strong> A handful of operators run ger camps specifically during the festival. Sleeping in a ger near the festival grounds is atmospheric and means you do not have to commute each morning. Prices are higher during festival week — expect $40–70 per person including meals.</li>
  <li><strong>Homestay with a local family:</strong> Altai Mount Travel can arrange homestays in Ölgii or in nomadic family gers outside town. This is the most authentic experience and often the most affordable.</li>
  </ul>
 

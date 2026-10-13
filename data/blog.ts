@@ -706,7 +706,7 @@ export type BlogPost = {
  <p>We are a locally-owned tour operator based in Ölgii with genuine relationships with eagle hunter families across the province. When you stay with one of these families through us, the family knows we are coming, they are compensated fairly, and your guide speaks Kazakh.</p>
 
  <ul>
- <li><strong>Golden Eagle Festival Tour 2026</strong> — 9 days, from $2,300 USD</li>
+ <li><strong>Golden Eagle Festival Tour 2027</strong> — 9 days, from $2,300 USD</li>
  <li><strong>Altai Tavan Bogd Base Camp Trek</strong> — 10 days, from $1,900 USD</li>
  <li><strong>Custom itineraries</strong> — built around your dates and interests</li>
  </ul>

@@ -10,8 +10,8 @@ const SITE = "https://www.altaimount.com";
 
 const FAQ = [
   {
-    q: "When exactly is the Golden Eagle Festival 2026?",
-    a: "The main festival takes place at Shar Nuur (Shar Lake) on 3–4 October 2026, about 15 km from Ölgii town. A smaller local festival is usually held the last weekend of September in Ölgii itself. Festival entrance tickets are included in our tour package — you don't pay separately at the gate.",
+    q: "When exactly is the Golden Eagle Festival 2027?",
+    a: "The main festival takes place at Shar Nuur (Shar Lake) on 2–3 October 2027, about 15 km from Ölgii town. A smaller local festival is usually held the last weekend of September in Ölgii itself. Festival entrance tickets are included in our tour package — you don't pay separately at the gate.",
   },
   {
     q: "How do I get to the Golden Eagle Festival from abroad?",
@@ -43,7 +43,7 @@ const FAQ = [
   },
   {
     q: "How far in advance should I book?",
-    a: "At least 3–4 months in advance. October is peak season in Bayan-Ölgii — domestic flights and accommodation in Ölgii sell out fast, especially for festival weekend. Domestic flights from Ulaanbaatar to Ölgii have limited seats and sell out well before the festival. Our 2026 tour has limited spots remaining.",
+    a: "At least 3–4 months in advance. October is peak season in Bayan-Ölgii — domestic flights and accommodation in Ölgii sell out fast, especially for festival weekend. Domestic flights from Ulaanbaatar to Ölgii have limited seats and sell out well before the festival. Our 2027 tour (27 September – 5 October 2027) is now open for booking.",
   },
   {
     q: "Can I visit eagle hunter families outside the festival?",
@@ -69,20 +69,20 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   );
 }
 
-export default function GoldenEagleFestival2026() {
+export default function GoldenEagleFestival2027() {
   return (
     <div className="min-h-screen bg-white">
       <Head>
-        <title>Golden Eagle Festival 2026 — Dates, Tickets & Tours | Altai Mount Travel</title>
+        <title>Golden Eagle Festival 2027 — Dates, Tickets & Tours | Altai Mount Travel</title>
         <meta
           name="description"
-          content="Everything about the Golden Eagle Festival 2026 in Bayan-Ölgii, Mongolia. Dates: October 3–4, 2026. Ticket prices, what to expect, photography tips, and small-group tours from a local operator."
+          content="Everything about the Golden Eagle Festival 2027 in Bayan-Ölgii, Mongolia. Dates: October 2–3, 2027. Ticket prices, what to expect, photography tips, and small-group tours from a local operator."
         />
-        <link rel="canonical" href={`${SITE}/golden-eagle-festival-2026`} />
-        <meta property="og:url" content={`${SITE}/golden-eagle-festival-2026`} />
+        <link rel="canonical" href={`${SITE}/golden-eagle-festival-2027`} />
+        <meta property="og:url" content={`${SITE}/golden-eagle-festival-2027`} />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Golden Eagle Festival 2026 — Dates, Tickets & Tours" />
-        <meta property="og:description" content="October 3–4, 2026 in Bayan-Ölgii, Mongolia. Local guided tours, photography tips, what to wear, and how to book." />
+        <meta property="og:title" content="Golden Eagle Festival 2027 — Dates, Tickets & Tours" />
+        <meta property="og:description" content="October 2–3, 2027 in Bayan-Ölgii, Mongolia. Local guided tours, photography tips, what to wear, and how to book." />
         <meta property="og:image" content={`${SITE}/images/hulin_eagle4.png`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={`${SITE}/images/hulin_eagle4.png`} />
@@ -94,9 +94,9 @@ export default function GoldenEagleFestival2026() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Event",
-              name: "Golden Eagle Festival 2026",
-              startDate: "2026-10-03",
-              endDate: "2026-10-04",
+              name: "Golden Eagle Festival 2027",
+              startDate: "2027-10-02",
+              endDate: "2027-10-03",
               eventStatus: "https://schema.org/EventScheduled",
               eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
               location: {
@@ -128,7 +128,7 @@ export default function GoldenEagleFestival2026() {
                 price: "2100",
                 priceCurrency: "USD",
                 availability: "https://schema.org/LimitedAvailability",
-                validFrom: "2026-01-01",
+                validFrom: "2027-10-13",
               },
             }),
           }}
@@ -166,10 +166,10 @@ export default function GoldenEagleFestival2026() {
         <div className="relative z-10 flex flex-col items-center justify-end h-full pb-14 px-6 text-center">
           <span className="text-amber-400 text-xs font-semibold uppercase tracking-widest mb-3">Bayan-Ölgii · Western Mongolia</span>
           <h1 className="text-4xl md:text-6xl font-black text-white drop-shadow-lg leading-tight mb-4">
-            Golden Eagle Festival<br />2026
+            Golden Eagle Festival<br />2027
           </h1>
           <div className="flex flex-wrap items-center justify-center gap-4 text-white/90 text-sm mb-8">
-            <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4 text-amber-400" /> October 3–4, 2026</span>
+            <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4 text-amber-400" /> October 2–3, 2027</span>
             <span className="w-1 h-1 rounded-full bg-white/40 hidden sm:block" />
             <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4 text-amber-400" /> Shar Nuur, Bayan-Ölgii</span>
             <span className="w-1 h-1 rounded-full bg-white/40 hidden sm:block" />
@@ -179,16 +179,16 @@ export default function GoldenEagleFestival2026() {
             href="/tours/golden-eagle-festival"
             className="bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold px-8 py-3.5 rounded-full text-sm transition-colors shadow-lg"
           >
-            View 2026 Tour & Prices →
+            View 2027 Tour & Prices →
           </Link>
         </div>
       </div>
 
       {/* Urgency strip */}
       <div className="bg-stone-900 text-white text-center py-3 px-4 text-sm">
-        <span className="text-amber-400 font-semibold">Limited spots for October 2026.</span>
+        <span className="text-amber-400 font-semibold">Limited spots for October 2027.</span>
         {" "}Tours fill 3–4 months in advance —{" "}
-        <Link href="/book?tour=Golden Eagle Festival Tour 2026" className="underline underline-offset-2 hover:text-amber-400">
+        <Link href="/book?tour=Golden Eagle Festival Tour 2027" className="underline underline-offset-2 hover:text-amber-400">
           secure your place now
         </Link>
       </div>
@@ -210,15 +210,15 @@ export default function GoldenEagleFestival2026() {
           </div>
         </section>
 
-        {/* 2026 dates */}
+        {/* 2027 dates */}
         <section>
-          <h2 className="text-2xl md:text-3xl font-bold text-stone-900 mb-6">2026 Festival Dates</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-stone-900 mb-6">2027 Festival Dates</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               {
                 name: "Shar Nuur Eagle Festival",
                 tag: "Main event",
-                date: "October 3–4, 2026",
+                date: "October 2–3, 2027",
                 location: "Shar Nuur (Shar Lake), ~15 km from Ölgii",
                 desc: "The largest and most internationally attended festival. 100+ eagle hunters compete over two full days. This is the one to build your trip around.",
                 highlight: true,
@@ -226,7 +226,7 @@ export default function GoldenEagleFestival2026() {
               {
                 name: "Ölgii Eagle Festival",
                 tag: "Smaller, more local",
-                date: "Late September 2026",
+                date: "Late September 2027",
                 location: "Ölgii town",
                 desc: "Held the last weekend of September, this is a more intimate festival with fewer tourists. If your dates allow, attending both gives a very different perspective.",
                 highlight: false,
@@ -394,13 +394,13 @@ export default function GoldenEagleFestival2026() {
         {/* Tour CTA */}
         <section className="bg-amber-50 border border-amber-200 rounded-3xl p-8 md:p-12 text-center">
           <div className="text-xs font-semibold uppercase tracking-widest text-amber-700 mb-3">Altai Mount Travel</div>
-          <h2 className="text-2xl md:text-3xl font-bold text-stone-900 mb-3">Our 2026 Festival Tour</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-stone-900 mb-3">Our 2027 Festival Tour</h2>
           <p className="text-stone-600 mb-6 max-w-xl mx-auto leading-relaxed">
-            9 days · October 2026 · Small groups (max 8) · English-speaking local guide
+            9 days · October 2027 · Small groups (max 8) · English-speaking local guide
           </p>
           <div className="grid sm:grid-cols-2 gap-2 max-w-xl mx-auto mb-8 text-left">
             {[
-              "Both festival days (Oct 3–4)",
+              "Both festival days (Oct 2–3)",
               "Festival entrance tickets included",
               "Private eagle hunter family visit",
               "Nomadic family ger stay",
@@ -423,7 +423,7 @@ export default function GoldenEagleFestival2026() {
               See full itinerary & prices
             </Link>
             <Link
-              href="/book?tour=Golden Eagle Festival Tour 2026"
+              href="/book?tour=Golden Eagle Festival Tour 2027"
               className="inline-flex items-center justify-center gap-2 bg-stone-900 hover:bg-stone-800 text-white font-semibold px-8 py-3.5 rounded-full text-sm transition-colors"
             >
               Book your spot

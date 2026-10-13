@@ -24,7 +24,7 @@ In 2021, UNESCO added Kazakh eagle hunting to its List of Intangible Cultural He
 
 ## The Golden Eagle Festival
 
-Every year in early October, eagle hunters from across Bayan-Ölgii gather near Ölgii town for the Golden Eagle Festival. The **2026 Golden Eagle Festival** takes place on the first weekend of October at Shar Nuur. Book at least six months in advance.
+Every year in early October, eagle hunters from across Bayan-Ölgii gather near Ölgii town for the Golden Eagle Festival. The **2027 Golden Eagle Festival** takes place on 2–3 October 2027 at Shar Nuur. Book at least six months in advance.
 
 There is also a smaller, more intimate festival held in **Sagsai village each September** — about 30 kilometres from Ölgii — which many travellers prefer for its community feel.
 
@@ -45,7 +45,7 @@ Fly to Ulaanbaatar, then take a domestic flight to Ölgii (around 2.5 hours, sev
 
 We are a locally-owned operator based in Ölgii with genuine relationships with eagle hunter families across the province.
 
-- **Golden Eagle Festival Tour 2026** — 9 days, from $2,300 USD
+- **Golden Eagle Festival Tour 2027** — 9 days, from $2,300 USD
 - **Altai Tavan Bogd Base Camp Trek** — 10 days, from $1,900 USD
 - **Custom itineraries** — built around your dates and interests
 

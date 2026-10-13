@@ -25,7 +25,7 @@ const difficultyStyles: Record<string, string> = {
 // Per-slug urgency config
 const URGENCY: Record<string, { label: string; color: string }> = {
   "golden-eagle-festival": {
-    label: "🔥 Filling fast · Oct 2026",
+    label: "📅 Oct 2–3, 2027",
     color: "bg-red-500 text-white",
   },
   "climbing-khuiten-peak": {

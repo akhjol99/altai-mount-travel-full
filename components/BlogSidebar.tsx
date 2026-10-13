@@ -1,5 +1,5 @@
 // Sticky sidebar shown on all blog post pages.
-// Contains the Eagle Festival 2026 promo banner + a contact CTA.
+// Contains the Eagle Festival 2027 promo banner + a contact CTA.
 
 import Link from "next/link";
 import Image from "next/image";
@@ -8,12 +8,12 @@ import { ArrowRight } from "lucide-react";
 export default function BlogSidebar() {
   return (
     <aside className="space-y-6">
-      {/* Eagle Festival 2026 Banner */}
+      {/* Eagle Festival 2027 Banner */}
       <div className="relative rounded-3xl overflow-hidden shadow-xl group cursor-pointer">
         <div className="relative h-[420px]">
           <Image
             src="/images/hulin_eagle.jpg"
-            alt="Golden Eagle Festival 2026"
+            alt="Golden Eagle Festival 2027"
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-700"
           />
@@ -25,13 +25,13 @@ export default function BlogSidebar() {
         <div className="absolute inset-0 flex flex-col justify-end p-6">
           {/* Top badge */}
           <span className="absolute top-5 left-5 inline-flex items-center px-3 py-1 rounded-full bg-amber-500/90 text-white text-[11px] font-bold tracking-widest uppercase shadow">
-            October 2026
+            October 2027
           </span>
           <p className="text-amber-400 text-[11px] font-bold tracking-[0.22em] uppercase mb-2">
             Bayan-Ölgii · Mongolia
           </p>
           <h3 className="text-white font-extrabold text-2xl leading-tight mb-2 uppercase tracking-wide drop-shadow-lg">
-            Golden Eagle<br />Festival 2026
+            Golden Eagle<br />Festival 2027
           </h3>
           <p className="text-white/75 text-sm mb-5 leading-relaxed">
             Join us for the world's most spectacular eagle hunting competition deep in the Altai Mountains.

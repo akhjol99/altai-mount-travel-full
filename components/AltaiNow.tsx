@@ -4,8 +4,8 @@ import { Sun, Bird, Cloud, CloudRain, CloudSnow, CloudFog, CloudLightning } from
 // The Golden Eagle Festival in Bayan-Ölgii is held the first weekend of October.
 // Update these dates each year after the festival ends.
 const FESTIVAL_NAME = "Golden Eagle Festival";
-const FESTIVAL_START_ISO = "2026-10-03T09:00:00+08:00";
-const FESTIVAL_END_ISO = "2026-10-04T18:00:00+08:00";
+const FESTIVAL_START_ISO = "2027-10-02T09:00:00+08:00";
+const FESTIVAL_END_ISO = "2027-10-03T18:00:00+08:00";
 
 export type AltaiNowData = {
   temperatureC: number | null;

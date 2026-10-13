@@ -53,7 +53,7 @@ export const tours = [
     priceTiers:[{minGroup:2,maxGroup:2,priceUsd:3200},{minGroup:3,maxGroup:4,priceUsd:2800},{minGroup:5,maxGroup:8,priceUsd:2490},{minGroup:9,maxGroup:12,priceUsd:2360}]
   },
   {
-    id:'eagle', slug:'golden-eagle-festival', title:'Golden Eagle Festival Tour 2026',
+    id:'eagle', slug:'golden-eagle-festival', title:'Golden Eagle Festival Tour 2027',
     summary:'Nine days in Western Mongolia — live with Kazakh eagle hunters, attend both days of the Golden Eagle Festival at Shar Nuur, and experience a nomadic way of life that has barely changed in centuries.',
     durationDays:9, difficulty:'Easy', season:['Sep', 'Oct'], tags:['Cultural', 'Festival'],
     startingFromUsd:2100, popularity:90,

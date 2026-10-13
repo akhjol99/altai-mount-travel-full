@@ -12,6 +12,14 @@ const heroSlides = [
     subtitle: "Small-group expeditions led by local guides deep into Western Mongolia. Trek across glaciers, sleep in nomad gers under a sky full of stars, and witness the world's greatest eagle festival.",
   },
   {
+    image: "/images/horseback-main-banner.jpg",
+    // Horses are in the lower part of this photo, so anchor it lower than the others.
+    position: "object-[center_75%]",
+    tag: "Horseback Riding · Altai Tavan Bogd",
+    title: "Ride the Altai on Horseback",
+    subtitle: "Ride with Tuvan and Kazakh horsemen across high passes, glacier valleys and alpine lakes. Pack horses carry the gear, and no riding experience is needed.",
+  },
+  {
     image: "/images/mount.jpeg",
     tag: "Trekking & Adventure",
     title: "Summit the Roof of Mongolia",
@@ -53,7 +61,7 @@ export default function HeroHome({ altaiNow }: HeroHomeProps) {
           fill
           sizes="100vw"
           priority={i === 0}
-          className={`object-cover object-top transition-opacity duration-[1200ms] ${
+          className={`object-cover ${(slide as { position?: string }).position ?? "object-top"} transition-opacity duration-[1200ms] ${
             i === current ? "opacity-100" : "opacity-0"
           }`}
         />

@@ -12,6 +12,89 @@ export type BlogPost = {
  export const POSTS: BlogPost[] = [
 
   {
+ slug: "horseback-riding-mongolian-altai-guide",
+ title: "Horseback Riding in the Mongolian Altai: A Beginner's Guide",
+ date: "2026-10-14",
+ readTime: "8 min read",
+ category: "Adventure",
+ excerpt:
+ "Never ridden before? You can still cross the Altai on horseback. What Mongolian horses are like, what a riding day looks like, the best months to go, and what to pack.",
+ image: "/images/horseback-main-banner.jpg",
+ content: `
+ <h2>Horseback Riding in the Mongolian Altai: A Beginner's Guide</h2>
+ <p>In Western Mongolia, the horse is still the way people cross the mountains. Herders ride to their summer pastures, eagle hunters ride out with their birds, and the high valleys of Altai Tavan Bogd National Park are linked by trails that were made by hooves long before there were roads. Seeing this landscape from the saddle is one of the most rewarding ways to travel in Mongolia — and you do not need to be an experienced rider to do it.</p>
+
+ <img src="/images/horseback-riding-trail.jpg" alt="A group of riders on horseback crossing a meadow below the glaciers of the Mongolian Altai" style="width:100%; border-radius:12px; margin: 24px 0;" />
+
+ <h3>Do I need riding experience?</h3>
+ <p>No. Most of the riding in the Altai is done at a walk, following valleys, rivers and old migration routes. Local horsemen ride with the group, look after the horses and choose a calm horse for each rider. On the first evening they give a short introduction: how to sit, how to hold the reins, how to stop and turn.</p>
+ <p>What matters more than experience is comfort in the saddle for several hours. A typical riding day is 4–6 hours with breaks. If you have never ridden, a couple of short lessons at home before the trip will make the first days much more enjoyable.</p>
+
+ <h3>What Mongolian horses are like</h3>
+ <ul>
+ <li><strong>Small but tough.</strong> Mongolian horses are shorter than most European horses, but they are strong, sure-footed and used to mountain terrain, rivers and cold weather.</li>
+ <li><strong>Half-wild by nature.</strong> They live outdoors all year in herds. They are working animals, not pets — approach calmly and follow the horsemen's lead.</li>
+ <li><strong>Steady on the trail.</strong> They walk well over rocks, scree and marshy ground, which is exactly what the Altai trails are made of.</li>
+ </ul>
+
+ <h3>A typical riding day</h3>
+ <ul>
+ <li><strong>Morning:</strong> breakfast in camp while the horsemen bring in and saddle the horses. Your luggage goes on pack horses — you only carry a small bag with water, a jacket and a camera.</li>
+ <li><strong>Riding:</strong> a relaxed pace with stops for photos, river crossings and short walks to stretch your legs.</li>
+ <li><strong>Lunch:</strong> a picnic in the valley.</li>
+ <li><strong>Afternoon:</strong> arrive at the next camp, where tents are set up and dinner is cooked. Evenings are for tea, stories and stars.</li>
+ </ul>
+
+ <img src="/images/altai-camping.jpg" alt="Expedition camp with tents beside a river in an Altai valley" style="width:100%; border-radius:12px; margin: 24px 0;" />
+
+ <h3>The route: Altai Tavan Bogd on horseback</h3>
+ <p>Our <a href="/tours/altai-mountain-horseback-riding-tour" style="color:#b45309;font-weight:600;">Altai Mountain Horseback Riding Tour</a> follows the same route as our classic Altai trek, with five riding days:</p>
+ <ul>
+ <li><strong>Tsagaan Gol valley → Tavan Bogd base camp</strong> (about 15 km) — first views of the five sacred peaks and the Potanin Glacier.</li>
+ <li><strong>Base camp → White River valley</strong> — down the valley past the Grane Glacier.</li>
+ <li><strong>White River → Khar Salaa valley</strong> (about 18 km) — ibex country, with ancient rock carvings and burial sites.</li>
+ <li><strong>Over Takhilt Pass (3,200 m) to Bear valley</strong> (about 19 km) — the highlight. On the steepest parts riders lead their horses on foot.</li>
+ <li><strong>Tsagaan-Us valley</strong> (about 21 km) — larch forest and a small heart-shaped lake.</li>
+ </ul>
+ <p>Between the riding days there is a rest day at base camp, when you can walk onto the Potanin Glacier or climb Malchin Peak (4,051 m) on foot.</p>
+
+ <img src="/images/horseback-altai-mountain-horse.jpg" alt="A horse grazing above the Potanin Glacier in Altai Tavan Bogd National Park" style="width:100%; border-radius:12px; margin: 24px 0;" />
+
+ <h3>When to go</h3>
+ <p><strong>July to September</strong> is the riding season. High passes such as Takhilt are usually only used by herders from July to September, the grass is good for the horses, and the weather is at its most stable. July and August are the warmest months; September brings golden colours and fewer travelers, with colder nights.</p>
+ <p>Even in summer, weather in the mountains changes quickly. Expect sun, wind, rain and sometimes snow on the same day.</p>
+
+ <h3>What to pack for riding</h3>
+ <ul>
+ <li><strong>Riding helmet</strong> — bring your own if you can.</li>
+ <li><strong>Comfortable riding trousers or padded cycling shorts</strong> under trekking trousers.</li>
+ <li><strong>Boots with a small heel</strong>, so your foot cannot slip through the stirrup.</li>
+ <li><strong>Gloves</strong> for the reins and for cold mornings.</li>
+ <li><strong>Waterproof jacket and warm layers</strong> — a down jacket for evenings.</li>
+ <li><strong>A small bag you can wear while riding</strong> for water, sunscreen, snacks and a camera.</li>
+ <li><strong>Sleeping bag</strong> rated for nights around freezing.</li>
+ </ul>
+ <p>For a full list, see our <a href="/blog/what-to-pack-western-mongolia" style="color:#b45309;font-weight:600;">Western Mongolia packing guide</a>.</p>
+
+ <h3>Safety tips</h3>
+ <ul>
+ <li>Never walk directly behind a horse.</li>
+ <li>Mount and dismount when the horseman tells you to, and ask for help at any time.</li>
+ <li>Keep a little space between your horse and the one in front.</li>
+ <li>On steep or rocky sections, it is normal to get off and walk.</li>
+ <li>Travel insurance that covers horse riding is essential — check your policy before you book.</li>
+ </ul>
+
+ <h3>Trekking or riding?</h3>
+ <p>If you prefer to walk, our <a href="/tours/altai-tavan-bogd-trek" style="color:#b45309;font-weight:600;">Altai Mountain Trekking Tour</a> follows the same valleys on foot, with camels carrying the luggage. Riding is easier on the legs and lets you cover the long valley days more comfortably; trekking gives you more time on your feet and close to the ground. Both include base camp, Malchin Peak, Khoton Lake and a visit to an eagle hunter family.</p>
+
+ <h3>Ready to ride?</h3>
+ <p>Tell us your riding experience and travel dates, and we will match you with the right horse and the right group. See the full itinerary and prices on the <a href="/tours/altai-mountain-horseback-riding-tour" style="color:#b45309;font-weight:600;">Altai Mountain Horseback Riding Tour</a> page, or message us on WhatsApp at +976 8542 8887.</p>
+ `
+ },
+
+
+  {
  slug: "domestic-flight-schedule-mongolia-2026",
  title: "How to Fly to Ölgii: Domestic Flight Guide for Western Mongolia 2026",
  date: "2026-06-08",

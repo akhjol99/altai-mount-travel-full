@@ -18,6 +18,10 @@ type Mapping = {
 };
 
 const POST_TO_TOUR: Record<string, Mapping> = {
+  "horseback-riding-mongolian-altai-guide": {
+    slug: "altai-mountain-horseback-riding-tour",
+    lead: "Ready to ride the Altai?",
+  },
   "golden-eagle-festival-guide": {
     slug: "golden-eagle-festival",
     lead: "See the festival in person",

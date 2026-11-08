@@ -120,6 +120,28 @@ export const tours = [
     priceTiers:[{minGroup:2,maxGroup:2,priceUsd:3200},{minGroup:3,maxGroup:4,priceUsd:2500},{minGroup:5,maxGroup:12,priceUsd:2100}]
   },
   {
+    id:'snowleopard', slug:'snow-leopard-photography-tour', title:'Snow Leopard Photography Tour',
+    summary:'Track the elusive snow leopard through the winter Altai with local spotters. Five full days of dawn-to-dusk scanning of ridges and cliffs, a day with a Kazakh eagle hunter family, ibex and argali, and the quiet of the mountains in the season when the cats are most active. Wild animals — sightings are never guaranteed.',
+    durationDays:11, difficulty:'Moderate', season:['Dec','Jan','Feb','Mar'], tags:['Wildlife','Photography','Winter'],
+    startingFromUsd:3900, popularity:93,
+    heroImage:'/images/snow-leopard-rocks.jpg',
+    images: ['/images/snow-leopard-ridge.jpg', '/images/snow-leopard-slope.jpg', '/images/snow-leopard-cliff.jpg', '/images/hunter.jpg', '/images/hulin_eagle4.png', '/images/kazan.jpg'],
+    highlights:['5 full days tracking snow leopards','Local spotters who know the cats\' territory','Spotting scopes for long-distance viewing','Ibex, argali and Pallas\'s cat country','Small group — max 6 photographers','A full day with an eagle hunter family in winter'],
+    quickFacts:{ bestSeason:'December–March', maxAltitudeM:3000, accommodationMix:'Hotel + Family winter home / Ger', startEnd:'UBN ↔ UBN', airport:'Chinggis Khaan Int Airport' },
+    itinerary:[
+      { day:1, title:'Arrival in Ulaanbaatar', summary:'Arrive in Ulaanbaatar and transfer to your hotel in the city centre. In the evening, meet your guide for a welcome dinner and a briefing on the days ahead: winter conditions, camera care in the cold, and how tracking with spotters works. (Hotel/D)' },
+      { day:2, title:'Flight to Ölgii', summary:'Morning flight to Ölgii in Bayan-Ölgii province. Meet your local team at the airport and check in to the hotel. In the afternoon, visit the Regional Museum to learn about the wildlife and the Kazakh people of the Altai, and do a final check of cold-weather gear. (Hotel/B,L,D)' },
+      { day:3, title:'Drive into snow leopard territory', summary:'Drive into the mountains of the Bayan-Ölgii Altai and settle into a herder family\'s warm winter home or a heated ger, our base for the next nights. Meet the local spotters, who know these valleys and the routes the cats use. On the way, watch for ibex, argali and birds of prey. (Winter home/B,L,D)' },
+      { day:'4-8', title:'Snow leopard tracking & photography', summary:'Five full days in the field. We leave early to reach good viewpoints at first light, when snow leopards are most active. With the spotters we scan ridges, cliffs and gullies through spotting scopes, look for fresh tracks and scrapes in the snow, and follow the ibex herds the cats hunt. Days include short hikes over uneven, snowy ground and long patient waits at lookouts. When a cat is found, we approach quietly to a safe photographing distance. Other wildlife can include ibex, argali, red fox, Pallas\'s cat, golden eagles and vultures. Evenings are spent warm by the stove, reviewing the day\'s images. Snow leopards are wild animals and sightings are never guaranteed. (Winter home/B,L,D)' },
+      { day:9, title:'A day with an eagle hunter family', summary:'Leave the mountains and drive to the winter home of a Kazakh eagle hunter family. Winter is the real hunting season, when foxes have their thick coats. Ride or drive out with the hunter to watch him fly his golden eagle over the snowy hills, then photograph the hunter in his fox-fur hat and traditional coat in the soft afternoon light. In the evening, share a meal of besbarmak with the family and listen to the dombra by the stove. (Family winter home/B,L,D)', image:'/images/octhunter.jpeg' },
+      { day:10, title:'Drive to Ölgii and fly to Ulaanbaatar', summary:'Say goodbye to the family and drive to Ölgii for the flight to Ulaanbaatar. Free time in the afternoon, then a farewell dinner. (Hotel/B,L,D)' },
+      { day:11, title:'Departure', summary:'Transfer to the airport for your international flight. (B)' }
+    ],
+    includes:['English-speaking guide','Local snow leopard spotters','Spotting scopes','Domestic flights (UBN–ULG–UBN)','All ground transport (4x4)','Hotels in Ulaanbaatar and Ölgii','Winter home / heated ger stay','All meals as listed','National park and permit fees','Eagle hunter family visit','Airport transfers'],
+    excludes:['International flights','Travel insurance (required)','Camera equipment','Warm winter clothing and sleeping bag rated to -30°C','Tips & personal items'],
+    priceTiers:[{minGroup:2,maxGroup:2,priceUsd:4500},{minGroup:3,maxGroup:4,priceUsd:4200},{minGroup:5,maxGroup:6,priceUsd:3900}]
+  },
+  {
     id:'nomad', slug:'live-with-kazakh-nomad-family', title:'Live with a Kazakh Nomad Family',
     summary:'Spend a week inside a Kazakh nomadic family in the Altai foothills — milk yaks at dawn, learn felt-making with the women, ride horses across summer pasture, and share every meal around the stove.',
     durationDays:7, difficulty:'Easy', season:['Jun','Jul','Aug','Sep'], tags:['Cultural','Homestay','Horse riding','Nomadic'],

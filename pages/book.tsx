@@ -201,7 +201,7 @@ export default function Book() {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-semibold text-stone-500 uppercase tracking-wide mb-1">Preferred dates</label>
-                    <input name="dates" value={state.dates} onChange={handleChange} placeholder="e.g. 5–12 July 2026"
+                    <input name="dates" value={state.dates} onChange={handleChange} placeholder="e.g. 5–12 July 2027"
                       className="w-full rounded-xl border border-stone-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400" />
                   </div>
                   <div>

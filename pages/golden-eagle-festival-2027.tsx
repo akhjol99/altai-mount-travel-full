@@ -345,7 +345,7 @@ export default function GoldenEagleFestival2027() {
           <p className="text-stone-500 mb-6">During the festival, hotels in Ölgii are packed and overpriced. We do it differently.</p>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative h-72 rounded-2xl overflow-hidden shadow-lg order-2 md:order-1">
-              <Image src="/images/ger_camp.jpeg" alt="Traditional ger camp, Bayan-Ölgii Mongolia" fill className="object-cover" />
+              <Image src="/images/yurt.png" alt="Traditional ger camp, Bayan-Ölgii Mongolia" fill className="object-cover" />
             </div>
             <div className="space-y-4 order-1 md:order-2">
               <div className="flex items-center gap-2 text-amber-600 text-sm font-semibold uppercase tracking-wide">

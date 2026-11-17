@@ -73,12 +73,12 @@ export default function HeroHome({ altaiNow }: HeroHomeProps) {
       {/* Text Content */}
       <div className="relative z-10 flex items-end justify-start h-full px-6 md:px-16 pb-16 md:pb-24">
         <div className="max-w-2xl">
-          <span className="inline-block text-xs font-semibold tracking-widest uppercase text-amber-400 mb-4 transition-all duration-700">
-            {heroSlides[current].tag}
-          </span>
-          <h1 className="text-4xl md:text-6xl font-medium leading-[1.15] tracking-tight text-white mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)] transition-all duration-700">
-            {heroSlides[current].title}
+          <h1 className="inline-block text-xs font-semibold tracking-widest uppercase text-amber-400 mb-4">
+            Western Mongolia Tours &amp; Golden Eagle Festival
           </h1>
+          <p className="text-4xl md:text-6xl font-medium leading-[1.15] tracking-tight text-white mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)] transition-all duration-700">
+            {heroSlides[current].title}
+          </p>
           <p className="text-white/80 text-lg mb-8 leading-relaxed transition-all duration-700">
             {heroSlides[current].subtitle}
           </p>

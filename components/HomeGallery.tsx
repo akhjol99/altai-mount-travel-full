@@ -9,7 +9,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 const PHOTOS = [
   { src: "/images/hulin_eagle.jpg",   alt: "Kazakh eagle hunter with golden eagle" },
   { src: "/images/eaglebest.jpg",     alt: "Golden eagle in flight over Altai" },
-  { src: "/images/festival.jpeg",     alt: "Golden Eagle Festival 2026" },
+  { src: "/images/festival.jpeg",     alt: "Golden Eagle Festival, Bayan-Ölgii" },
   { src: "/images/5bogd.jpg",         alt: "Altai Tavan Bogd peaks" },
   { src: "/images/glacier.jpg",       alt: "Potanin Glacier, Western Mongolia" },
   { src: "/images/hearth_lake.jpeg",  alt: "Khoton Lake at sunrise" },

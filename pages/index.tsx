@@ -55,7 +55,7 @@ export default function Home({ altaiNow }: HomeProps) {
                 { value: "300+", label: "Travelers served" },
                 { value: "5★", label: "TripAdvisor rating" },
                 { value: "Since 2019", label: "Operating locally" },
-                { value: "7 tours", label: "Across Western Mongolia" },
+                { value: `${tours.length} tours`, label: "Across Mongolia" },
               ].map((s) => (
                 <div key={s.label}>
                   <div className="text-2xl md:text-3xl font-black text-amber-400">{s.value}</div>
